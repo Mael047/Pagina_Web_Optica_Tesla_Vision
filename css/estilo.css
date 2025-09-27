@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0 5%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    font-family: 'Lato', lato-regular;
+}
+
+.nav-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left, .nav-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-center{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-center img{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+}
+
+.nav-center span{
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+
+
+.nav-left a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    transition: transform 0.2s ease;
+}
+
+.icon{
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.search-box{
+    display: flex;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 2px 8px;
+}
+
+
+.search-box input{
+    border: none;
+    outline: none;
+    padding: 6px 8px;
+    flex: 1;
+    font-size: 14px;
+}
+
+.search-box button{
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.nav-left a:hover{
+transform: scale(1.2);
+}
+
+.icon:hover{
+    color: blue;
+    transform: scale(1.2);
+}
+
+.search-box button:hover{
+    color: blue;
+    transform: scale(1.2);
+}
+
+.nav-center span:hover{
+    transform: scale(1.1);
+    color: blue;
+}
