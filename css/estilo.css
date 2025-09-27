@@ -56,6 +56,7 @@ nav {
     font-weight: bold;
     color: black;
     cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
 }
 
 
