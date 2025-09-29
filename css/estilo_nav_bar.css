@@ -4,9 +4,9 @@
 }
 
 .lato-regular {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 nav {
@@ -22,20 +22,21 @@ nav {
     font-family: 'Lato', lato-regular;
 }
 
-.nav-container{
+.nav-container {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-left, .nav-right{
+.nav-left,
+.nav-right {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
-.nav-center{
+.nav-center {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -44,14 +45,14 @@ nav {
     transform: translateX(-50%);
 }
 
-.nav-center img{
+.nav-center img {
     width: 60px;
     height: 60px;
     cursor: pointer;
 
 }
 
-.nav-center span{
+.nav-center span {
     font-size: 16px;
     font-weight: bold;
     color: black;
@@ -60,7 +61,7 @@ nav {
 }
 
 
-.nav-left a{
+.nav-left a {
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
@@ -68,12 +69,12 @@ nav {
     transition: transform 0.2s ease;
 }
 
-.icon{
+.icon {
     cursor: pointer;
     transition: transform 0.2s ease, color 0.3s ease;
 }
 
-.search-box{
+.search-box {
     display: flex;
     align-items: center;
     border: 1px solid #000;
@@ -83,7 +84,7 @@ nav {
 }
 
 
-.search-box input{
+.search-box input {
     border: none;
     outline: none;
     padding: 6px 8px;
@@ -91,7 +92,7 @@ nav {
     font-size: 14px;
 }
 
-.search-box button{
+.search-box button {
     border: none;
     background: none;
     cursor: pointer;
@@ -101,21 +102,27 @@ nav {
     transition: transform 0.2s ease, color 0.3s ease;
 }
 
-.nav-left a:hover{
-transform: scale(1.2);
+.nav-left a:hover {
+    transform: scale(1.2);
+    color: blue;
 }
 
-.icon:hover{
+.icon:hover {
     color: blue;
     transform: scale(1.2);
 }
 
-.search-box button:hover{
+.search-box button:hover {
     color: blue;
     transform: scale(1.2);
 }
 
-.nav-center span:hover{
+.nav-center span:hover {
     transform: scale(1.1);
     color: blue;
+}
+
+.nav-center:hover {
+    color: blue;
+    transform:translateX(-50%) scale(1.05);
 }
