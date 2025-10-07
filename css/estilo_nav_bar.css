@@ -43,6 +43,7 @@ nav {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .nav-center img {
