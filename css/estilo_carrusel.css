@@ -1,0 +1,74 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.carrusel {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+    padding: 2em;
+
+}
+
+/* el % del width se ajusta a partir de la cantidad de imagenes */
+.carrusel .item {
+    display: flex;
+    justify-content: space-between;
+    transition: all .5s ease;
+    width: 400%;
+
+}
+
+/* el width se ajusta a partir de cuantas imagenes hay */
+.carrusel .img {
+    width: calc(100% / 4 - 1em);
+    aspect-ratio: 16/6;
+}
+
+.carrusel .puntos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    padding: 1em 0;
+}
+
+.carrusel .punto {
+    list-style: none;
+    width: .8em;
+    height: .8em;
+    border-radius: 50%;
+    background-color: black;
+    opacity: .5;
+    transition: all;
+
+}
+
+.carrusel .punto.activo {
+    background-color: rgb(106, 200, 243);
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .carrusel {
+        padding: 0.5em 0;
+    }
+
+    .carrusel .img {
+        aspect-ratio: 16/5;
+    }
+
+    .carrusel .punto {
+        width: 0.6em;
+        height: 0.6em;
+    }
+}
+
+@media (max-width: 480px) {
+    .carrusel .img {
+        aspect-ratio: 16/8;
+    }
+}
