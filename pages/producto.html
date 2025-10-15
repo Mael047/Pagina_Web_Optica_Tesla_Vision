@@ -17,6 +17,7 @@
     <script src="../js/precios.js" defer></script>
     <script src="../js/carrusel.js" defer></script>
     <script src="../js/detalle_producto.js" defer></script>
+    <script src="../js/tryon.js" defer></script>
     <title>Producto</title>
 </head>
 
@@ -34,7 +35,7 @@
                     <div class="nav-center">
                         <img src="../img/logo.png" alt="Logo">
                         <a href="../index.html" class="link-con-span">
-                            <span >Optica Tesla Vision</span>
+                            <span>Optica Tesla Vision</span>
                         </a>
 
                     </div>
@@ -113,6 +114,47 @@
                 <button class="btn-comprar">Continuar</button>
             </div>
         </div>
+
+        <!-- BOTÓN FIJO: Pruébatelos -->
+        <button id="btnTryon" class="tryon-btn" aria-haspopup="dialog" aria-controls="modalTryon">
+            <span class="tryon-icon" aria-hidden="true">
+                <!-- icono cámara -->
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M4 7H7L8.5 5H15.5L17 7H20C21.1 7 22 7.9 22 9V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V9C2 7.9 2.9 7 4 7Z"
+                        fill="white" />
+                    <circle cx="12" cy="13" r="3.5" fill="#8b6a2f" />
+                </svg>
+            </span>
+            <span>Pruébatelos</span>
+        </button>
+
+        <!-- MODAL -->
+        <div id="modalTryon" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"
+            aria-hidden="true">
+            <div class="modal-backdrop" data-action="close"></div>
+
+            <div class="modal-card" role="document" tabindex="-1">
+                <div class="modal-header">
+                    <h2 id="modalTitle">Prueba de gafas — Demo</h2>
+                    <button class="modal-close" aria-label="Cerrar" data-action="close">✕</button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="preview" aria-hidden="true">
+                        <img src="../img/placeholder_glasses.png" alt="Placeholder vista previa de gafas">
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn-secondary" data-action="close">Cerrar</button>
+                    <button class="btn-primary"
+                        onclick="alert('Aquí en el futuro iniciaremos la prueba con la cámara')">Simular prueba</button>
+                </div>
+            </div>
+        </div>
+
     </main>
 
 </body>
