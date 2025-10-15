@@ -7,7 +7,15 @@ html, body {
   flex-direction: column;
 }
 
-/* El main se expande para empujar el footer hacia abajo */
+body.has-scrollbar {
+
+  padding-right: var(--scrollbar-width, 0px);
+  box-sizing: border-box; 
+}
+
+
+body { overflow-x: hidden; }
+
 main.contenido {
   flex: 1;
 }
@@ -16,7 +24,7 @@ main.contenido {
 .footer {
   background-color: #343a3f;
   color: #fff;
-  padding: 50px 20px;
+  padding: 50px 10px;
   width: 100%;
   font-family: "Poppins", sans-serif;
   display: flex;
@@ -28,7 +36,7 @@ main.contenido {
 /* Contenedor interno */
 .footer-container {
   max-width: 900px;
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: flex-start;
