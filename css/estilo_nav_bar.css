@@ -16,13 +16,17 @@ nav {
     top: 0;
     padding: 0 5%;
     height: 100px;
-    background-color: white;
+    background-color: rgb(184, 70, 70);
     display: flex;
     align-items: center;
     font-family: 'Lato', lato-regular;
 }
 
-.nav-container {
+ul {
+    list-style: none;
+}
+
+nav ul {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -42,7 +46,7 @@ nav {
     gap: 10px;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-50%);
     transition: transform 0.2s ease, color 0.2s ease;
 }
 
@@ -125,5 +129,5 @@ nav {
 
 .nav-center:hover {
     color: blue;
-    transform:translateX(-50%) scale(1.05);
+    transform:translateX(-50%) translateY(-50%) scale(1.05);
 }
