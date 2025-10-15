@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/estilo_nav_bar.css">
+  <link rel="stylesheet" href="../css/estilo_carrito.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <title>Carrito</title>
+</head>
+
+<body>
+  <header>
+
+    <nav>
+      <div class="nav-container">
+        <!-- IZQUIERDA -->
+        <div class="nav-left">
+          <a href="#">Gafas</a>
+          <a href="#">Accesorios</a>
+        </div>
+
+        <!-- CENTRO -->
+        <div class="nav-center">
+          <img src="../img/logo.png" alt="Logo">
+          <span>Tesla Vision</span>
+        </div>
+
+        <!-- DERECHA -->
+        <div class="nav-right">
+          <div class="icon">
+            <!-- Carrito -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+              <g fill="none">
+                <circle cx="7.5" cy="18.5" r="1.5" fill="currentColor" />
+                <circle cx="16.5" cy="18.5" r="1.5" fill="currentColor" />
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 5h2l.6 3m0 0L7 15h10l2-7z" />
+              </g>
+            </svg>
+          </div>
+
+          <!-- Buscador -->
+          <form action="./search/" class="search-box">
+            <input type="search" placeholder="Buscar...">
+            <button type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+<main>
+  <div class="carrito-container">
+    <!-- Encabezado -->
+    <div class="carrito-encabezado">
+      <span class="encabezado-producto">Producto</span>
+      <span class="encabezado-examen">Precio</span>
+      <span class="encabezado-precio">Precio</span>
+    </div>
+
+    <!-- Tabla -->
+    <div class="tabla-productos">
+
+      <!-- Fila de producto -->
+      <div class="producto-fila">
+        <div class="col-imagen">
+          <img src="../img/gafa-ejemplo.png" alt="Gafas ejemplo">
+        </div>
+
+        <div class="col-divisor"></div>
+
+        <div class="col-detalles">
+          <strong>Modelo clásico</strong><br>
+          Ref: 2025-BR<br>
+          Material: Acetato
+        </div>
+
+        <div class="col-examen">Sí</div>
+
+        <div class="col-precio">
+          <p><del>$250.000</del></p>
+          <p class="precio-actual">$199.000</p>
+        </div>
+
+        <div class="col-eliminar">
+          <button class="btn-eliminar">X</button>
+        </div>
+      </div>
+
+      <!-- Segunda fila de ejemplo -->
+      <div class="producto-fila">
+        <div class="col-imagen">
+          <img src="../img/gafa-ejemplo.png" alt="Gafas ejemplo">
+        </div>
+
+        <div class="col-divisor"></div>
+
+        <div class="col-detalles">
+          <strong>Modelo premium</strong><br>
+          Ref: 2030-PL<br>
+          Material: Titanio
+        </div>
+
+        <div class="col-examen">No</div>
+
+        <div class="col-precio">
+          <p><del>$350.000</del></p>
+          <p class="precio-actual">$299.000</p>
+        </div>
+
+        <div class="col-eliminar">
+          <button class="btn-eliminar">X</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+</body>
+
+</html>

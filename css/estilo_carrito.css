@@ -1,0 +1,159 @@
+/* === CONTENEDOR GENERAL === */
+.carrito-container {
+  width: 95%;
+  max-width: 900px;
+  margin: 200px 0 0 180px;
+  font-family: "Lato", sans-serif;
+  color: #000;
+}
+
+/* === ENCABEZADO (alineado con columnas del grid) === */
+.carrito-encabezado {
+  display: grid;
+  grid-template-columns: 130px 1px 1.5fr 0.5fr 0.6fr 50px;
+  align-items: center;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0 10px;
+}
+
+.encabezado-producto {
+  grid-column: 1 / 4; /* cubre desde la imagen hasta detalles */
+}
+
+.encabezado-examen {
+  grid-column: 4 / 5; /* alineado exactamente sobre los exámenes */
+  text-align: center;
+}
+
+.encabezado-precio {
+  grid-column: 5 / 6; /* alineado exactamente sobre los precios */
+  text-align: center;
+}
+
+/* === BLOQUE CON LÍNEAS AZULES === */
+.tabla-productos {
+  border-top: 6px solid #0026a8;
+  border-bottom: 6px solid #0026a8;
+  background-color: #fff;
+  padding: 5px 0;
+}
+
+/* === FILA DE PRODUCTO === */
+.producto-fila {
+  display: grid;
+  grid-template-columns: 130px 1px 1.5fr 0.5fr 0.6fr 50px;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.producto-fila:last-child {
+  border-bottom: none;
+}
+
+/* === COLUMNA: IMAGEN === */
+.col-imagen img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* === COLUMNA: DIVISOR === */
+.col-divisor {
+  width: 1px;
+  height: 80px;
+  background-color: #dcdcdc;
+}
+
+/* === COLUMNA: DETALLES === */
+.col-detalles {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* === COLUMNA: EXAMEN === */
+.col-examen {
+  text-align: center;
+  font-weight: 600;
+}
+
+/* === COLUMNA: PRECIO === */
+.col-precio {
+  text-align: center;
+}
+
+.col-precio del {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.precio-actual {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #000;
+}
+
+/* === COLUMNA: ELIMINAR === */
+.col-eliminar {
+  text-align: center;
+}
+
+.btn-eliminar {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.btn-eliminar:hover {
+  color: #d93636;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  .carrito-encabezado,
+  .producto-fila {
+    grid-template-columns: 100px 1px 1fr 0.4fr 0.5fr 40px;
+  }
+
+  .col-imagen img {
+    width: 100px;
+  }
+
+  .col-detalles {
+    font-size: 0.95rem;
+  }
+
+  .precio-actual {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .carrito-encabezado {
+    display: none; /* oculta encabezado en móviles */
+  }
+
+  .producto-fila {
+    grid-template-columns: 100px 1px 1fr;
+    grid-template-rows: auto auto auto;
+    row-gap: 10px;
+    text-align: center;
+  }
+
+  .col-divisor {
+    display: none;
+  }
+
+  .col-examen,
+  .col-precio,
+  .col-eliminar {
+    grid-column: 1 / -1;
+  }
+}
