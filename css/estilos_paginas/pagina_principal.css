@@ -3,17 +3,17 @@
   justify-content: center;
   align-items: center;
   background-color: #111120; /* color negro o azul oscuro */
-  padding: 40px 0;           /* espacio arriba y abajo */
+  padding: 40px 0;           
   margin-top: 30px;
   margin-bottom: 30px;
   width: 100%;
 }
 
 .Texto_principal {
-
+  font-family: "Lato", sans-serif;
   color: rgb(0, 0, 0);
   font-size: 28px;
-  font-style: italc;
+  font-style: italic;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -63,6 +63,7 @@
   background-color: #2349f0; /* color azul cuando está activo */
 }
 .texto_secundario {
+  font-family: "Lato", sans-serif;
   color: rgb(0, 0, 0);
   font-size: 28px;
   font-style: italc;
@@ -100,6 +101,7 @@
 
 /* Botón sobre la imagen */
 .boton_categoria {
+  font-family: "Lato", sans-serif;
   position: absolute;
   bottom: 20px;
   left: 50%;
@@ -129,6 +131,7 @@ hr {
 }
 
 .quienes-somos {
+  font-family: "Lato", sans-serif;
   text-align: center;
   margin: 80px auto;
   max-width: 1000px;
@@ -142,6 +145,7 @@ hr {
 
 /* Contenedor de texto y logo */
 .contenido-quienes {
+  font-family: "Lato", sans-serif;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -168,6 +172,7 @@ hr {
 }
 
 .Texto_final {
+  font-family: "Lato", sans-serif;
   max-width: 1100px;
   margin: 80px auto;
   padding: 0 40px;
