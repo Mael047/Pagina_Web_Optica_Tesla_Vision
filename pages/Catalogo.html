@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo_catalogo.css">
+    <link rel="stylesheet" href="../css/breadcrumb.css">
+    <link rel="stylesheet" href="../css/estilo_nav_bar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="../js/catalogo.js" defer></script>
+    <script src="../js/breadcrumb.js" defer></script>
+    <title>Catálogo</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <div class="nav-left">
+                        <a href="#">Gafas</a>
+                        <a href="#">Accesorios</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-center">
+                        <img src="../img/logo.png" alt="Logo">
+                        <span>Tesla Vision</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="nav-right">
+                        <div class="icon">
+                            <!-- Carrito -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                                <g fill="none">
+                                    <circle cx="7.5" cy="18.5" r="1.5" fill="currentColor" />
+                                    <circle cx="16.5" cy="18.5" r="1.5" fill="currentColor" />
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M3 5h2l.6 3m0 0L7 15h10l2-7z" />
+                                </g>
+                            </svg>
+                        </div>
+                        <!-- Buscador -->
+                        <form action="./search/" class="search-box">
+                            <input type="search" placeholder="Buscar...">
+                            <button type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="imagen-publicitaria">
+        <figure><img src="../img/imagen-catalogo.png" alt="Imagen Publicitaria"></figure>
+    </div>
+
+    <main>
+        <div class="barra-superior">
+            <nav class="breadcrumb">
+                <a href="../index.html">Inicio</a> /
+                <a href="../pages/catalogo.html" class="active">Catálogo</a>
+            </nav>
+
+            <div class="filtros">
+                <label for="marca">Marca:</label>
+                <select id="marca">
+                    <option value="todos">Todas</option>
+                    <option value="Rayban">Rayban</option>
+                    <option value="Oakley">Oakley</option>
+                    <option value="Gucci">Gucci</option>
+                </select>
+
+                <label for="material">Material:</label>
+                <select id="material">
+                    <option value="todos">Todos</option>
+                    <option value="Metal">Metal</option>
+                    <option value="Plastico">Plástico</option>
+                    <option value="Madera">Madera</option>
+                </select>
+            </div>
+        </div>
+        <div class="container-catalogo">
+            <div class="producto" data-marca="Rayban" data-material="Metal">
+                <figure><img src="../img/gafas1.png" alt="Gafas 1"></figure>
+                <h3>Gafas de sol modelo A</h3>
+                <h5>Referencia: GAFAS001</h5>
+                <h3>Material</h3>
+                <p>Precio: 99.99€</p>
+            </div>
+            <div class="producto" data-marca="Rayban" data-material="Metal">
+                <figure><img src="../img/gafas1.png" alt="Gafas 1"></figure>
+                <h3>Gafas de sol modelo A</h3>
+                <h5>Referencia: GAFAS001</h5>
+                <h3>Material</h3>
+                <p>Precio: 99.99€</p>
+            </div>
+            <div class="producto" data-descuento="8,99" data-marca="Oakley" data-material="Plastico">
+                <figure><img src="../img/gafas1.png" alt="Gafas 1"></figure>
+                <h3>Gafas de sol modelo A</h3>
+                <h5>Referencia: GAFAS001</h5>
+                <h3>Material</h3>
+                <p>Precio: 99.99€</p>
+            </div>
+            <div class="producto">
+                <figure><img src="../img/gafas1.png" alt="Gafas 1"></figure>
+                <h3>Gafas de sol modelo A</h3>
+                <h5>Referencia: GAFAS001</h5>
+                <h3>Material</h3>
+                <p>Precio: 99.99€</p>
+            </div>
+            <div class="producto">
+                <figure><img src="../img/gafas1.png" alt="Gafas 1"></figure>
+                <h3>Gafas de sol modelo A</h3>
+                <h5>Referencia: GAFAS001</h5>
+                <h3>Material</h3>
+                <p>Precio: 99.99€</p>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>

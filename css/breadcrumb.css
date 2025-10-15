@@ -1,0 +1,28 @@
+.breadcrumb {
+    width: 80%;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    position: static;
+    overflow: hidden;
+    z-index: 999;
+    font-family: 'Lato', lato-regular;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s;
+    margin: 0 5px;
+    padding: auto;
+}
+
+.breadcrumb a:hover {
+    color: #0882e6;
+}
+
+.breadcrumb .active {
+    color: #033ba3;
+    font-weight: bold;
+    pointer-events: none;
+}

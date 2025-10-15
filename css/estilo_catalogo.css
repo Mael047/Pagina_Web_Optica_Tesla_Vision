@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 0px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+}
+
+.imagen-publicitaria{
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+    
+}
+
+
+.imagen-publicitaria figure{
+    width: 100%;
+    height: 100%;
+}
+
+.imagen-publicitaria img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-catalogo {
+    width: 80%;
+    display: grid;
+    grid-template-columns:  auto auto auto;
+    gap: 56px;
+}
+
+.producto{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.678);
+    height: 280px;
+    width: 330px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    transition: transform 0.3s ease shadow 0.3s ease;
+    font-family: 'Lato', lato-regular;
+}
+
+.producto img{
+    width: 260px;
+    height: 180px;
+    padding: auto;
+    object-fit: cover;
+}
+
+
+.producto h3{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    font-weight: bold;
+}
+
+.producto p{
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.producto h5{
+    font-size: 12px;
+    font-weight: bold;
+    color: black;
+}
+
+.producto:hover{
+    transform: scale(1.01);
+    box-shadow: 20px 20px 20px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.barra-superior {
+    width: 80%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: auto;
+    font-family: 'Lato', lato-regular;
+}
+
+.filtros {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filtros label {
+    font-size: 18px;
+    color: #222;
+}
+
+.filtros select {
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+

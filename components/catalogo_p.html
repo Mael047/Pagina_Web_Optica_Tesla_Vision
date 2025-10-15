@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo_catalogo.css">
+    <link rel="stylesheet" href="../css/breadcrumb.css">
+    <script src="../js/catalogo.js" defer></script>
+    <script src="../js/breadcrumb.js" defer></script>
+    <title>Catálogo</title>
+</head>
+
+<body>
+
+    <div class="imagen-publicitaria">
+        <figure><img src="../img/imagen-catalogo.png" alt="Imagen Publicitaria"></figure>
+    </div>
+
+    <nav class="breadcrumb">
+        <a href="../index.html">Inicio</a> >
+        <a href="../pages/catalogo.html" class="active">Catálogo</a>
+    </nav>
+
+    <main>
+        <!-- 🔍 FILTROS -->
+        <div class="filtros">
+            <label for="marca">Marca:</label>
+            <select id="marca">
+                <option value="todos">Todas</option>
+                <option value="Rayban">Rayban</option>
+                <option value="Oakley">Oakley</option>
+                <option value="Gucci">Gucci</option>
+            </select>
+
+            <label for="material">Material:</label>
+            <select id="material">
+                <option value="todos">Todos</option>
+                <option value="Metal">Metal</option>
+                <option value="Plastico">Plástico</option>
+                <option value="Madera">Madera</option>
+            </select>
+        </div>
+
+        <div class="container-catalogo">
+            <div class="producto" data-marca="Rayban" data-material="Metal">
+                <figure><img src="../img/gafas1.png" alt="Gafas 1"></figure>
+                <h3>Gafas de sol modelo A</h3>
+                <h5>Referencia: GAFAS001</h5>
+                <h3>Material</h3>
+                <p>Precio: 99.99€</p>
+            </div>
+            <div class="producto" data-marca="Rayban" data-material="Metal">
+                <figure><img src="../img/gafas1.png" alt="Gafas 1"></figure>
+                <h3>Gafas de sol modelo A</h3>
+                <h5>Referencia: GAFAS001</h5>
+                <h3>Material</h3>
+                <p>Precio: 99.99€</p>
+            </div>
+            <div class="producto" data-descuento="8,99" data-marca="Oakley" data-material="Plastico">
+                <figure><img src="../img/gafas1.png" alt="Gafas 1"></figure>
+                <h3>Gafas de sol modelo A</h3>
+                <h5>Referencia: GAFAS001</h5>
+                <h3>Material</h3>
+                <p>Precio: 99.99€</p>
+            </div>
+            <div class="producto">
+                <figure><img src="../img/gafas1.png" alt="Gafas 1"></figure>
+                <h3>Gafas de sol modelo A</h3>
+                <h5>Referencia: GAFAS001</h5>
+                <h3>Material</h3>
+                <p>Precio: 99.99€</p>
+            </div>
+            <div class="producto">
+                <figure><img src="../img/gafas1.png" alt="Gafas 1"></figure>
+                <h3>Gafas de sol modelo A</h3>
+                <h5>Referencia: GAFAS001</h5>
+                <h3>Material</h3>
+                <p>Precio: 99.99€</p>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
