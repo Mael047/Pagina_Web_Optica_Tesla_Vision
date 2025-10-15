@@ -54,3 +54,14 @@ document.addEventListener("DOMContentLoaded", () => {
     marcaSelect.addEventListener("change", filtrar);
     materialSelect.addEventListener("change", filtrar);
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const productos = document.querySelectorAll(".producto");
+
+    productos.forEach((producto) => {
+        producto.addEventListener("click", () => {
+            // Redirige a la misma página de detalles
+            window.location.href = "producto.html";
+        });
+    });
+});

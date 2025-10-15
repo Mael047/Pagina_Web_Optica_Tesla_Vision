@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilo_nav_bar.css">
+    <link rel="stylesheet" href="../css/estilos_paginas/productos.css">
+    <link rel="stylesheet" href="../css/estilo_carrusel_producto.css">
+    <link rel="stylesheet" href="../css/breadcrumb.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
-    <title>Barra_navegación</title>
+    <script src="../js/breadcrumb.js" defer></script>
+    <script src="../js/precios.js" defer></script>
+    <script src="../js/carrusel.js" defer></script>
+    <script src="../js/detalle_producto.js" defer></script>
+    <title>Producto</title>
 </head>
 
 <body>
@@ -61,6 +68,52 @@
         </nav>
     </header>
 
+    <main>
+        <!-- ===== BREADCRUMB ===== -->
+        <nav class="breadcrumb">
+            <a href="../index.html">Inicio</a> /
+            <a href="../pages/catalogo.html">Catálogo</a> /
+
+            <span class="active">Detalle del producto</span>
+        </nav>
+
+        <div class="container-producto">
+            <div class="carrusel">
+                <div class="item">
+                    <!----La Imagen de Producto debe ser de 1200px x 900px-->
+                    <img src="../productos/foto1.png" alt="Imagen1" class="img">
+                    <img src="../productos/foto2.png" alt="Imagen2" class="img">
+                    <img src="../productos/foto3.png" alt="Imagen3" class="img">
+                </div>
+                <ul class="puntos">
+                    <li class="punto"></li>
+                    <li class="punto"></li>
+                    <li class="punto"></li>
+                </ul>
+            </div>
+
+            <div class="detalles-producto">
+                <h1>Gafas de sol Tesla Vision</h1>
+                <h3>Referencia: TS-12345</h3>
+                <p class="precio" data-precio="200000" data-descuento="100000">200.000</p>
+
+                <div class="secciones">
+                    <h2>Detalle y Garantía</h2>
+                </div>
+
+                <div class="divider"></div>
+
+                <ul class="garantias">
+                    <li>Devolución Por Gusto</li>
+                    <li>Devolución Por Graduación Inadecuada</li>
+                    <li>Garantía Antirrayaduras</li>
+                    <li>Garantía Por Defectos De Fábrica</li>
+                </ul>
+
+                <button class="btn-comprar">Continuar</button>
+            </div>
+        </div>
+    </main>
 
 </body>
 

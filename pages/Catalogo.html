@@ -14,6 +14,7 @@
         rel="stylesheet">
     <script src="../js/catalogo.js" defer></script>
     <script src="../js/breadcrumb.js" defer></script>
+    <script src="../js/precios.js" defer></script>
     <title>Catálogo</title>
 </head>
 
@@ -23,14 +24,17 @@
             <ul>
                 <li>
                     <div class="nav-left">
-                        <a href="#">Gafas</a>
+                        <a href="../pages/Catalogo.html">Gafas</a>
                         <a href="#">Accesorios</a>
                     </div>
                 </li>
                 <li>
                     <div class="nav-center">
                         <img src="../img/logo.png" alt="Logo">
-                        <span>Tesla Vision</span>
+                        <a href="../index.html" class="link-con-span">
+                            <span >Optica Tesla Vision</span>
+                        </a>
+
                     </div>
                 </li>
                 <li>
@@ -92,41 +96,14 @@
             </div>
         </div>
         <div class="container-catalogo">
-            <div class="producto" data-marca="Rayban" data-material="Metal">
+            <div class="producto" data-id="1" data-marca="Rayban" data-material="Metal">
                 <figure><img src="../img/gafas1.png" alt="Gafas 1"></figure>
                 <h3>Gafas de sol modelo A</h3>
                 <h5>Referencia: GAFAS001</h5>
                 <h3>Material</h3>
-                <p>Precio: 99.99€</p>
+                <p class="precio" data-precio="200000" data-descuento="100000">200.000</p>
             </div>
-            <div class="producto" data-marca="Rayban" data-material="Metal">
-                <figure><img src="../img/gafas1.png" alt="Gafas 1"></figure>
-                <h3>Gafas de sol modelo A</h3>
-                <h5>Referencia: GAFAS001</h5>
-                <h3>Material</h3>
-                <p>Precio: 99.99€</p>
-            </div>
-            <div class="producto" data-descuento="8,99" data-marca="Oakley" data-material="Plastico">
-                <figure><img src="../img/gafas1.png" alt="Gafas 1"></figure>
-                <h3>Gafas de sol modelo A</h3>
-                <h5>Referencia: GAFAS001</h5>
-                <h3>Material</h3>
-                <p>Precio: 99.99€</p>
-            </div>
-            <div class="producto">
-                <figure><img src="../img/gafas1.png" alt="Gafas 1"></figure>
-                <h3>Gafas de sol modelo A</h3>
-                <h5>Referencia: GAFAS001</h5>
-                <h3>Material</h3>
-                <p>Precio: 99.99€</p>
-            </div>
-            <div class="producto">
-                <figure><img src="../img/gafas1.png" alt="Gafas 1"></figure>
-                <h3>Gafas de sol modelo A</h3>
-                <h5>Referencia: GAFAS001</h5>
-                <h3>Material</h3>
-                <p>Precio: 99.99€</p>
-            </div>
+
         </div>
 
     </main>

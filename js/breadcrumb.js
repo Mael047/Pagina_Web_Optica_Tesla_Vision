@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Recorremos las partes del path, pero omitimos la carpeta "pages"
     path.forEach((segment, index) => {
-        if (segment.toLowerCase() === "pages") return; // 🚫 omite la carpeta "pages"
+        if (segment.toLowerCase() === "pages") return; 
+    
 
         const name = segment
             .replace(".html", "")

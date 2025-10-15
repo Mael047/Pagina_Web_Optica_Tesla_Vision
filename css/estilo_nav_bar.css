@@ -66,6 +66,15 @@ nav ul {
     transition: transform 0.2s ease, color 0.2s ease;
 }
 
+.nav-center a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
 
 .nav-left a {
     text-decoration: none;
