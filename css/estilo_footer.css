@@ -22,15 +22,17 @@ main.contenido {
   display: flex;
   justify-content: center;
   border-top: 2px solid #2b2f33; /* línea superior sutil */
+  margin-top: auto; /* ✅ mantiene el footer al fondo */
 }
 
+/* Contenedor interno */
 .footer-container {
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 100px;
+  gap: clamp(40px, 10vw, 120px); /* ✅ el espacio se adapta fluidamente */
   transition: gap 0.3s ease;
 }
 
@@ -76,7 +78,7 @@ main.contenido {
 }
 
 .footer-redes a:hover {
-  color: #00b4ff;
+  color: #0c52f4;
   transform: scale(1.1);
 }
 
@@ -96,7 +98,7 @@ main.contenido {
 
 @media (max-width: 650px) {
   .footer-container {
-    gap: 30px;
+    gap: 40px;
   }
 }
 
