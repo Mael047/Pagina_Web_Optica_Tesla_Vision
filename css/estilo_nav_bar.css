@@ -41,6 +41,11 @@ nav ul {
     gap: 20px;
 }
 
+.nav-right a{
+    font-style: normal;
+    color: #000;
+}
+
 .nav-center {
     display: flex;
     align-items: center;
@@ -118,6 +123,11 @@ nav ul {
 }
 
 .nav-left a:hover {
+    transform: scale(1.2);
+    color: blue;
+}
+
+.nav-right a:hover {
     transform: scale(1.2);
     color: blue;
 }

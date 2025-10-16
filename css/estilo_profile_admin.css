@@ -1,0 +1,336 @@
+/* css/estilo_profile_admin.css */
+:root {
+    --sidebar-bg: #48658f;
+    --sidebar-mid: #5f7fb0;
+    --accent: #1a2be6;
+    --muted: #9aa7c1;
+    --white: #ffffff;
+    --page-bg: #fafbfd;
+}
+
+/* reset */
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: "Lato", Arial, sans-serif;
+    background: var(--page-bg);
+    color: #222
+}
+
+/* layout */
+.container {
+    display: flex;
+    min-height: 100vh
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 260px;
+    background: var(--sidebar-bg);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 16px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 6px 8px
+}
+
+.logo img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 4px
+}
+
+.logo h2 {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 700
+}
+
+.back-btn {
+    display: inline-block;
+    margin: 16px 8px;
+    padding: 10px 12px;
+    background: rgba(255, 255, 255, 0.08);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.menu {
+    margin-top: 12px;
+    padding: 0 6px
+}
+
+.menu .section-title {
+    opacity: 0.9;
+    font-weight: 700;
+    margin: 6px 0 8px 2px
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.menu-item {
+    padding: 12px 10px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #eef3ff;
+}
+
+.menu-item:hover {
+    background: var(--sidebar-mid)
+}
+
+.menu-item.active {
+    background: #7f9cc5;
+    color: #fff
+}
+
+/* MAIN */
+.main-content {
+    flex: 1;
+    padding: 28px 36px;
+}
+
+/* Header area */
+.admin-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 18px
+}
+
+.admin-header .titulo {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.admin-header .titulo h1 {
+    margin: 0;
+    font-size: 20px
+}
+
+.admin-header .star {
+    font-size: 20px;
+    color: #9e7e4a
+}
+
+.sub {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 4px
+}
+
+.acciones {
+    margin-top: 6px
+}
+
+.btn-add {
+    background: #0b22ff;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.btn-add .plus {
+    background: #fff;
+    color: #0b22ff;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-weight: 700
+}
+
+/* empty state */
+.empty-state {
+    padding: 28px 10px
+}
+
+.empty-state .text-muted {
+    color: #9aa7c1;
+    font-style: normal;
+}
+
+/* divider */
+.divider {
+    border: 0;
+    border-top: 1px solid #e9edf5;
+    margin: 20px 0
+}
+
+/* product form */
+.product-form {
+    background: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(20, 40, 80, 0.04)
+}
+
+.product-form h2 {
+    margin: 0 0 12px 0;
+    color: #333
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 26px;
+    align-items: start
+}
+
+.col {
+    display: flex;
+    flex-direction: column
+}
+
+.label {
+    font-size: 13px;
+    color: #5f6f86;
+    margin-bottom: 8px
+}
+
+.image-placeholder {
+    height: 220px;
+    border-radius: 8px;
+    background: #f2f4f8;
+    border: 2px dashed #d8dde8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #9aa7c1;
+}
+
+.placeholder-icon {
+    font-size: 36px
+}
+
+.placeholder-text {
+    margin-top: 8px;
+    font-size: 14px
+}
+
+.form-actions {
+    margin-top: 14px;
+    display: flex;
+    gap: 12px
+}
+
+.btn-confirm {
+    background: #0b22ff;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700
+}
+
+.btn-cancel {
+    background: #eee;
+    color: #333;
+    padding: 8px 14px;
+    border-radius: 18px;
+    border: none;
+    cursor: pointer
+}
+
+/* fields column */
+.fields-col input[type="text"],
+.fields-col textarea {
+    border: 1px solid #e6e9ef;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    outline: none;
+}
+
+.fields-col input::placeholder,
+.fields-col textarea::placeholder {
+    color: #b7bfd0
+}
+
+.fields-col textarea {
+    min-height: 86px;
+    resize: vertical
+}
+
+/* responsive */
+@media (max-width:1000px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 18px
+    }
+
+    .sidebar {
+        width: 220px
+    }
+}
+
+@media (max-width:720px) {
+    .sidebar {
+        display: none
+    }
+
+    .main-content {
+        padding: 18px
+    }
+}
+
+/* ocultar el formulario por defecto */
+.product-form {
+    display: none;
+    background: #fff;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(20, 40, 80, 0.04);
+}
+
+/* cuando tenga la clase visible, se muestra */
+.product-form.visible {
+    display: block;
+}
+
+/* opcional: pequeña transición visual (si quieres más, podemos mejorar) */
+.product-form,
+.empty-state {
+    transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.product-form.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.product-form.hidden {
+    opacity: 0;
+    transform: translateY(-6px);
+}

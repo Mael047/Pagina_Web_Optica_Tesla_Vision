@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Panel Admin - Tesla Vision</title>
+
+    <link rel="stylesheet" href="css/estilo_profile_admin.css">
+    <script src="js/profile_admin.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo Tesla Vision">
+                <h2>Tesla Vision</h2>
+            </div>
+
+            <a class="back-btn" href="index.html">← Volver A La Tienda</a>
+
+            <nav class="menu">
+                <p class="section-title">Store</p>
+                <ul>
+                    <li class="menu-item active"><span class="icon"></span> Gafas</li>
+                    <li class="menu-item"><span class="icon"></span> Accesorios</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- MAIN -->
+        <main class="main-content">
+            <!-- Header / listado vacío -->
+            <header class="admin-header">
+                <div class="titulo">
+                    <span class="star">◎</span>
+                    <h1>Gafas</h1>
+                </div>
+                <p class="sub">Administra Productos De La Tienda</p>
+
+                <div class="acciones">
+                    <button class="btn-add"><span class="plus">＋</span> Añadir Nuevos Productos</button>
+                </div>
+            </header>
+
+            <section class="empty-state">
+                <p class="text-muted">No Tienes Ningun Producto Aún</p>
+            </section>
+
+            <hr class="divider">
+
+            <section class="product-form">
+                <h2>Nuevo Lente</h2>
+                <div class="form-grid">
+                    <div class="col imagen-col">
+                        <label class="label">Imagen</label>
+                        <div class="image-placeholder">
+                            <div class="placeholder-icon">🖼️</div>
+                            <div class="placeholder-text">Cargar Imagen</div>
+                        </div>
+                        <div class="form-actions">
+                            <button class="btn-confirm">Confirmar</button>
+                            <button class="btn-cancel">Cancelar</button>
+                        </div>
+                    </div>
+
+
+                    <div class="col fields-col">
+                        <label class="label">Nombre Del Producto</label>
+                        <input type="text" placeholder="Ej:Gafas De Sol Mol A">
+
+                        <label class="label">Material</label>
+                        <input type="text" placeholder="Ej:Rayman">
+
+                        <label class="label">Valor</label>
+                        <input type="text" placeholder="Ej:180.000">
+
+                        <label class="label">Descuento</label>
+                        <input type="text" placeholder="Ej:20">
+
+                        <label class="label">Referencia</label>
+                        <input type="text" placeholder="Ej:Gsv900">
+
+                        <label class="label">Descripcion</label>
+                        <textarea placeholder="Descripción Del Producto"></textarea>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

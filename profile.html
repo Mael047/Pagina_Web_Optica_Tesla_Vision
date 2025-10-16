@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Perfil - Tesla Vision</title>
+
+    <link rel="stylesheet" href="css/estilo_profile.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Panel lateral -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo Tesla Vision" />
+                <h2>Tesla Vision</h2>
+            </div>
+
+            <a href="index.html" class="back-btn">
+                ← Volver A La Tienda
+            </a>
+
+            <nav class="menu">
+                <p class="section-title">Store</p>
+                <ul>
+                    <li class="active">Perfil</li>
+                    <li>Historial</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section class="profile-section">
+                <h2>Información del Usuario</h2>
+                <p id="user-name">Nombre: —</p>
+                <p id="user-email">Correo: —</p>
+                <p id="user-direccion">Dirección: —</p>
+                <p id="user-telefono">Teléfono: —</p>
+
+                <button id="logout-btn"><a href="inicio_sesion.html">Cerrar Sesión</a></button>
+            </section>
+
+            <section class="historial-section">
+                <h2>Historial de Compras</h2>
+                <div id="historial-list">
+                    <p class="vacio">No tienes compras registradas aún.</p>
+                </div>
+            </section>
+        </main>
+
+    </div>
+</body>
+
+</html>

@@ -14,54 +14,72 @@
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
 
+  <script src="js/carrito.js" defer></script>
+  <script src="js/auth.js" defer></script>
+
   <title>Carrito</title>
 </head>
 
 <body>
   <header>
     <nav>
-      <div class="nav-container">
-        <!-- IZQUIERDA -->
-        <div class="nav-left">
-          <a href="#">Gafas</a>
-          <a href="#">Accesorios</a>
-        </div>
-
-        <!-- CENTRO -->
-        <div class="nav-center">
-          <img src="img/logo.png" alt="Logo">
-          <span>Tesla Vision</span>
-        </div>
-
-        <!-- DERECHA -->
-        <div class="nav-right">
-          <div class="icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
-              <g fill="none">
-                <circle cx="7.5" cy="18.5" r="1.5" fill="currentColor" />
-                <circle cx="16.5" cy="18.5" r="1.5" fill="currentColor" />
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M3 5h2l.6 3m0 0L7 15h10l2-7z" />
-              </g>
-            </svg>
+      <ul>
+        <li>
+          <div class="nav-left">
+            <a href="Catalogo.html">Gafas</a>
+            <a href="#">Accesorios</a>
           </div>
+        </li>
+        <li>
+          <div class="nav-center">
+            <img src="img/logo.png" alt="Logo">
+            <a href="index.html" class="link-con-span">
+              <span>Optica Tesla Vision</span>
+            </a>
 
-          <form action="./search/" class="search-box">
-            <input type="search" placeholder="Buscar...">
-            <button type="submit">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
-                <path fill="currentColor"
-                  d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14" />
-              </svg>
-            </button>
-          </form>
-        </div>
-      </div>
+          </div>
+        </li>
+        <li>
+          <div class="nav-right">
+            <div class="icon">
+              <!-- Carrito -->
+              <a href="carrito.html"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                  <g fill="none">
+                    <circle cx="7.5" cy="18.5" r="1.5" fill="currentColor" />
+                    <circle cx="16.5" cy="18.5" r="1.5" fill="currentColor" />
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 5h2l.6 3m0 0L7 15h10l2-7z" />
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <div class="icon">
+              <!-- Profile -->
+              <a href="profile.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M8 7a4 4 0 1 1 8 0a4 4 0 0 1-8 0m0 6a5 5 0 0 0-5 5a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3a5 5 0 0 0-5-5z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+            <!-- Buscador -->
+            <form action="./search/" class="search-box">
+              <input type="search" placeholder="Buscar...">
+              <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <main class="carrito-layout">
-    <!-- === COLUMNA IZQUIERDA: TABLA DE PRODUCTOS + ASESORÍA + BOTONES MÓVIL === -->
     <div class="carrito-container">
       <!-- Encabezado (solo escritorio) -->
       <div class="carrito-encabezado">
@@ -190,48 +208,7 @@
       </div>
     </div>
   </footer>
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const checkboxes = document.querySelectorAll('.resumen-opciones input[type="checkbox"]');
 
-      checkboxes.forEach((checkbox) => {
-        checkbox.addEventListener('change', function () {
-          if (this.checked) {
-            checkboxes.forEach((other) => {
-              if (other !== this) other.checked = false;
-            });
-          }
-        });
-      });
-    });
-  </script>
-  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const btnEnviar = document.querySelector(".btn-enviar");
-    const textarea = document.getElementById("asesoria");
-
-    btnEnviar.addEventListener("click", function () {
-      const mensaje = textarea.value.trim();
-
-      if (mensaje !== "") {
-        // Limpia el texto
-        textarea.value = "";
-
-        // Muestra confirmación temporal
-        const aviso = document.createElement("p");
-        aviso.textContent = "Tu mensaje fue enviado correctamente.";
-        aviso.style.color = "#4a66a3";
-        aviso.style.marginTop = "8px";
-        aviso.style.fontWeight = "600";
-
-        btnEnviar.parentNode.appendChild(aviso);
-
-        // Desaparece después de 2 segundos
-        setTimeout(() => aviso.remove(), 2000);
-      }
-    });
-  });
-</script>
 
 
 </body>
