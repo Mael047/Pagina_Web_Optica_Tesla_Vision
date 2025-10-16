@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -18,7 +18,6 @@
 
 <body>
   <header>
-
     <nav>
       <div class="nav-container">
         <!-- IZQUIERDA -->
@@ -36,7 +35,6 @@
         <!-- DERECHA -->
         <div class="nav-right">
           <div class="icon">
-            <!-- Carrito -->
             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
               <g fill="none">
                 <circle cx="7.5" cy="18.5" r="1.5" fill="currentColor" />
@@ -47,7 +45,6 @@
             </svg>
           </div>
 
-          <!-- Buscador -->
           <form action="./search/" class="search-box">
             <input type="search" placeholder="Buscar...">
             <button type="submit">
@@ -61,76 +58,109 @@
       </div>
     </nav>
   </header>
-<main>
-  <div class="carrito-container">
-    <!-- Encabezado -->
-    <div class="carrito-encabezado">
-      <span class="encabezado-producto">Producto</span>
-      <span class="encabezado-examen">Precio</span>
-      <span class="encabezado-precio">Precio</span>
-    </div>
 
-    <!-- Tabla -->
-    <div class="tabla-productos">
+  <main class="carrito-layout">
+    <!-- === COLUMNA IZQUIERDA: TABLA DE PRODUCTOS + ASESORÍA + BOTONES MÓVIL === -->
+    <div class="carrito-container">
+      <!-- Encabezado (solo escritorio) -->
+      <div class="carrito-encabezado">
+        <div class="encabezado-producto">Producto</div>
+        <div class="encabezado-examen">Examen</div>
+        <div class="encabezado-precio">Precio</div>
+      </div>
 
-      <!-- Fila de producto -->
-      <div class="producto-fila">
-        <div class="col-imagen">
-          <img src="../img/gafa-ejemplo.png" alt="Gafas ejemplo">
+      <div class="tabla-productos">
+        <!-- producto 1 -->
+        <div class="producto-fila">
+          <div class="col-imagen">
+            <img src="../img/gafas1.png" alt="Gafas ejemplo" />
+          </div>
+          <div class="col-divisor"></div>
+          <div class="col-detalles">
+            <strong>Modelo clásico</strong><br />Ref: 2025-BR<br />Material: Acetato
+          </div>
+          <div class="col-examen">Sí</div>
+          <div class="col-precio"><del>$250.000</del><br /><span class="precio-actual">$199.000</span>
+          </div>
+          <div class="col-eliminar"><button class="btn-eliminar">×</button></div>
+
+          <!-- versión móvil -->
+          <div class="row-movil">
+            <div class="r-detalles">
+              <strong>Modelo clásico</strong><br />Ref: 2025-BR<br />Material: Acetato<br />Examen: Sí
+            </div>
+            <div class="r-precio"><del>$250.000</del><br /><span class="precio-actual">$199.000</span></div>
+            <div class="r-eliminar"><button class="btn-eliminar">×</button></div>
+          </div>
         </div>
 
-        <div class="col-divisor"></div>
+        <!-- producto 2 -->
+        <div class="producto-fila">
+          <div class="col-imagen">
+            <img src="../img/gafas2.png" alt="Gafas ejemplo 2" />
+          </div>
+          <div class="col-divisor"></div>
+          <div class="col-detalles">
+            <strong>Modelo deportivo</strong><br />Ref: 2030-NE<br />Material: Policarbonato
+          </div>
+          <div class="col-examen">No</div>
+          <div class="col-precio"><del>$300.000</del><br /><span class="precio-actual">$259.000</span>
+          </div>
+          <div class="col-eliminar"><button class="btn-eliminar">×</button></div>
 
-        <div class="col-detalles">
-          <strong>Modelo clásico</strong><br>
-          Ref: 2025-BR<br>
-          Material: Acetato
-        </div>
-
-        <div class="col-examen">Sí</div>
-
-        <div class="col-precio">
-          <p><del>$250.000</del></p>
-          <p class="precio-actual">$199.000</p>
-        </div>
-
-        <div class="col-eliminar">
-          <button class="btn-eliminar">X</button>
+          <!-- versión móvil -->
+          <div class="row-movil">
+            <div class="r-detalles">
+              <strong>Modelo deportivo</strong><br />Ref: 2030-NE<br />Material: Policarbonato<br />Examen: No
+            </div>
+            <div class="r-precio"><del>$300.000</del><br /><span class="precio-actual">$259.000</span></div>
+            <div class="r-eliminar"><button class="btn-eliminar">×</button></div>
+          </div>
         </div>
       </div>
 
-      <!-- Segunda fila de ejemplo -->
-      <div class="producto-fila">
-        <div class="col-imagen">
-          <img src="../img/gafa-ejemplo.png" alt="Gafas ejemplo">
-        </div>
-
-        <div class="col-divisor"></div>
-
-        <div class="col-detalles">
-          <strong>Modelo premium</strong><br>
-          Ref: 2030-PL<br>
-          Material: Titanio
-        </div>
-
-        <div class="col-examen">No</div>
-
-        <div class="col-precio">
-          <p><del>$350.000</del></p>
-          <p class="precio-actual">$299.000</p>
-        </div>
-
-        <div class="col-eliminar">
-          <button class="btn-eliminar">X</button>
-        </div>
+      <!-- ===== RECUADRO DE ASESORÍA (debajo de la tabla, columna izquierda) ===== -->
+      <div class="asesoria-box">
+        <label for="asesoria">Asesoría En Caso De Examen</label>
+        <textarea id="asesoria" placeholder="Escribe tus comentarios..."></textarea>
+        <button class="btn-enviar">Enviar</button>
       </div>
 
+      <!-- ===== BOTONES (esta versión solo se mostrará en móvil por CSS) ===== -->
+      <div class="botones-carrito botones-mobile">
+        <button>Seguir Comprando</button>
+        <button>Pagar</button>
+      </div>
     </div>
-  </div>
-</main>
-<footer class="footer">
+
+    <!-- === COLUMNA DERECHA: RESUMEN + BOTONES DESKTOP === -->
+    <aside class="resumen-lateral">
+      <div class="resumen-orden">
+        <h3>Total De La Orden</h3>
+        <hr />
+        <div class="resumen-opciones">
+          <label>
+            Envío
+            <input type="checkbox" name="metodo" value="envio" onclick="seleccionarSolo(this)">
+          </label>
+          <label>
+            Reclamar En Tienda
+            <input type="checkbox" name="metodo" value="tienda" onclick="seleccionarSolo(this)">
+          </label>
+        </div>
+        <hr />
+        <div class="resumen-total">Total: $199.000</div>
+      </div>
+
+      <!-- BOTONES (esta versión se mostrará en desktop) -->
+      <div class="botones-carrito botones-desktop">
+        <button>Seguir Comprando</button>
+        <button>Pagar</button>
+      </div>
+    </aside>
+  </main>
+  <footer class="footer">
     <div class="footer-container">
-
       <div class="footer-col izquierda">
         <div class="footer-section">
           <h4>Productos</h4>
@@ -157,9 +187,51 @@
           <div class="footer-contacto">+57 320 4066587</div>
         </div>
       </div>
-
     </div>
   </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const checkboxes = document.querySelectorAll('.resumen-opciones input[type="checkbox"]');
+
+      checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener('change', function () {
+          if (this.checked) {
+            checkboxes.forEach((other) => {
+              if (other !== this) other.checked = false;
+            });
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const btnEnviar = document.querySelector(".btn-enviar");
+    const textarea = document.getElementById("asesoria");
+
+    btnEnviar.addEventListener("click", function () {
+      const mensaje = textarea.value.trim();
+
+      if (mensaje !== "") {
+        // Limpia el texto
+        textarea.value = "";
+
+        // Muestra confirmación temporal
+        const aviso = document.createElement("p");
+        aviso.textContent = "Tu mensaje fue enviado correctamente.";
+        aviso.style.color = "#4a66a3";
+        aviso.style.marginTop = "8px";
+        aviso.style.fontWeight = "600";
+
+        btnEnviar.parentNode.appendChild(aviso);
+
+        // Desaparece después de 2 segundos
+        setTimeout(() => aviso.remove(), 2000);
+      }
+    });
+  });
+</script>
+
 
 </body>
 
