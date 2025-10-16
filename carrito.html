@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilo_nav_bar.css">
+  <link rel="stylesheet" href="css/estilo_carrito.css">
+  <link rel="stylesheet" href="css/estilo_footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+  <title>Carrito</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-container">
+        <!-- IZQUIERDA -->
+        <div class="nav-left">
+          <a href="#">Gafas</a>
+          <a href="#">Accesorios</a>
+        </div>
+
+        <!-- CENTRO -->
+        <div class="nav-center">
+          <img src="img/logo.png" alt="Logo">
+          <span>Tesla Vision</span>
+        </div>
+
+        <!-- DERECHA -->
+        <div class="nav-right">
+          <div class="icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+              <g fill="none">
+                <circle cx="7.5" cy="18.5" r="1.5" fill="currentColor" />
+                <circle cx="16.5" cy="18.5" r="1.5" fill="currentColor" />
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 5h2l.6 3m0 0L7 15h10l2-7z" />
+              </g>
+            </svg>
+          </div>
+
+          <form action="./search/" class="search-box">
+            <input type="search" placeholder="Buscar...">
+            <button type="submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14" />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="carrito-layout">
+    <!-- === COLUMNA IZQUIERDA: TABLA DE PRODUCTOS + ASESORÍA + BOTONES MÓVIL === -->
+    <div class="carrito-container">
+      <!-- Encabezado (solo escritorio) -->
+      <div class="carrito-encabezado">
+        <div class="encabezado-producto">Producto</div>
+        <div class="encabezado-examen">Examen</div>
+        <div class="encabezado-precio">Precio</div>
+      </div>
+
+      <div class="tabla-productos">
+        <!-- producto 1 -->
+        <div class="producto-fila">
+          <div class="col-imagen">
+            <img src="img/gafas1.png" alt="Gafas ejemplo" />
+          </div>
+          <div class="col-divisor"></div>
+          <div class="col-detalles">
+            <strong>Modelo clásico</strong><br />Ref: 2025-BR<br />Material: Acetato
+          </div>
+          <div class="col-examen">Sí</div>
+          <div class="col-precio"><del>$250.000</del><br /><span class="precio-actual">$199.000</span>
+          </div>
+          <div class="col-eliminar"><button class="btn-eliminar">×</button></div>
+
+          <!-- versión móvil -->
+          <div class="row-movil">
+            <div class="r-detalles">
+              <strong>Modelo clásico</strong><br />Ref: 2025-BR<br />Material: Acetato<br />Examen: Sí
+            </div>
+            <div class="r-precio"><del>$250.000</del><br /><span class="precio-actual">$199.000</span></div>
+            <div class="r-eliminar"><button class="btn-eliminar">×</button></div>
+          </div>
+        </div>
+
+        <!-- producto 2 -->
+        <div class="producto-fila">
+          <div class="col-imagen">
+            <img src="img/gafas2.png" alt="Gafas ejemplo 2" />
+          </div>
+          <div class="col-divisor"></div>
+          <div class="col-detalles">
+            <strong>Modelo deportivo</strong><br />Ref: 2030-NE<br />Material: Policarbonato
+          </div>
+          <div class="col-examen">No</div>
+          <div class="col-precio"><del>$300.000</del><br /><span class="precio-actual">$259.000</span>
+          </div>
+          <div class="col-eliminar"><button class="btn-eliminar">×</button></div>
+
+          <!-- versión móvil -->
+          <div class="row-movil">
+            <div class="r-detalles">
+              <strong>Modelo deportivo</strong><br />Ref: 2030-NE<br />Material: Policarbonato<br />Examen: No
+            </div>
+            <div class="r-precio"><del>$300.000</del><br /><span class="precio-actual">$259.000</span></div>
+            <div class="r-eliminar"><button class="btn-eliminar">×</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== RECUADRO DE ASESORÍA (debajo de la tabla, columna izquierda) ===== -->
+      <div class="asesoria-box">
+        <label for="asesoria">Asesoría En Caso De Examen</label>
+        <textarea id="asesoria" placeholder="Escribe tus comentarios..."></textarea>
+        <button class="btn-enviar">Enviar</button>
+      </div>
+
+      <!-- ===== BOTONES (esta versión solo se mostrará en móvil por CSS) ===== -->
+      <div class="botones-carrito botones-mobile">
+        <button>Seguir Comprando</button>
+        <button>Pagar</button>
+      </div>
+    </div>
+
+    <!-- === COLUMNA DERECHA: RESUMEN + BOTONES DESKTOP === -->
+    <aside class="resumen-lateral">
+      <div class="resumen-orden">
+        <h3>Total De La Orden</h3>
+        <hr />
+        <div class="resumen-opciones">
+          <label>
+            Envío
+            <input type="checkbox" name="metodo" value="envio" onclick="seleccionarSolo(this)">
+          </label>
+          <label>
+            Reclamar En Tienda
+            <input type="checkbox" name="metodo" value="tienda" onclick="seleccionarSolo(this)">
+          </label>
+        </div>
+        <hr />
+        <div class="resumen-total">Total: $199.000</div>
+      </div>
+
+      <!-- BOTONES (esta versión se mostrará en desktop) -->
+      <div class="botones-carrito botones-desktop">
+        <button>Seguir Comprando</button>
+        <button>Pagar</button>
+      </div>
+    </aside>
+  </main>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col izquierda">
+        <div class="footer-section">
+          <h4>Productos</h4>
+          <a href="#">Nuestras Gafas</a>
+        </div>
+
+        <div class="footer-section">
+          <h4>Ubicaciones</h4>
+          <a href="#">Nosotros</a>
+        </div>
+      </div>
+
+      <div class="footer-col derecha">
+        <div class="footer-section">
+          <h4>Síguenos</h4>
+          <div class="footer-redes">
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contáctanos</h4>
+          <div class="footer-contacto">+57 320 4066587</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const checkboxes = document.querySelectorAll('.resumen-opciones input[type="checkbox"]');
+
+      checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener('change', function () {
+          if (this.checked) {
+            checkboxes.forEach((other) => {
+              if (other !== this) other.checked = false;
+            });
+          }
+        });
+      });
+    });
+  </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const btnEnviar = document.querySelector(".btn-enviar");
+    const textarea = document.getElementById("asesoria");
+
+    btnEnviar.addEventListener("click", function () {
+      const mensaje = textarea.value.trim();
+
+      if (mensaje !== "") {
+        // Limpia el texto
+        textarea.value = "";
+
+        // Muestra confirmación temporal
+        const aviso = document.createElement("p");
+        aviso.textContent = "Tu mensaje fue enviado correctamente.";
+        aviso.style.color = "#4a66a3";
+        aviso.style.marginTop = "8px";
+        aviso.style.fontWeight = "600";
+
+        btnEnviar.parentNode.appendChild(aviso);
+
+        // Desaparece después de 2 segundos
+        setTimeout(() => aviso.remove(), 2000);
+      }
+    });
+  });
+</script>
+
+
+</body>
+
+</html>
