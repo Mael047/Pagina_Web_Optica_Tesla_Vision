@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="css/estilo_profile_admin.css">
     <script src="js/profile_admin.js" defer></script>
+    <script src ="js/datos.js" defer></script>
+    
 </head>
 
 <body>
@@ -52,45 +54,66 @@
 
             <hr class="divider">
 
+            <!-- FORMULARIO -->
             <section class="product-form">
                 <h2>Nuevo Lente</h2>
-                <div class="form-grid">
-                    <div class="col imagen-col">
-                        <label class="label">Imagen</label>
-                        <div class="image-placeholder">
-                            <div class="placeholder-icon">🖼️</div>
-                            <div class="placeholder-text">Cargar Imagen</div>
+
+                <!-- Aquí empieza el form -->
+                <form id="formulario" enctype="multipart/form-data">
+                    <div class="form-grid">
+                        <div class="col imagen-col">
+                            <label class="label">Imagen</label>
+                            <div class="image-placeholder">
+                                <div class="placeholder-icon">🖼️</div>
+                                <div class="placeholder-text">Cargar Imagen</div>
+                                <input class="placeholder-text" type="file" name="imagen" id="imagen">
+                                <figure><img id="preview" src="" alt=""></figure>
+                            </div>
+                            <div class="form-actions">
+                                <button class="btn-confirm" type="submit">Confirmar</button>
+                                <button class="btn-cancel" type="button">Cancelar</button>
+                            </div>
                         </div>
-                        <div class="form-actions">
-                            <button class="btn-confirm">Confirmar</button>
-                            <button class="btn-cancel">Cancelar</button>
+
+                        <div class="col fields-col">
+                            <label class="label">Nombre Del Producto</label>
+                            <input type="text" name="producto" id="producto" placeholder="Ej:Gafas De Sol Mol A">
+
+                            <label class="label">Categoria</label>
+                            <select name="categoria" id="categoria">
+                                <option value="gafas">Gafas</option>
+                                <option value="accesorios">Accesorios</option>
+                            </select>
+
+                            <label class="label">Material</label>
+                            <input type="text" name="material" id="material" placeholder="Ej:Rayman">
+
+                            <label class="label">Valor</label>
+                            <input type="text" name="valor" id="valor" placeholder="Ej:180.000">
+
+                            <label class="label">Descuento</label>
+                            <input type="text" name="descuento" id="descuento" placeholder="Ej:20">
+
+                            <label class="label">Referencia</label>
+                            <input type="text" name="referencia" id="referencia" placeholder="Ej:Gsv900">
+
+                            <label class="label">Descripcion</label>
+                            <textarea name="descripcion" id="descripcion" placeholder="Descripción Del Producto"></textarea>
                         </div>
                     </div>
+                </form>
 
-
-                    <div class="col fields-col">
-                        <label class="label">Nombre Del Producto</label>
-                        <input type="text" placeholder="Ej:Gafas De Sol Mol A">
-
-                        <label class="label">Material</label>
-                        <input type="text" placeholder="Ej:Rayman">
-
-                        <label class="label">Valor</label>
-                        <input type="text" placeholder="Ej:180.000">
-
-                        <label class="label">Descuento</label>
-                        <input type="text" placeholder="Ej:20">
-
-                        <label class="label">Referencia</label>
-                        <input type="text" placeholder="Ej:Gsv900">
-
-                        <label class="label">Descripcion</label>
-                        <textarea placeholder="Descripción Del Producto"></textarea>
-                    </div>
-                </div>
+                <span id="respuesta"></span>
+                <!-- Aquí termina el form -->
             </section>
         </main>
     </div>
+
+
+    <ul id="productos"></ul>
+    
+
 </body>
+
 
 </html>

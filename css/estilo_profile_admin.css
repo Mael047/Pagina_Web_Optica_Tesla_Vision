@@ -226,7 +226,9 @@ body {
     align-items: center;
     justify-content: center;
     color: #9aa7c1;
+    overflow: hidden;
 }
+
 
 .placeholder-icon {
     font-size: 36px
@@ -333,4 +335,11 @@ body {
 .product-form.hidden {
     opacity: 0;
     transform: translateY(-6px);
+}
+
+#respuesta {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #e44242;
 }

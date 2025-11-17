@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <root>
+     <categoria>
+         <nombre>Plastico</nombre>
+         <producto>
+             <nombre>Gafas de Plastico</nombre>
+             <valor>15000</valor>
+             <descuento>15000</descuento>
+             <material>Plastico</material>
+             <referencia>GP001</referencia>
+             <descripcion>Gafas de sol hechas de plastico reciclado</descripcion>
+             <imagen>gafas_plastico.jpg</imagen>
+         </producto>
+         <producto>
+             <nombre>Gafas de Plastico Negras</nombre>
+             <valor>45000</valor>
+             <descuento>45000</descuento>
+             <material>Plastico</material>
+             <referencia>GP002</referencia>
+             <descripcion>Gafas negras de plastico resistente</descripcion>
+             <imagen>gafas_plastico_negras.jpg</imagen>
+         </producto>
+     </categoria>
+     <categoria>
+         <nombre>Madera</nombre>
+         <producto>
+             <nombre>Gafas de Madera</nombre>
+             <valor>80000</valor>
+             <descuento>80000</descuento>
+             <material>Madera</material>
+             <referencia>GM001</referencia>
+             <descripcion>Gafas de sol hechas de madera sostenible</descripcion>
+             <imagen>gafas_madera.jpg</imagen>
+         </producto>
+         <producto>
+             <nombre>Gafas de Madera Oscura</nombre>
+             <valor>95000</valor>
+             <descuento>95000</descuento>
+             <material>Madera</material>
+             <referencia>GM002</referencia>
+             <descripcion>Gafas de madera oscura con diseño elegante</descripcion>
+             <imagen>gafas_madera_oscura.jpg</imagen>
+         </producto>
+     </categoria>
+ </root>

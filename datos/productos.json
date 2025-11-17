@@ -1,0 +1,47 @@
+{
+    "categoria": [
+        {
+            "nombre": "Gafas",
+            "producto": [
+                {
+                    "nombre": "Gafas de Plastico",
+                    "valor": 15000,
+                    "descuento": 15000,
+                    "material": "Plastico",
+                    "referencia": "GP001",
+                    "descripcion": "Gafas de sol hechas de plastico reciclado",
+                    "imagen": "gafas_plastico.jpg"
+                },
+                {
+                    "nombre": "Gafas de Plastico Negras",
+                    "valor": 45000,
+                    "descuento": 45000,
+                    "referencia": "GP002",
+                    "descripcion": "Gafas negras de plastico resistente",
+                    "imagen": "gafas_plastico_negras.jpg"
+                }
+            ]
+        },
+        {
+            "nombre": "Accesorios",
+            "producto": [
+                {
+                    "nombre": "liquido",
+                    "valor": 80000,
+                    "descuento": 80000,
+                    "referencia": "GM001",
+                    "descripcion": "Gafas de sol hechas de madera sostenible",
+                    "imagen": "gafas_madera.jpg"
+                },
+                {
+                    "nombre": "liquido oscuro",
+                    "valor": 95000,
+                    "descuento": 95000,
+                    "referencia": "GM002",
+                    "descripcion": "Gafas de madera oscura con diseño elegante",
+                    "imagen": "gafas_madera_oscura.jpg"
+                }
+            ]
+        }
+    ]
+}
