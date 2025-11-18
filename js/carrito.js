@@ -17,23 +17,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const textarea = document.getElementById("asesoria");
 
     if (btnEnviar && textarea) {
-      btnEnviar.addEventListener("click", function () {
-          const mensaje = textarea.value.trim();
+        btnEnviar.addEventListener("click", function () {
+            const mensaje = textarea.value.trim();
 
-          if (mensaje !== "") {
-              textarea.value = "";
+            if (mensaje !== "") {
+                textarea.value = "";
 
-              const aviso = document.createElement("p");
-              aviso.textContent = "Tu mensaje fue enviado correctamente.";
-              aviso.style.color = "#4a66a3";
-              aviso.style.marginTop = "8px";
-              aviso.style.fontWeight = "600";
+                const aviso = document.createElement("p");
+                aviso.textContent = "Tu mensaje fue enviado correctamente.";
+                aviso.style.color = "#4a66a3";
+                aviso.style.marginTop = "8px";
+                aviso.style.fontWeight = "600";
 
-              btnEnviar.parentNode.appendChild(aviso);
+                btnEnviar.parentNode.appendChild(aviso);
 
-              setTimeout(() => aviso.remove(), 2000);
-          }
-      });
+                setTimeout(() => aviso.remove(), 2000);
+            }
+        });
     }
 });
 
@@ -149,7 +149,24 @@ document.addEventListener("DOMContentLoaded", () => {
         if (precioEl) {
             const dataDescuento = precioEl.dataset ? precioEl.dataset.descuento : null;
             const dataPrecio = precioEl.dataset ? precioEl.dataset.precio : null;
-            const raw = dataDescuento || dataPrecio || precioEl.textContent;
+
+            let raw = precioEl.textContent; // valor por defecto: lo que se ve en pantalla
+
+            const numDescuento = dataDescuento !== undefined && dataDescuento !== null
+                ? Number(dataDescuento)
+                : NaN;
+            const numPrecio = dataPrecio !== undefined && dataPrecio !== null
+                ? Number(dataPrecio)
+                : NaN;
+
+            if (!Number.isNaN(numDescuento) && numDescuento > 0) {
+                // hay descuento válido
+                raw = dataDescuento;
+            } else if (!Number.isNaN(numPrecio) && numPrecio > 0) {
+                // no hay descuento, pero sí precio normal
+                raw = dataPrecio;
+            }
+
             const cleaned = String(raw).replace(/[^\d]/g, "");
             precio = cleaned ? parseInt(cleaned, 10) : 0;
         }

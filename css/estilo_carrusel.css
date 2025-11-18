@@ -10,7 +10,7 @@ body {
     margin: auto;
     position: relative;
     padding: 2em;
-
+    overflow: hidden;
 }
 
 /* el % del width se ajusta a partir de la cantidad de imagenes */

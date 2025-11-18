@@ -1,37 +1,49 @@
 .carrusel {
-  overflow: hidden;
   width: 100%;
   max-width: 700px;
+  margin: 0 auto 1.5rem;
   position: relative;
+  overflow: hidden;
 }
 
+/* Contenedor de las slides */
 .carrusel .item {
   display: flex;
   transition: transform 0.5s ease;
 }
 
-.carrusel img {
+/* Cada imagen ocupa exactamente el 100% del ancho del carrusel */
+.carrusel .item img {
+  flex: 0 0 100%;
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  /* Altura fija para que todas las imágenes se vean del mismo alto */
+  height: 360px; /* puedes ajustar a 320 / 400 según tu diseño */
+  object-fit: cover; /* recorta la imagen para llenar el cuadro */
+  /* Si prefieres no recortar y ver barras grises, usa: object-fit: contain; */
+  background: #f2f4f8;
+  border-radius: 12px;
 }
 
+/* Puntos del carrusel */
 .carrusel .puntos {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+  padding: 0;
+  list-style: none;
 }
 
 .carrusel .punto {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: #aaa;
-    transition: background 0.3s;
-    cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #c4cbd8;
+  transition: background 0.3s, transform 0.2s;
+  cursor: pointer;
 }
 
 .carrusel .punto.activo {
-    background: #0077cc;
+  background: #1a2be6;
+  transform: scale(1.1);
 }

@@ -8,8 +8,8 @@
 
     <link rel="stylesheet" href="css/estilo_profile_admin.css">
     <script src="js/profile_admin.js" defer></script>
-    <script src ="js/datos.js" defer></script>
-    
+    <script src="js/datos.js" defer></script>
+
 </head>
 
 <body>
@@ -27,8 +27,7 @@
             <nav class="menu">
                 <p class="section-title">Store</p>
                 <ul>
-                    <li class="menu-item active"><span class="icon"></span> Gafas</li>
-                    <li class="menu-item"><span class="icon"></span> Accesorios</li>
+                    <li class="menu-item active"><span class="icon"></span> Gafas y Accesorios </li>
                 </ul>
             </nav>
         </aside>
@@ -57,18 +56,38 @@
             <!-- FORMULARIO -->
             <section class="product-form">
                 <h2>Nuevo Lente</h2>
-
                 <!-- Aquí empieza el form -->
                 <form id="formulario" enctype="multipart/form-data">
+                    <input type="hidden" name="referencia_original" id="referencia_original">
                     <div class="form-grid">
                         <div class="col imagen-col">
                             <label class="label">Imagen</label>
+
+                            <!-- Imagen 1 -->
                             <div class="image-placeholder">
                                 <div class="placeholder-icon">🖼️</div>
                                 <div class="placeholder-text">Cargar Imagen</div>
-                                <input class="placeholder-text" type="file" name="imagen" id="imagen">
-                                <figure><img id="preview" src="" alt=""></figure>
+                                <img id="preview1" src="" alt="Preview 1">
                             </div>
+                            <input class="placeholder-text" type="file" name="imagen" id="imagen">
+
+                            <!-- Imagen 2 -->
+                            <div class="image-placeholder">
+                                <div class="placeholder-icon">🖼️</div>
+                                <div class="placeholder-text">Imagen 2 (opcional)</div>
+                                <img id="preview2" src="" alt="Preview 2">
+                            </div>
+                            <input class="placeholder-text" type="file" name="imagen2" id="imagen2">
+
+                            <!-- Imagen 3 -->
+                            <div class="image-placeholder">
+                                <div class="placeholder-icon">🖼️</div>
+                                <div class="placeholder-text">Imagen 3 (opcional)</div>
+                                <img id="preview3" src="" alt="Preview 3">
+                            </div>
+                            <input class="placeholder-text" type="file" name="imagen3" id="imagen3">
+
+
                             <div class="form-actions">
                                 <button class="btn-confirm" type="submit">Confirmar</button>
                                 <button class="btn-cancel" type="button">Cancelar</button>
@@ -85,8 +104,11 @@
                                 <option value="accesorios">Accesorios</option>
                             </select>
 
+                            <label class="label">Marca</label>
+                            <input type="text" name="marca" id="marca" placeholder="Ej:RayBan">
+
                             <label class="label">Material</label>
-                            <input type="text" name="material" id="material" placeholder="Ej:Rayman">
+                            <input type="text" name="material" id="material" placeholder="Ej:Metal">
 
                             <label class="label">Valor</label>
                             <input type="text" name="valor" id="valor" placeholder="Ej:180.000">
@@ -98,7 +120,8 @@
                             <input type="text" name="referencia" id="referencia" placeholder="Ej:Gsv900">
 
                             <label class="label">Descripcion</label>
-                            <textarea name="descripcion" id="descripcion" placeholder="Descripción Del Producto"></textarea>
+                            <textarea name="descripcion" id="descripcion"
+                                placeholder="Descripción Del Producto"></textarea>
                         </div>
                     </div>
                 </form>
@@ -106,12 +129,14 @@
                 <span id="respuesta"></span>
                 <!-- Aquí termina el form -->
             </section>
+            <section class="product-list">
+                <h2>Lista De Productos</h2>
+                <ul id="productos"></ul>
+                <span id="respuesta"></span>
+            </section>
         </main>
     </div>
 
-
-    <ul id="productos"></ul>
-    
 
 </body>
 
