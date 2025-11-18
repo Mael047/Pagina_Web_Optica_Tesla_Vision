@@ -229,6 +229,12 @@ body {
     overflow: hidden;
 }
 
+.image-placeholder img#preview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
 
 .placeholder-icon {
     font-size: 36px
@@ -342,4 +348,65 @@ body {
     margin-top: 10px;
     font-size: 14px;
     color: #e44242;
+}
+
+.product-list {
+    margin-top: 24px;
+    background: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(20, 40, 80, 0.04);
+}
+
+.product-list h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.product-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-list li.producto-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 0;
+    border-bottom: 1px solid #e9edf5;
+    font-size: 14px;
+}
+
+.product-list li.producto-item:last-child {
+    border-bottom: none;
+}
+
+.btnDelete {
+    background: #e94242;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.btnDelete:hover {
+    opacity: 0.9;
+}
+
+.btnEdit {
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-right: 8px;
+}
+
+.btnEdit:hover {
+    opacity: 0.9;
 }

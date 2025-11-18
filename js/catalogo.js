@@ -1,67 +1,97 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const productos = document.querySelectorAll(".producto");
-
-    productos.forEach(producto => {
-        const descuento = producto.getAttribute("data-descuento");
-        if (descuento) {
-            const p = producto.querySelector("p");
-            const textoOriginal = p.textContent.match(/[\d.,]+/)[0]; // Extrae el número
-            p.innerHTML = `
-                        Precio: <span style="text-decoration: line-through; color: gray;">${textoOriginal}€</span>
-                        <span style="color: red; font-weight: bold; margin-left: 8px;">${descuento}€</span>
-                    `;
-        }
-    });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    const productos = document.querySelectorAll(".producto");
-
-    productos.forEach(producto => {
-        const descuento = producto.getAttribute("data-descuento");
-        if (descuento) {
-            const p = producto.querySelector("p");
-            const textoOriginal = p.textContent.match(/[\d.,]+/)[0];
-            p.innerHTML = `
-                        Precio: <span style="text-decoration: line-through; color: gray;">${textoOriginal}€</span>
-                        <span style="color: red; font-weight: bold; margin-left: 8px;">${descuento}€</span>
-                    `;
-        }
-    });
-});
-
-// --- Filtros ---
-document.addEventListener("DOMContentLoaded", () => {
+    const contenedor = document.querySelector(".container-catalogo");
     const marcaSelect = document.getElementById("marca");
     const materialSelect = document.getElementById("material");
-    const productos = document.querySelectorAll(".producto");
 
-    function filtrar() {
-        const marca = marcaSelect.value;
-        const material = materialSelect.value;
+    let productos = []; // lo que viene de la BD
 
-        productos.forEach(prod => {
-            const prodMarca = prod.getAttribute("data-marca");
-            const prodMaterial = prod.getAttribute("data-material");
-
-            const coincideMarca = marca === "todos" || prodMarca === marca;
-            const coincideMaterial = material === "todos" || prodMaterial === material;
-
-            prod.style.display = (coincideMarca && coincideMaterial) ? "flex" : "none";
+    // 1) Traer productos desde el backend
+    fetch("api/get/productos.php")
+        .then(res => res.json())
+        .then(data => {
+            productos = data || [];
+            renderProductos();
+        })
+        .catch(err => {
+            console.error("Error cargando productos:", err);
+            if (contenedor) {
+                contenedor.innerHTML = "<p>Error cargando el catálogo.</p>";
+            }
         });
+
+    // 2) Render según filtros
+    function renderProductos() {
+        if (!contenedor) return;
+
+        contenedor.innerHTML = "";
+
+        const marcaFiltro = marcaSelect ? marcaSelect.value : "todos";
+        const materialFiltro = materialSelect ? materialSelect.value : "todos";
+
+        productos.forEach(p => {
+            const marcaProd = (p.marca || "").trim(); // asumimos categoria = marca
+            const materialProd = (p.material || "").trim();
+
+            const coincideMarca =
+                !marcaSelect || marcaFiltro === "todos" || marcaProd === marcaFiltro;
+            const coincideMaterial =
+                !materialSelect || materialFiltro === "todos" || materialProd === materialFiltro;
+
+            if (!coincideMarca || !coincideMaterial) return;
+
+            const card = document.createElement("div");
+            card.className = "producto";
+            card.dataset.id = p.id;
+            card.dataset.marca = marcaProd;
+            card.dataset.material = materialProd;
+
+            const valor = Number(p.valor || 0);
+            const descuentoVal = Number(p.descuento || 0);
+            const hayDescuento = descuentoVal > 0;
+
+            const precioOriginal = valor.toLocaleString("es-CO");
+            let precioHtml = "";
+
+            if (hayDescuento) {
+                const precioDesc = descuentoVal.toLocaleString("es-CO");
+                precioHtml = `
+                    <div class="precio">
+                        <span class="precio-original">${precioOriginal}</span>
+                        <span class="precio-descuento">${precioDesc}</span>
+                    </div>
+                `;
+            } else {
+                precioHtml = `<p class="precio">${precioOriginal}</p>`;
+            }
+
+            card.innerHTML = `
+                <figure>
+                    <img src="imagenes/${p.imagen}" alt="${p.nombre}">
+                </figure>
+                <h3>${p.nombre}</h3>
+                <h5>Referencia: ${p.referencia}</h5>
+                <h3>${p.material}</h3>
+                ${precioHtml}
+            `;
+
+            // Al hacer clic, ir a detalle
+            card.addEventListener("click", () => {
+                window.location.href = "producto.html?ref=" + encodeURIComponent(p.referencia);
+            });
+
+            contenedor.appendChild(card);
+        });
+
+        if (!contenedor.children.length) {
+            contenedor.innerHTML = "<p>No se encontraron productos con estos filtros.</p>";
+        }
     }
 
-    marcaSelect.addEventListener("change", filtrar);
-    materialSelect.addEventListener("change", filtrar);
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-    const productos = document.querySelectorAll(".producto");
-
-    productos.forEach((producto) => {
-        producto.addEventListener("click", () => {
-            // Redirige a la misma página de detalles
-            window.location.href = "producto.html";
-        });
-    });
+    // 3) Filtros
+    if (marcaSelect) {
+        marcaSelect.addEventListener("change", renderProductos);
+    }
+    if (materialSelect) {
+        materialSelect.addEventListener("change", renderProductos);
+    }
 });
