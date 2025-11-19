@@ -1,89 +1,160 @@
+// js/profile.js
 
-document.addEventListener("DOMContentLoaded", () => {
-    if (!window.auth || !auth.isLoggedIn()) {
-        const loginUrl = "inicio_sesion.html?next=profile.html";
-        window.location.href = loginUrl;
+// Helper para leer cookies
+function getCookie(nombre) {
+    const valor = `; ${document.cookie}`;
+    const partes = valor.split(`; ${nombre}=`);
+    if (partes.length === 2) {
+        return decodeURIComponent(partes.pop().split(";").shift());
+    }
+    return null;
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("form-usuario");
+    const respuestaSpan = document.getElementById("respuesta");
+    const historialList = document.getElementById("historial-list");
+
+    function renderHistorial(pedidos) {
+        if (!historialList) return;
+        historialList.innerHTML = "";
+
+        let lista = [];
+        if (Array.isArray(pedidos)) {
+            lista = pedidos;
+        } else if (typeof pedidos === "string" && pedidos.trim() !== "") {
+            try {
+                const parsed = JSON.parse(pedidos);
+                if (Array.isArray(parsed)) lista = parsed;
+            } catch (err) {
+                console.error("Pedidos no es JSON", err);
+            }
+        }
+
+        if (!lista.length) {
+            historialList.innerHTML = '<p class="vacio">No tienes compras registradas aun.</p>';
+            return;
+        }
+
+        lista.slice().reverse().forEach((orden) => {
+            const card = document.createElement("div");
+            card.className = "historial-card";
+
+            const total = Number(orden.total) || 0;
+            const totalFmt = new Intl.NumberFormat("es-ES").format(total);
+            const itemsCantidad = Array.isArray(orden.items)
+                ? orden.items.reduce((acc, it) => acc + (Number(it.cantidad) || 1), 0)
+                : 0;
+
+            const itemsDetalle = Array.isArray(orden.items)
+                ? orden.items
+                      .map((it) => {
+                          const nombre = it.nombre || "Producto";
+                          const ref = it.ref ? ` (Ref: ${it.ref})` : "";
+                          const cant = Number(it.cantidad) || 1;
+                          const precio = Number(it.precio) || 0;
+                          const subtotal = cant * precio;
+                          const subtotalFmt = new Intl.NumberFormat("es-ES").format(subtotal);
+                          return `<li>${nombre}${ref} x${cant} — $${subtotalFmt}</li>`;
+                      })
+                      .join("")
+                : "";
+
+            card.innerHTML = `
+                <div class="historial-header">
+                    <strong>#${orden.order_id || ""}</strong>
+                    <span>${orden.estado || "pagado"}</span>
+                </div>
+                <div class="historial-body">
+                    <div><small>Fecha</small><br>${orden.fecha || ""}</div>
+                    <div><small>Total</small><br>$${totalFmt}</div>
+                    <div><small>Envio</small><br>${orden.envio || ""}</div>
+                    <div><small>Items</small><br>${itemsCantidad}</div>
+                </div>
+                ${
+                    itemsDetalle
+                        ? `<div class="historial-items-wrap">
+                            <small>Detalle</small>
+                            <ul class="historial-items">${itemsDetalle}</ul>
+                           </div>`
+                        : ""
+                }
+            `;
+            historialList.appendChild(card);
+        });
+    }
+
+    // 1. Leer correo desde la cookie
+    const correoCookie = getCookie("user_correo");
+    if (!correoCookie) {
+        alert("No hay usuario en sesión. Inicia sesión de nuevo.");
+        window.location.href = "index.html"; // ajusta la ruta
         return;
     }
 
-    const user = auth.getUser() || { name: "Usuario", email: "" };
+    // 2. Pedir al backend los datos del usuario por correo
+    fetch("api/get/get_usuario.php?correo=" + encodeURIComponent(correoCookie))
+        .then((r) => r.json())
+        .then((usuario) => {
+            if (!usuario) {
+                alert("No se encontraron datos del usuario.");
+                return;
+            }
+            document.getElementById("id").value = usuario.id || "";
+            
+            // Rellenar el formulario
+            document.getElementById("nombre").value = usuario.nombre || "";
+            document.getElementById("correo").value = usuario.correo || "";
 
-    let root = document.querySelector("#profile-root") || document.querySelector(".profile-root");
-    if (!root) {
-        root = document.createElement("main");
-        root.id = "profile-root";
-        document.body.appendChild(root);
-    }
+            // Nuevos campos (no se muestra rol)
+            if (document.getElementById("direccion")) {
+                document.getElementById("direccion").value = usuario.direccion || "";
+            }
+            if (document.getElementById("telefono")) {
+                document.getElementById("telefono").value = usuario.telefono || "";
+            }
 
-    root.innerHTML = `
-    <section style="max-width:900px;margin:40px auto;padding:22px;background:#fff;border-radius:8px;box-shadow:0 8px 24px rgba(0,0,0,0.08);">
-      <h2>Mi perfil</h2>
-      <div id="user-info" style="margin-bottom:18px;"></div>
-      <button id="btn-logout" style="background:#0b3be6;color:#fff;padding:8px 12px;border-radius:6px;border:none;cursor:pointer">Cerrar sesión</button>
-      <hr style="margin:18px 0"/>
-      <h3>Historial de compras</h3>
-      <div id="historial-list"></div>
-    </section>
-  `;
-
-    const infoDiv = document.getElementById("user-info");
-    infoDiv.innerHTML = `
-    <p><strong>Nombre:</strong> ${user.name || "—"}</p>
-    <p><strong>Email:</strong> ${user.email || "—"}</p>
-  `;
-
-    document.getElementById("btn-logout").addEventListener("click", () => {
-        auth.logout();
-        // opcional: limpiar badge
-        window.location.href = "inicio_sesion.html";
-    });
-
-    const lista = document.getElementById("historial-list");
-    const ordenesRaw = localStorage.getItem("ordenes");
-    let ordenes = [];
-    if (ordenesRaw) {
-        try { ordenes = JSON.parse(ordenesRaw) || []; } catch (e) { ordenes = []; }
-    } else {
-        const carritoRaw = localStorage.getItem("carrito");
-        if (carritoRaw) {
-            try {
-                const carrito = JSON.parse(carritoRaw) || [];
-                if (carrito.length) {
-                    ordenes = [{ id: "SIM-" + Date.now(), fecha: new Date().toLocaleString(), items: carrito }];
-                }
-            } catch (e) { ordenes = []; }
-        }
-    }
-
-    if (!ordenes || ordenes.length === 0) {
-        lista.innerHTML = `<p>No hay compras registradas.</p>`;
-    } else {
-        lista.innerHTML = "";
-        ordenes.forEach((orden) => {
-            const div = document.createElement("div");
-            div.style.border = "1px solid #eee";
-            div.style.padding = "12px";
-            div.style.borderRadius = "6px";
-            div.style.marginBottom = "10px";
-
-            const itemsHTML = (orden.items || []).map(it => `
-        <div style="display:flex;align-items:center;gap:10px;margin:6px 0;">
-          <img src="${it.imagen || "img/gafas1.png"}" style="width:56px;height:auto;border-radius:6px"/>
-          <div>
-            <div><strong>${it.nombre || "Producto"}</strong></div>
-            <div style="font-size:13px;color:#666">Ref: ${it.ref || "—"} • Cant: ${it.cantidad || 1}</div>
-          </div>
-          <div style="margin-left:auto;font-weight:700">$${(Number(it.precio) || 0).toLocaleString()}</div>
-        </div>
-      `).join("");
-
-            div.innerHTML = `
-        <div style="display:flex;align-items:center;justify-content:space-between">
-          <div><strong>Orden ${orden.id || "—"}</strong></div>
-          <div style="font-size:13px;color:#666">${orden.fecha || ""}</div>
-        </div>
-        <div style="margin-top:8px">${itemsHTML}</div>`;
-            lista.appendChild(div);
+            renderHistorial(usuario.pedidos || []);
+        })
+        .catch((err) => {
+            console.error(err);
+            alert("Error al cargar los datos del usuario.");
         });
-    }
+
+    // 3. Enviar cambios al backend
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const data = {
+            id: document.getElementById("id").value,
+            nombre: document.getElementById("nombre").value,
+            correo: document.getElementById("correo").value,
+            direccion: document.getElementById("direccion") ? document.getElementById("direccion").value : "",
+            telefono: document.getElementById("telefono") ? document.getElementById("telefono").value : "",
+            password: document.getElementById("password").value, // puede estar vacío
+        };
+
+        fetch("api/post/actualizar_usuario.php", {
+            method: "POST",
+            headers: { "Content-Type": "application/json;charset=UTF-8" },
+            body: JSON.stringify(data),
+        })
+            .then((r) => r.json())
+            .then((res) => {
+                respuestaSpan.textContent = res.mensaje || "Datos actualizados";
+
+                // limpiar campo password
+                document.getElementById("password").value = "";
+
+                // si se cambió el correo, actualiza la cookie
+                document.cookie =
+                    "user_correo=" +
+                    encodeURIComponent(data.correo) +
+                    "; path=/; max-age=86400";
+            })
+            .catch((err) => {
+                console.error(err);
+                respuestaSpan.textContent = "Error al actualizar el usuario";
+            });
+    });
 });

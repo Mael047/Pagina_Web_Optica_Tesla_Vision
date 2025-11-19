@@ -15,20 +15,20 @@
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
     <script src="js/catalogo.js" defer></script>
-    <script src="js/breadcrumb.js" defer></script>
     <script src="js/precios.js" defer></script>
+    <script src="js/login-modal.js" defer></script>
     <script src="js/auth.js" defer></script>
     <title>Catálogo</title>
 </head>
 
-<body>
+<body data-categoria="gafas">
     <header>
         <nav>
             <ul>
                 <li>
                     <div class="nav-left">
                         <a href="Catalogo.html">Gafas</a>
-                        <a href="#">Accesorios</a>
+                        <a href="acc_catalogo.html">Accesorios</a>
                     </div>
                 </li>
                 <li>
@@ -57,7 +57,7 @@
                         </div>
                         <div class="icon">
                             <!-- Profile -->
-                            <a href="profile.html">
+                            <a href="#" class="js-open-login" aria-label="Iniciar sesión" id="acceso">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                     <path fill="currentColor" fill-rule="evenodd"
                                         d="M8 7a4 4 0 1 1 8 0a4 4 0 0 1-8 0m0 6a5 5 0 0 0-5 5a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3a5 5 0 0 0-5-5z"
@@ -66,8 +66,8 @@
                             </a>
                         </div>
                         <!-- Buscador -->
-                        <form action="./search/" class="search-box">
-                            <input type="search" placeholder="Buscar...">
+            <form action="search.html" class="search-box" method="get">
+              <input type="search" name="q" placeholder="Buscar...">
                             <button type="submit">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
                                     <path fill="currentColor"
@@ -111,7 +111,7 @@
             </div>
         </div>
         <div class="container-catalogo">
-            
+
 
         </div>
 
@@ -148,6 +148,84 @@
 
         </div>
     </footer>
+
+    <div class="login-overlay" id="login-overlay">
+        <div class="login-modal">
+            <button class="login-close js-close-login" aria-label="Cerrar inicio de sesión">×</button>
+
+            <div class="login-header">
+                <img src="img/logo.png" alt="Óptica Tesla Vision">
+                <h2>Iniciar Sesión</h2>
+                <p>Accede para administrar tus compras y perfil.</p>
+            </div>
+
+            <form id="login-form" class="login-form">
+                <div class="login-field">
+                    <label for="login-email">Correo electrónico</label>
+                    <input type="text" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+                </div>
+
+                <div class="login-field">
+                    <label for="login-password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="login-submit">Iniciar sesión</button>
+
+                <p class="login-help">
+                    ¿Olvidaste tu contraseña? <a href="#">Recuperar acceso</a><br>
+                    ¿No tienes cuenta?
+                    <a href="#" class="js-open-register">Crear una cuenta</a>
+                </p>
+            </form>
+            <span id="respuesta"></span>
+        </div>
+    </div>
+
+    <!-- MODAL REGISTRO -->
+    <div class="login-overlay" id="register-overlay">
+        <div class="login-modal registro-modal">
+            <button class="login-close js-close-register" aria-label="Cerrar registro">×</button>
+
+            <div class="login-header">
+                <h2>Crear cuenta</h2>
+                <p>Regístrate para guardar tus datos y compras.</p>
+            </div>
+
+            <form id="register-form" class="register-form" autocomplete="on">
+                <div class="login-field">
+                    <label for="reg-name">Usuario / Nombre</label>
+                    <input type="text" id="reg-name" name="name" placeholder="Usuario/Nombre" required />
+                </div>
+
+                <div class="login-field">
+                    <label for="reg-email">Correo electrónico</label>
+                    <input type="email" id="reg-email" name="email" placeholder="Email" required />
+                </div>
+
+                <div class="login-field">
+                    <label for="reg-pass">Contraseña</label>
+                    <input type="password" id="reg-pass" name="password" placeholder="Contraseña" required />
+                </div>
+
+                <div class="login-field">
+                    <label for="reg-phone">Número de teléfono (opcional)</label>
+                    <input type="tel" id="reg-phone" name="telefono" placeholder="Número De Teléfono" />
+                </div>
+
+                <button type="submit" class="login-submit">Registrarse</button>
+
+                <p class="login-help">
+                    ¿Ya tienes una cuenta?
+                    <a href="#" class="js-back-to-login">Ingresar</a>
+                </p>
+
+                <p id="register-msg" class="msg" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+    <!-- FIN MODAL REGISTRO -->
+
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 header("Content-Type: application/json");
 include_once("../conexion.php");
 
-// Leer referencia desde GET: ?ref=... o ?referencia=...
+
 $ref = isset($_GET['ref']) ? $_GET['ref'] : (isset($_GET['referencia']) ? $_GET['referencia'] : '');
 
 if (!$ref) {

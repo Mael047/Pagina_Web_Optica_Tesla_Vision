@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const marcaSelect = document.getElementById("marca");
     const materialSelect = document.getElementById("material");
 
+    // 🔹 leemos qué categoría debe mostrar esta página (gafas, accesorio, etc.)
+    const categoriaPagina = (document.body.dataset.categoria || "").toLowerCase();
+
     let productos = []; // lo que viene de la BD
 
     // 1) Traer productos desde el backend
@@ -29,21 +32,28 @@ document.addEventListener("DOMContentLoaded", () => {
         const materialFiltro = materialSelect ? materialSelect.value : "todos";
 
         productos.forEach(p => {
-            const marcaProd = (p.marca || "").trim(); // asumimos categoria = marca
+            const marcaProd = (p.marca || "").trim();
             const materialProd = (p.material || "").trim();
+            const categoriaProd = (p.categoria || "").trim().toLowerCase(); // 🔹 viene de la BD
+
+            // 🔹 filtro por categoría según la página
+            const coincideCategoria =
+                !categoriaPagina || categoriaProd === categoriaPagina;
 
             const coincideMarca =
                 !marcaSelect || marcaFiltro === "todos" || marcaProd === marcaFiltro;
             const coincideMaterial =
                 !materialSelect || materialFiltro === "todos" || materialProd === materialFiltro;
 
-            if (!coincideMarca || !coincideMaterial) return;
+            // si no coincide con algo, no se muestra
+            if (!coincideCategoria || !coincideMarca || !coincideMaterial) return;
 
             const card = document.createElement("div");
             card.className = "producto";
             card.dataset.id = p.id;
             card.dataset.marca = marcaProd;
             card.dataset.material = materialProd;
+            card.dataset.categoria = categoriaProd;
 
             const valor = Number(p.valor || 0);
             const descuentoVal = Number(p.descuento || 0);

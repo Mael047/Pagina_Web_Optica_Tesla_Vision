@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/estilo_nav_bar.css">
+  <link rel="stylesheet" href="css/estilo_search.css">
+  <link rel="stylesheet" href="css/estilo_footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script src="js/login-modal.js" defer></script>
+  <script src="js/auth.js" defer></script>
+  <script src="js/search.js" defer></script>
+  <title>Buscar productos</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <div class="nav-left">
+            <a href="Catalogo.html">Gafas</a>
+            <a href="acc_catalogo.html">Accesorios</a>
+          </div>
+        </li>
+        <li>
+          <div class="nav-center">
+            <img src="img/logo.png" alt="Logo">
+            <a href="index.html" class="link-con-span">
+              <span>Óptica Tesla Vision</span>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="nav-right">
+            <div class="icon">
+              <a href="carrito.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+                  <g fill="none">
+                    <circle cx="7.5" cy="18.5" r="1.5" fill="currentColor" />
+                    <circle cx="16.5" cy="18.5" r="1.5" fill="currentColor" />
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M3 5h2l.6 3m0 0L7 15h10l2-7z" />
+                  </g>
+                </svg>
+              </a>
+            </div>
+            <div class="icon">
+              <a href="#" class="js-open-login" aria-label="Iniciar sesión" id="acceso">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="currentColor" fill-rule="evenodd"
+                    d="M8 7a4 4 0 1 1 8 0a4 4 0 0 1-8 0m0 6a5 5 0 0 0-5 5a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3a5 5 0 0 0-5-5z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </div>
+            <form action="search.html" class="search-box" method="get">
+              <input type="search" name="q" placeholder="Buscar...">
+              <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                  <path fill="currentColor"
+                    d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14" />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="search-hero">
+    <h1>Buscar productos</h1>
+    <p id="search-subtitle">Resultados</p>
+  </section>
+
+  <section class="search-results-container">
+    <div id="search-results"></div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col izquierda">
+        <div class="footer-section">
+          <h4>Productos</h4>
+          <a href="Catalogo.html">Nuestras Gafas</a>
+        </div>
+
+        <div class="footer-section">
+          <h4>Ubicaciones</h4>
+          <a href="index.html">Nosotros</a>
+        </div>
+      </div>
+
+      <div class="footer-col derecha">
+        <div class="footer-section">
+          <h4>Síguenos</h4>
+          <div class="footer-redes">
+            <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contáctanos</h4>
+          <div class="footer-contacto">+57 320 4066587</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="login-overlay" id="login-overlay">
+    <div class="login-modal">
+      <button class="login-close js-close-login" aria-label="Cerrar inicio de sesión">X</button>
+
+      <div class="login-header">
+        <h2>Iniciar Sesión</h2>
+        <p>Accede para administrar tus compras y perfil.</p>
+      </div>
+
+      <form id="login-form" class="login-form">
+        <div class="login-field">
+          <label for="login-email">Correo electrónico</label>
+          <input type="text" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+        </div>
+
+        <div class="login-field">
+          <label for="login-password">Contraseña</label>
+          <input type="password" id="password" name="password" placeholder="********" required>
+        </div>
+
+        <button type="submit" class="login-submit">Iniciar sesión</button>
+
+        <p class="login-help">
+          ¿Olvidaste tu contraseña? <a href="#">Recuperar acceso</a><br>
+          ¿No tienes cuenta?
+          <a href="#" class="js-open-register">Crear una cuenta</a>
+        </p>
+      </form>
+      <span id="respuesta"></span>
+    </div>
+  </div>
+
+  <div class="login-overlay" id="register-overlay">
+    <div class="login-modal registro-modal">
+      <button class="login-close js-close-register" aria-label="Cerrar registro">X</button>
+
+      <div class="login-header">
+        <h2>Crear cuenta</h2>
+        <p>Regístrate para guardar tus datos y compras.</p>
+      </div>
+
+      <form id="register-form" class="register-form" autocomplete="on">
+        <div class="login-field">
+          <label for="reg-name">Usuario / Nombre</label>
+          <input type="text" id="reg-name" name="name" placeholder="Usuario/Nombre" required />
+        </div>
+
+        <div class="login-field">
+          <label for="reg-email">Correo electrónico</label>
+          <input type="email" id="reg-email" name="email" placeholder="Email" required />
+        </div>
+
+        <div class="login-field">
+          <label for="reg-pass">Contraseña</label>
+          <input type="password" id="reg-pass" name="password" placeholder="Contraseña" required />
+        </div>
+
+        <div class="login-field">
+          <label for="reg-phone">Número de teléfono (opcional)</label>
+          <input type="tel" id="reg-phone" name="telefono" placeholder="Número De Teléfono" />
+        </div>
+
+        <button type="submit" class="login-submit">Registrarse</button>
+
+        <p class="login-help">
+          ¿Ya tienes una cuenta?
+          <a href="#" class="js-back-to-login">Ingresar</a>
+        </p>
+
+        <p id="register-msg" class="msg" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
