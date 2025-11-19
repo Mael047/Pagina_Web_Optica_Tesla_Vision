@@ -28,7 +28,7 @@
         <li>
           <div class="nav-left">
             <a href="Catalogo.html">Gafas</a>
-            <a href="#">Accesorios</a>
+            <a href="acc_catalogo.html">Accesorios</a>
           </div>
         </li>
         <li>
@@ -65,8 +65,8 @@
               </a>
             </div>
             <!-- Buscador -->
-            <form action="./search/" class="search-box">
-              <input type="search" placeholder="Buscar...">
+            <form action="search.html" class="search-box" method="get">
+              <input type="search" name="q" placeholder="Buscar...">
               <button type="submit">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
                   <path fill="currentColor"
@@ -148,8 +148,8 @@
 
       <!-- ===== BOTONES ===== -->
       <div class="botones-carrito botones-mobile">
-        <button>Seguir Comprando</button>
-        <button>Pagar</button>
+        <button class="btn-seguir">Seguir Comprando</button>
+        <button class="btn-pagar">Pagar</button>
       </div>
     </div>
 
@@ -174,8 +174,8 @@
 
       <!-- BOTONES (esta versión se mostrará en desktop) -->
       <div class="botones-carrito botones-desktop">
-        <button href="Catalogo.html">Seguir Comprando</button>
-        <button>Pagar</button>
+        <button class="btn-seguir">Seguir Comprando</button>
+        <button class="btn-pagar">Pagar</button>
       </div>
     </aside>
   </main>
@@ -286,6 +286,62 @@
     </div>
   </div>
   <!-- FIN MODAL REGISTRO -->
+
+  <!-- MODAL CHECKOUT PAGO -->
+  <div class="checkout-overlay" id="checkout-overlay">
+    <div class="checkout-modal">
+      <button class="checkout-close" aria-label="Cerrar pago">X</button>
+      <h3>Confirmar pago</h3>
+      <form id="checkout-form" class="checkout-form">
+        <div class="checkout-grid">
+          <label class="checkout-field">
+            <span>Nombre completo</span>
+            <input type="text" id="pago-nombre" required>
+          </label>
+          <label class="checkout-field">
+            <span>Correo</span>
+            <input type="email" id="pago-correo" required>
+          </label>
+          <label class="checkout-field">
+            <span>Teléfono</span>
+            <input type="tel" id="pago-telefono" required>
+          </label>
+          <label class="checkout-field">
+            <span>Dirección de entrega</span>
+            <input type="text" id="pago-direccion" required>
+          </label>
+          <label class="checkout-field">
+            <span>Método de envío</span>
+            <select id="pago-envio" required>
+              <option value="">Selecciona</option>
+              <option value="envio">Envío a domicilio</option>
+              <option value="tienda">Recoger en tienda</option>
+            </select>
+          </label>
+          <label class="checkout-field">
+            <span>Método de pago</span>
+            <select id="pago-metodo" required>
+              <option value="">Selecciona</option>
+              <option value="tarjeta">Tarjeta</option>
+              <option value="efectivo">Efectivo / Contraentrega</option>
+              <option value="transferencia">Transferencia</option>
+            </select>
+          </label>
+          <label class="checkout-field">
+            <span>Número de tarjeta (demo)</span>
+            <input type="text" id="pago-tarjeta" placeholder="4111 1111 1111 1111">
+          </label>
+          <label class="checkout-field">
+            <span>Notas</span>
+            <textarea id="pago-notas" rows="2" placeholder="Indicaciones de entrega"></textarea>
+          </label>
+        </div>
+        <div class="checkout-total" id="checkout-total">Total: $0</div>
+        <button type="submit" class="checkout-submit">Pagar ahora</button>
+        <p id="checkout-msg" class="checkout-msg"></p>
+      </form>
+    </div>
+  </div>
 
 
 </body>

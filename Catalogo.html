@@ -21,14 +21,14 @@
     <title>Catálogo</title>
 </head>
 
-<body>
+<body data-categoria="gafas">
     <header>
         <nav>
             <ul>
                 <li>
                     <div class="nav-left">
                         <a href="Catalogo.html">Gafas</a>
-                        <a href="#">Accesorios</a>
+                        <a href="acc_catalogo.html">Accesorios</a>
                     </div>
                 </li>
                 <li>
@@ -66,8 +66,8 @@
                             </a>
                         </div>
                         <!-- Buscador -->
-                        <form action="./search/" class="search-box">
-                            <input type="search" placeholder="Buscar...">
+            <form action="search.html" class="search-box" method="get">
+              <input type="search" name="q" placeholder="Buscar...">
                             <button type="submit">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
                                     <path fill="currentColor"

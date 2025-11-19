@@ -329,3 +329,180 @@ document.addEventListener("DOMContentLoaded", () => {
     // iniciar
     actualizarCarrito();
 });
+
+
+/* -------------------- checkout y pasarela sencilla -------------------- */
+document.addEventListener("DOMContentLoaded", () => {
+    const pagarBtns = document.querySelectorAll(".btn-pagar");
+    const seguirBtns = document.querySelectorAll(".btn-seguir");
+    const loginOverlay = document.getElementById("login-overlay");
+    const checkoutOverlay = document.getElementById("checkout-overlay");
+    const checkoutClose = document.querySelector(".checkout-close");
+    const checkoutForm = document.getElementById("checkout-form");
+    const checkoutMsg = document.getElementById("checkout-msg");
+    const checkoutTotal = document.getElementById("checkout-total");
+
+    const nombreInput = document.getElementById("pago-nombre");
+    const correoInput = document.getElementById("pago-correo");
+    const telefonoInput = document.getElementById("pago-telefono");
+    const direccionInput = document.getElementById("pago-direccion");
+    const envioSelect = document.getElementById("pago-envio");
+    const metodoPagoSelect = document.getElementById("pago-metodo");
+    const tarjetaInput = document.getElementById("pago-tarjeta");
+    const notasInput = document.getElementById("pago-notas");
+
+    function getCookie(name) {
+        const value = `; ${document.cookie}`;
+        const parts = value.split(`; ${name}=`);
+        if (parts.length === 2) return decodeURIComponent(parts.pop().split(";").shift());
+        return "";
+    }
+
+    function isLogged() {
+        return Boolean(getCookie("token"));
+    }
+
+    function getEnvioSeleccionado() {
+        const marcado = document.querySelector('input[name="metodo"]:checked');
+        if (marcado) return marcado.value;
+        if (envioSelect && envioSelect.value) return envioSelect.value;
+        return "";
+    }
+
+    function setEnvioSeleccionado(valor) {
+        if (envioSelect) envioSelect.value = valor || "";
+    }
+
+    function calcularTotal(carrito) {
+        return carrito.reduce((acc, item) => {
+            const precio = Number(item.precio) || 0;
+            const cant = Number(item.cantidad) || 1;
+            return acc + precio * cant;
+        }, 0);
+    }
+
+    async function rellenarDatosUsuario() {
+        const correoCookie = getCookie("user_correo");
+        if (correoCookie && correoInput) correoInput.value = correoCookie;
+
+        if (!correoCookie) return;
+        try {
+            const resp = await fetch("api/get/get_usuario.php?correo=" + encodeURIComponent(correoCookie));
+            const usuario = await resp.json();
+            if (usuario) {
+                if (nombreInput) nombreInput.value = usuario.nombre || "";
+                if (telefonoInput) telefonoInput.value = usuario.telefono || "";
+                if (direccionInput) direccionInput.value = usuario.direccion || "";
+                if (correoInput) correoInput.value = usuario.correo || correoCookie;
+            }
+        } catch (err) {
+            console.error("No se pudo prellenar datos de usuario", err);
+        }
+    }
+
+    function abrirCheckout() {
+        const carrito = JSON.parse(localStorage.getItem("carrito") || "[]");
+        if (!carrito.length) {
+            alert("Tu carrito está vacío.");
+            return;
+        }
+        const envio = getEnvioSeleccionado();
+        if (!envio) {
+            alert("Selecciona un método de envío.");
+            return;
+        }
+        const total = calcularTotal(carrito);
+        if (checkoutTotal) {
+            try {
+                checkoutTotal.textContent = "Total: $" + new Intl.NumberFormat("es-ES").format(total);
+            } catch (e) {
+                checkoutTotal.textContent = "Total: $" + total;
+            }
+        }
+        setEnvioSeleccionado(envio);
+        if (checkoutOverlay) checkoutOverlay.classList.add("activo");
+    }
+
+    pagarBtns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            if (!isLogged()) {
+                if (loginOverlay) loginOverlay.classList.add("activo");
+                return;
+            }
+            abrirCheckout();
+        });
+    });
+
+    seguirBtns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            window.location.href = "Catalogo.html";
+        });
+    });
+
+    checkoutClose?.addEventListener("click", () => {
+        checkoutOverlay?.classList.remove("activo");
+    });
+
+    checkoutOverlay?.addEventListener("click", (e) => {
+        if (e.target === checkoutOverlay) {
+            checkoutOverlay.classList.remove("activo");
+        }
+    });
+
+    checkoutForm?.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        if (checkoutMsg) checkoutMsg.textContent = "";
+
+        const carrito = JSON.parse(localStorage.getItem("carrito") || "[]");
+        if (!carrito.length) {
+            if (checkoutMsg) checkoutMsg.textContent = "El carrito está vacío.";
+            return;
+        }
+
+        const envio = getEnvioSeleccionado() || (envioSelect ? envioSelect.value : "");
+        const total = calcularTotal(carrito);
+        const payload = {
+            envio,
+            total,
+            items: carrito,
+            contacto: {
+                nombre: nombreInput ? nombreInput.value : "",
+                correo: correoInput ? correoInput.value : "",
+                telefono: telefonoInput ? telefonoInput.value : "",
+                direccion: direccionInput ? direccionInput.value : "",
+            },
+            pago: {
+                metodo: metodoPagoSelect ? metodoPagoSelect.value : "",
+                tarjeta: tarjetaInput ? tarjetaInput.value : "",
+                notas: notasInput ? notasInput.value : "",
+            },
+        };
+
+        try {
+            const resp = await fetch("api/post/orden.php", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload),
+            });
+            const resultado = await resp.json();
+
+            if (resultado.status === "success") {
+                if (checkoutMsg) checkoutMsg.textContent = `Pago exitoso. Orden #${resultado.order_id}`;
+                localStorage.removeItem("carrito");
+                setTimeout(() => {
+                    window.location.href = "profile.html";
+                }, 1000);
+            } else {
+                if (checkoutMsg) checkoutMsg.textContent = resultado.mensaje || "No se pudo procesar el pago.";
+            }
+        } catch (err) {
+            console.error(err);
+            if (checkoutMsg) checkoutMsg.textContent = "Error de conexión.";
+        }
+    });
+
+    // Prefill datos si hay usuario logueado
+    rellenarDatosUsuario();
+});

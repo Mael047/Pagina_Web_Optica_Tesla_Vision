@@ -29,21 +29,11 @@
                 <p class="section-title">Store</p>
                 <ul>
                     <li class="active">Perfil</li>
-                    <li>Historial</li>
                 </ul>
             </nav>
         </aside>
 
         <main class="main-content">
-            <section class="profile-section">
-                <h2>Información del Usuario</h2>
-                <p id="user-name">Nombre: —</p>
-                <p id="user-email">Correo: —</p>
-                <p id="user-direccion">Dirección: —</p>
-                <p id="user-telefono">Teléfono: —</p>
-
-                <button id="logout-btn"><a href="#">Cerrar Sesión</a></button>
-            </section>
 
             <section class="historial-section">
                 <h2>Historial de Compras</h2>
@@ -52,32 +42,74 @@
                 </div>
             </section>
 
-            <form id="form-usuario">
+            <form id="form-usuario" class="profile-section">
+                <h2>Editar datos de tu cuenta</h2>
+
                 <input type="hidden" id="id" name="id">
 
-                <div>
+                <div class="form-row" style="display:flex; flex-direction:column; margin-bottom:12px;">
                     <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre">
+                    <input type="text" id="nombre" name="nombre"
+                        style="padding:8px 10px; border-radius:6px; border:1px solid #ccc; font:inherit;">
                 </div>
 
-                <div>
+                <div class="form-row" style="display:flex; flex-direction:column; margin-bottom:12px;">
                     <label for="correo">Correo</label>
-                    <input type="email" id="correo" name="correo">
+                    <input type="email" id="correo" name="correo"
+                        style="padding:8px 10px; border-radius:6px; border:1px solid #ccc; font:inherit;">
                 </div>
 
-                <div>
-                    <label for="rol">Rol</label>
-                    <input type="text" id="rol" name="rol">
+                <!-- 👉 NUEVOS CAMPOS: DIRECCIÓN Y TELÉFONO -->
+                <div class="form-row" style="display:flex; flex-direction:column; margin-bottom:12px;">
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion"
+                        style="padding:8px 10px; border-radius:6px; border:1px solid #ccc; font:inherit;">
                 </div>
 
-                <div>
+                <div class="form-row" style="display:flex; flex-direction:column; margin-bottom:16px;">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono" name="telefono"
+                        style="padding:8px 10px; border-radius:6px; border:1px solid #ccc; font:inherit;">
+                </div>
+                <!-- 👆 FIN NUEVOS CAMPOS -->
+
+                <div class="form-row" style="display:flex; flex-direction:column; margin-bottom:16px;">
                     <label for="password">Nueva contraseña (opcional)</label>
-                    <input type="password" id="password" name="password">
+                    <input type="password" id="password" name="password"
+                        style="padding:8px 10px; border-radius:6px; border:1px solid #ccc; font:inherit;">
                 </div>
 
-                <button type="submit">Guardar cambios</button>
-                <span id="respuesta"></span>
+                <button type="submit" style="
+                        background: var(--accent);
+                        color:#fff;
+                        border:none;
+                        border-radius:6px;
+                        padding:10px 16px;
+                        cursor:pointer;
+                        font-weight:600;
+                        margin-top:4px;
+                    ">
+                    Guardar cambios
+                </button>
+
+                <!-- Botón Cerrar Sesión con texto azul -->
+                <button id="logout-btn" type="button" style="
+                        margin-left:12px;
+                        background:transparent;
+                        border:1px solid #007bff;
+                        color:#007bff;
+                        border-radius:6px;
+                        padding:10px 16px;
+                        cursor:pointer;
+                        font-weight:600;
+                    ">
+                    Cerrar Sesión
+                </button>
+
+                <span id="respuesta" style="margin-left:10px; font-size:0.9rem;"></span>
             </form>
+            <!-- 🔹 FIN SEGUNDO FORM -->
+
         </main>
 
     </div>

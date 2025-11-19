@@ -13,6 +13,76 @@ function getCookie(nombre) {
 window.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("form-usuario");
     const respuestaSpan = document.getElementById("respuesta");
+    const historialList = document.getElementById("historial-list");
+
+    function renderHistorial(pedidos) {
+        if (!historialList) return;
+        historialList.innerHTML = "";
+
+        let lista = [];
+        if (Array.isArray(pedidos)) {
+            lista = pedidos;
+        } else if (typeof pedidos === "string" && pedidos.trim() !== "") {
+            try {
+                const parsed = JSON.parse(pedidos);
+                if (Array.isArray(parsed)) lista = parsed;
+            } catch (err) {
+                console.error("Pedidos no es JSON", err);
+            }
+        }
+
+        if (!lista.length) {
+            historialList.innerHTML = '<p class="vacio">No tienes compras registradas aun.</p>';
+            return;
+        }
+
+        lista.slice().reverse().forEach((orden) => {
+            const card = document.createElement("div");
+            card.className = "historial-card";
+
+            const total = Number(orden.total) || 0;
+            const totalFmt = new Intl.NumberFormat("es-ES").format(total);
+            const itemsCantidad = Array.isArray(orden.items)
+                ? orden.items.reduce((acc, it) => acc + (Number(it.cantidad) || 1), 0)
+                : 0;
+
+            const itemsDetalle = Array.isArray(orden.items)
+                ? orden.items
+                      .map((it) => {
+                          const nombre = it.nombre || "Producto";
+                          const ref = it.ref ? ` (Ref: ${it.ref})` : "";
+                          const cant = Number(it.cantidad) || 1;
+                          const precio = Number(it.precio) || 0;
+                          const subtotal = cant * precio;
+                          const subtotalFmt = new Intl.NumberFormat("es-ES").format(subtotal);
+                          return `<li>${nombre}${ref} x${cant} — $${subtotalFmt}</li>`;
+                      })
+                      .join("")
+                : "";
+
+            card.innerHTML = `
+                <div class="historial-header">
+                    <strong>#${orden.order_id || ""}</strong>
+                    <span>${orden.estado || "pagado"}</span>
+                </div>
+                <div class="historial-body">
+                    <div><small>Fecha</small><br>${orden.fecha || ""}</div>
+                    <div><small>Total</small><br>$${totalFmt}</div>
+                    <div><small>Envio</small><br>${orden.envio || ""}</div>
+                    <div><small>Items</small><br>${itemsCantidad}</div>
+                </div>
+                ${
+                    itemsDetalle
+                        ? `<div class="historial-items-wrap">
+                            <small>Detalle</small>
+                            <ul class="historial-items">${itemsDetalle}</ul>
+                           </div>`
+                        : ""
+                }
+            `;
+            historialList.appendChild(card);
+        });
+    }
 
     // 1. Leer correo desde la cookie
     const correoCookie = getCookie("user_correo");
@@ -30,12 +100,21 @@ window.addEventListener("DOMContentLoaded", () => {
                 alert("No se encontraron datos del usuario.");
                 return;
             }
-
+            document.getElementById("id").value = usuario.id || "";
+            
             // Rellenar el formulario
-            document.getElementById("id").value = usuario.id;
             document.getElementById("nombre").value = usuario.nombre || "";
             document.getElementById("correo").value = usuario.correo || "";
-            document.getElementById("rol").value = usuario.rol || "";
+
+            // Nuevos campos (no se muestra rol)
+            if (document.getElementById("direccion")) {
+                document.getElementById("direccion").value = usuario.direccion || "";
+            }
+            if (document.getElementById("telefono")) {
+                document.getElementById("telefono").value = usuario.telefono || "";
+            }
+
+            renderHistorial(usuario.pedidos || []);
         })
         .catch((err) => {
             console.error(err);
@@ -50,8 +129,9 @@ window.addEventListener("DOMContentLoaded", () => {
             id: document.getElementById("id").value,
             nombre: document.getElementById("nombre").value,
             correo: document.getElementById("correo").value,
-            rol: document.getElementById("rol").value,
-            password: document.getElementById("password").value, // opcional
+            direccion: document.getElementById("direccion") ? document.getElementById("direccion").value : "",
+            telefono: document.getElementById("telefono") ? document.getElementById("telefono").value : "",
+            password: document.getElementById("password").value, // puede estar vacío
         };
 
         fetch("api/post/actualizar_usuario.php", {
