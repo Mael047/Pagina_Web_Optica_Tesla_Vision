@@ -43,19 +43,6 @@ if ($row[0] > 0) {
     }
 }
 
-/*
-echo json_encode([
-    "status" => "success",
-    "message" => "Datos recibidos correctamente",
-    "producto" => $producto,
-    "material"=> $material,
-    "valor" => $valor,
-    "descuento"=> $descuento,
-    "referencia" => $referencia,
-    "descripcion" => $descripcion,
-    "imagen" => $imagen,
-    "categoria" => $categoria
-]);*/
 
 function guardarImagen($imagenBase64) {
     // This function is not used in the current code but can be implemented if needed

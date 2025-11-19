@@ -6,45 +6,44 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Registro - Tesla Vision</title>
 
-    <link rel="stylesheet" href="css/estilo_registro.css">
-
+    <script src="js/auth.js" defer></script>
+    <script src="js/usuario.js" defer></script>
 
 </head>
 
 <body>
 
-    <!-- BOTÓN VOLVER (esquina superior izquierda) -->
-    <a id="back-home" href="index.html" aria-label="Volver a inicio">
-        <span class="arrow">←</span>
-        <span class="txt">Volver</span>
-    </a>
+    <form id="login-form">
 
-    <main class="registro-page">
-        <div class="card-reg">
-            <div class="avatar" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="48" height="48" aria-hidden="true">
-                    <path fill="#fff" d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2c-4 0-7 2-7 4v1h14v-1c0-2-3-4-7-4z" />
-                </svg>
-            </div>
+        <label for="correo">correo</label>
+        <input type="text" id="correo" name="correo">
 
-            <h2 class="title">Crear cuenta</h2>
+        <label for="password">contraseña</label>
+        <input type="password" id="password" name="password">
 
-            <form id="register-form" class="register-form" autocomplete="on">
-                <input type="text" name="name" placeholder="Usuario/Nombre" required />
-                <input type="email" name="email" placeholder="Email" required />
-                <input type="password" name="password" placeholder="Contraseña" required />
-                <input type="text" name="direccion" placeholder="Dirección" />
-                <input type="tel" name="telefono" placeholder="Número De Teléfono" />
-                <button type="submit" class="btn-primary">Registrarse</button>
+        <button type="submit">inicia sesión</button>
 
-                <div class="small-links">
-                    <a href="inicio_sesion.html">¿Ya tienes una cuenta? Ingresar</a>
-                </div>
+    </form>
+    <span id="respuesta"></span>
 
-                <p id="register-msg" class="msg" aria-live="polite"></p>
-            </form>
-        </div>
-    </main>
+
+    <form id="form-usuario">
+        <input type="text" name="nombre" placeholder="nombre" required>
+        <input type="email" name="correo" placeholder="Correo" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <button type="submit">Registrar usuario</button>
+    </form>
+
+    <div class="icon">
+        <!-- Profile -->
+        <a href="#" class="js-open-login" aria-label="Iniciar sesión" id="acceso">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path fill="currentColor" fill-rule="evenodd"
+                    d="M8 7a4 4 0 1 1 8 0a4 4 0 0 1-8 0m0 6a5 5 0 0 0-5 5a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3a5 5 0 0 0-5-5z"
+                    clip-rule="evenodd" />
+            </svg>
+        </a>
+    </div>
 
 </body>
 

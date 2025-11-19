@@ -7,6 +7,8 @@
     <title>Perfil - Tesla Vision</title>
 
     <link rel="stylesheet" href="css/estilo_profile.css" />
+    <script src="js/auth3.js" defer></script>
+    <script src="js/profile.js" defer></script>
 </head>
 
 <body>
@@ -40,7 +42,7 @@
                 <p id="user-direccion">Dirección: —</p>
                 <p id="user-telefono">Teléfono: —</p>
 
-                <button id="logout-btn"><a href="inicio_sesion.html">Cerrar Sesión</a></button>
+                <button id="logout-btn"><a href="#">Cerrar Sesión</a></button>
             </section>
 
             <section class="historial-section">
@@ -49,6 +51,33 @@
                     <p class="vacio">No tienes compras registradas aún.</p>
                 </div>
             </section>
+
+            <form id="form-usuario">
+                <input type="hidden" id="id" name="id">
+
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                </div>
+
+                <div>
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo">
+                </div>
+
+                <div>
+                    <label for="rol">Rol</label>
+                    <input type="text" id="rol" name="rol">
+                </div>
+
+                <div>
+                    <label for="password">Nueva contraseña (opcional)</label>
+                    <input type="password" id="password" name="password">
+                </div>
+
+                <button type="submit">Guardar cambios</button>
+                <span id="respuesta"></span>
+            </form>
         </main>
 
     </div>
