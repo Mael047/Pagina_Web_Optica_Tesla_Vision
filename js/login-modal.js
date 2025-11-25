@@ -104,10 +104,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const formData = new FormData(registerForm);
 
+            // Unificar campos seg�n c�mo est�n nombrados en distintas p�ginas
+            const nombre = formData.get('nombre')
+                || formData.get('name')
+                || formData.get('name-reg')
+                || '';
+            const correo = formData.get('correo')
+                || formData.get('email')
+                || formData.get('correo-reg')
+                || '';
+            const password = formData.get('password')
+                || formData.get('password-reg')
+                || '';
+
             const payload = {
-                usuario: formData.get('name-reg'),     // <input name="name">
-                correo: formData.get('correo-reg'),     // <input name="email">
-                password: formData.get('password-reg') // <input name="password">
+                nombre,
+                correo,
+                password,
+                rol: 'cliente'
             };
 
             try {
@@ -123,10 +137,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log(result);
 
                 if (msg) {
-                    msg.textContent = result.mensaje || '';
+                    msg.textContent = result.mensaje || 'Registro enviado.';
                 }
 
                 if (result.status === "success") {
+                    registerForm.reset();
                     setTimeout(() => {
                         if (msg) msg.textContent = '';
                         // cerrar registro y abrir login

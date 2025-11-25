@@ -26,10 +26,8 @@ function ajaxPostUsuario(url, dataObjeto) {
                 responseServerUsuario(xhr.responseText);
             } else {
                 console.error("Error en la solicitud:", xhr.status, xhr.statusText);
-                const span = document.getElementById("respuesta-usuario");
-                if (span) {
-                    span.textContent = "Error en la solicitud al servidor.";
-                }
+        const span = document.getElementById("respuesta-usuario") || document.getElementById("register-msg");
+        if (span) span.textContent = "Error en la solicitud al servidor.";
             }
         }
     };
@@ -55,10 +53,8 @@ function responseServerUsuario(response) {
 
     console.log("Respuesta de usuario.php:", jsonResponse);
 
-    const span = document.getElementById("respuesta-usuario");
-    if (span) {
-        span.textContent = jsonResponse.mensaje || "";
-    }
+    const span = document.getElementById("respuesta-usuario") || document.getElementById("register-msg");
+    if (span) span.textContent = jsonResponse.mensaje || "";
 
     // Si quieres limpiar el formulario cuando todo sale bien:
     if (jsonResponse.status === "success") {
