@@ -214,7 +214,7 @@ function responseServerGet(response) {
         texto.textContent =
             `${producto.nombre} - ${producto.referencia} - ${producto.categoria}`;
 
-        // Botón EDITAR
+        // Boton EDITAR
         const btnEdit = document.createElement("button");
         btnEdit.textContent = "Editar";
         btnEdit.className = "btnEdit";
@@ -222,7 +222,7 @@ function responseServerGet(response) {
             cargarProductoEnFormulario(producto);
         };
 
-        // Botón ELIMINAR
+        // Boton ELIMINAR
         const btnDelete = document.createElement("button");
         btnDelete.textContent = "Eliminar";
         btnDelete.className = "btnDelete";
@@ -235,6 +235,10 @@ function responseServerGet(response) {
         li.appendChild(btnDelete);
         productosList.appendChild(li);
     });
+
+    if (typeof updateAdminEmptyState === "function") {
+        updateAdminEmptyState();
+    }
 }
 
 // ----- LLENAR FORMULARIO PARA EDITAR -----
@@ -257,17 +261,23 @@ function cargarProductoEnFormulario(producto) {
     if (campoDesc) campoDesc.value = producto.descripcion || "";
     if (refOriginal) refOriginal.value = producto.referencia || "";
 
-    // Mostrar imágenes actuales (si existen en BD)
+    // Mostrar imagenes actuales (si existen en BD)
     mostrarPreviewExistente("preview1", producto.imagen);
     mostrarPreviewExistente("preview2", producto.imagen2);
     mostrarPreviewExistente("preview3", producto.imagen3);
 
-    // Mostrar el formulario si lo tenías oculto
+    // Mostrar el formulario si estaba oculto
     const formSection = document.querySelector(".product-form");
-    if (formSection) {
+    if (typeof showAdminForm === "function") {
+        showAdminForm();
+    } else if (formSection) {
+        formSection.classList.remove("hidden");
         formSection.classList.add("visible");
+        const emptyState = document.querySelector(".empty-state");
+        if (emptyState) emptyState.style.display = "none";
     }
 }
+
 
 // ----- ELIMINAR PRODUCTO -----
 function eliminarProducto(referencia) {

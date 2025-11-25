@@ -95,7 +95,7 @@ body {
 }
 .btn-eliminar:hover { transform: translateY(-2px); box-shadow: 0 6px 12px rgba(185, 28, 28, 0.18); }
 
-/* versión móvil de fila (oculta en desktop) */
+/* versiÃ³n mÃ³vil de fila (oculta en desktop) */
 .row-movil { display: none; }
 
 /* ======= LAYOUT PRINCIPAL: dos columnas ======= */
@@ -110,7 +110,7 @@ body {
 }
 
 
-/* izquierda más ancha */
+/* izquierda mÃ¡s ancha */
 .carrito-container { flex: 3; }
 
 /* derecha: resumen y botones agrupados en un aside */
@@ -120,6 +120,7 @@ body {
   flex-direction: column;
   align-items: flex-end;
 }
+
 
 /* ======== RECUADRO DE RESUMEN ======== */
 .resumen-orden {
@@ -136,12 +137,39 @@ body {
   border-radius: 16px;
   box-shadow: var(--shadow);
 }
-.resumen-orden h3 { font-weight: 800; margin: 0 0 8px 0; color: #0f172a; letter-spacing: 0.3px; }
-.resumen-orden hr { border: none; border-top: 1px solid var(--border); width: 100%; margin: 12px 0; }
-.resumen-opciones { display: flex; flex-direction: column; gap: 12px; width: 100%; align-items: center; }
-.resumen-opciones label { display: flex; justify-content: space-between; width: 90%; font-size: 14px; color: #111827; }
+.resumen-orden h3 {
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  color: #0f172a;
+  letter-spacing: 0.3px;
+}
+.resumen-orden hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  width: 100%;
+  margin: 12px 0;
+}
+.resumen-opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  align-items: center;
+}
+.resumen-opciones label {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  font-size: 14px;
+  color: #111827;
+}
 .resumen-opciones input { accent-color: var(--accent); }
-.resumen-total { font-weight: 900; font-size: 1.05rem; margin-top: 8px; color: #0f172a; }
+.resumen-total {
+  font-weight: 900;
+  font-size: 1.05rem;
+  margin-top: 8px;
+  color: #0f172a;
+}
 
 /* ======== BOTONES (desktop dentro de aside) ======== */
 .botones-carrito {
@@ -169,43 +197,16 @@ body {
   text-align: center;
   box-shadow: 0 10px 22px rgba(74, 102, 163, 0.25);
 }
-.botones-carrito button:hover { background: #3b507f; transform: translateY(-2px); box-shadow: 0 12px 26px rgba(74, 102, 163, 0.3); opacity: 0.96; }
-
-/* ======== RECUADRO DE ASESORÍA (columna izquierda, debajo de la tabla) ======== */
-.asesoria-box {
- display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 40px;
+.botones-carrito button:hover {
+  background: #3b507f;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(74, 102, 163, 0.3);
+  opacity: 0.96;
 }
-.asesoria-box label { font-weight: 700; margin-bottom: 10px; text-align: center; color: #0f172a; }
-.asesoria-box textarea {
-  width: 90%;
-  max-width: 550px;
-  height: 70px;
-  border-radius: 10px;
-  border: 1px solid var(--border);
-  padding: 12px;
-  resize: none;
-  margin-bottom: 10px;
-  box-shadow: inset 0 1px 3px rgba(15, 23, 42, 0.05);
-}
-.btn-enviar {
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  border-radius: 12px;
-  padding: 9px 18px;
-  cursor: pointer;
-  font-weight: 800;
-  letter-spacing: 0.2px;
-  box-shadow: 0 8px 18px rgba(74, 102, 163, 0.25);
-}
-.btn-enviar:hover { background: #3b507f; transform: translateY(-1px); }
 
 /* ======== OCULTAR/ MOSTRAR BOTONES POR DISPOSITIVO ======== */
 /* .botones-desktop: dentro del aside (se muestra en desktop).
-   .botones-mobile: dentro de carrito-container (se muestra en móvil). */
+   .botones-mobile: dentro de carrito-container (se muestra en mÃ³vil). */
 .botones-desktop { display: flex; }   /* visible por defecto (desktop) */
 .botones-mobile { display: none; }    /* hidden desktop */
 
@@ -239,22 +240,20 @@ body {
   }
 
 
-  /* mostrar botones móviles y ocultar los del aside */
+  /* mostrar botones mÃ³viles y ocultar los del aside */
   .botones-desktop { display: none; }
   .botones-mobile { display: flex; margin: 10px 0 30px 0; width: 100%; max-width: 480px; align-items: center; }
 
-  /* dentro de carrito, los botones móviles ocuparán 70% y centrados */
+  /* dentro de carrito, los botones mÃ³viles ocuparÃ¡n 70% y centrados */
   .botones-mobile button {
     width: 70%;
     max-width: 360px;
     margin: 0 auto;
   }
 
-  /* asesoría debajo de botones móviles (ya está en DOM antes que aside, así que queda: tabla -> asesoría -> botones-mobile -> resumen) */
-  .asesoria-box { width: 100%; max-width: 640px; min-width: auto; }
 }
 
-/* ======== Responsive tabla (móvil) ======== */
+/* ======== Responsive tabla (mÃ³vil) ======== */
 @media (max-width: 750px) {
   .carrito-encabezado { display: none; }
   

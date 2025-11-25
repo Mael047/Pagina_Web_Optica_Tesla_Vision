@@ -48,15 +48,39 @@ function renderProducto(p) {
     if (refEl) refEl.textContent = 'Referencia: ' + (p.referencia || '');
     if (matEl) matEl.textContent = 'Material: ' + (p.material || '');
 
-    // ===== IMAGEN PRINCIPAL DEL CARRUSEL (SOLO LA PRIMERA) =====
+    // ===== IM�?GENES DEL CARRUSEL =====
     const imgs = document.querySelectorAll('.carrusel .img');
-    if (imgs[0] && p.imagen) { imgs[0].src = 'imagenes/' + p.imagen; imgs[0].alt = p.nombre || 'Producto'; }
-    if (imgs[1] && p.imagen2) { imgs[1].src = 'imagenes/' + p.imagen2; imgs[1].alt = p.nombre || 'Producto'; }
-    if (imgs[2] && p.imagen3) { imgs[2].src = 'imagenes/' + p.imagen3; imgs[2].alt = p.nombre || 'Producto'; }
 
-    // si faltan imagen2/3, puedes reutilizar la primera:
-    if (imgs[1] && !p.imagen2 && p.imagen) imgs[1].src = 'imagenes/' + p.imagen;
-    if (imgs[2] && !p.imagen3 && p.imagen) imgs[2].src = 'imagenes/' + p.imagen;
+    const esImagenValida = (nombre) => {
+        const val = (nombre || '').trim();
+        if (!val) return false;
+        const low = val.toLowerCase();
+        // Evitar textos devueltos por el backend como "No se recibio ninguna imagen"
+        if (low.includes('no se recibi') || low.includes('ninguna imagen')) return false;
+        return true;
+    };
+
+    const fuentesBase = [p.imagen, p.imagen2, p.imagen3].filter(esImagenValida);
+
+    if (!fuentesBase.length) {
+        return; // sin fuentes válidas, no forzamos src para evitar 404
+    }
+
+    let fuentes = [];
+    if (fuentesBase.length === 1) {
+        fuentes = [fuentesBase[0], fuentesBase[0], fuentesBase[0]];
+    } else if (fuentesBase.length === 2) {
+        fuentes = [fuentesBase[0], fuentesBase[1], fuentesBase[1]];
+    } else {
+        fuentes = fuentesBase;
+    }
+
+    imgs.forEach((imgEl, idx) => {
+        const src = fuentes[idx] || fuentes[0];
+        if (!imgEl || !src) return;
+        imgEl.src = 'imagenes/' + src;
+        imgEl.alt = p.nombre || 'Producto';
+    });
 
     // ===== PRECIO =====
     if (precioEl) {

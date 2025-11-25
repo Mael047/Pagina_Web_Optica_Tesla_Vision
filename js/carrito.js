@@ -12,31 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const btnEnviar = document.querySelector(".btn-enviar");
-    const textarea = document.getElementById("asesoria");
-
-    if (btnEnviar && textarea) {
-        btnEnviar.addEventListener("click", function () {
-            const mensaje = textarea.value.trim();
-
-            if (mensaje !== "") {
-                textarea.value = "";
-
-                const aviso = document.createElement("p");
-                aviso.textContent = "Tu mensaje fue enviado correctamente.";
-                aviso.style.color = "#4a66a3";
-                aviso.style.marginTop = "8px";
-                aviso.style.fontWeight = "600";
-
-                btnEnviar.parentNode.appendChild(aviso);
-
-                setTimeout(() => aviso.remove(), 2000);
-            }
-        });
-    }
-});
-
 
 /* -------------------- agregar al carrito + badge (desde producto.html) -------------------- */
 document.addEventListener("DOMContentLoaded", () => {

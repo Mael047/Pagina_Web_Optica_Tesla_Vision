@@ -8,48 +8,61 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!btnAdd || !productForm) return;
 
+    const hasProducts = () => {
+        const list = document.getElementById("productos");
+        return !!(list && list.children.length > 0);
+    };
+
+    const updateEmptyStateVisibility = () => {
+        if (!emptyState) return;
+        emptyState.style.display = hasProducts() ? "none" : "block";
+    };
+
     function showForm() {
-        // ocultar estado vacío y divider
         if (emptyState) emptyState.style.display = "none";
         if (divider) divider.style.display = "none";
 
-        // mostrar formulario
-        productForm.classList.add("visible");
         productForm.classList.remove("hidden");
+        productForm.classList.add("visible");
 
-        // desplazar suavemente al formulario (si la pantalla es pequeña)
         productForm.scrollIntoView({ behavior: "smooth", block: "start" });
 
-        // poner foco en el primer input
         const firstInput = productForm.querySelector("input, textarea, select");
         if (firstInput) firstInput.focus();
     }
 
     function hideForm() {
-        // ocultar formulario
         productForm.classList.remove("visible");
         productForm.classList.add("hidden");
 
-        // mostrar estado vacío y divider de nuevo
-        if (emptyState) emptyState.style.display = "";
+        updateEmptyStateVisibility();
         if (divider) divider.style.display = "";
 
-        // opcional: desplazar hacia arriba
         window.scrollTo({ top: 0, behavior: "smooth" });
     }
 
     btnAdd.addEventListener("click", (e) => {
         e.preventDefault();
+        if (typeof limpiarFormulario === "function") {
+            limpiarFormulario();
+        }
         showForm();
     });
 
     if (btnCancel) {
         btnCancel.addEventListener("click", (e) => {
             e.preventDefault();
+            if (typeof limpiarFormulario === "function") {
+                limpiarFormulario();
+            }
             hideForm();
         });
     }
 
-    // Si quieres que el formulario se quede visible después de recargar (stateful),
-    // podrías leer un flag en sessionStorage/localStorage aquí y llamar a showForm().
+    // Expose helpers for other scripts (e.g., editing a product)
+    window.showAdminForm = showForm;
+    window.hideAdminForm = hideForm;
+    window.updateAdminEmptyState = updateEmptyStateVisibility;
+
+    updateEmptyStateVisibility();
 });
