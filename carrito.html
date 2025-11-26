@@ -17,6 +17,7 @@
   <script src="js/carrito.js" defer></script>
   <script src="js/login-modal.js" defer></script>
   <script src="js/auth.js" defer></script>
+  <script src="js/usuario.js" defer></script>
 
   <title>Carrito</title>
 </head>
@@ -139,13 +140,6 @@
         </div>
       </div>
 
-      <!-- ===== RECUADRO DE ASESORÍA (debajo de la tabla, columna izquierda) ===== -->
-      <div class="asesoria-box">
-        <label for="asesoria">Asesoría En Caso De Examen</label>
-        <textarea id="asesoria" placeholder="Escribe tus comentarios..."></textarea>
-        <button class="btn-enviar">Enviar</button>
-      </div>
-
       <!-- ===== BOTONES ===== -->
       <div class="botones-carrito botones-mobile">
         <button class="btn-seguir">Seguir Comprando</button>
@@ -161,11 +155,11 @@
         <div class="resumen-opciones">
           <label>
             Envío
-            <input type="checkbox" name="metodo" value="envio" onclick="seleccionarSolo(this)">
+            <input type="checkbox" name="metodo" value="envio">
           </label>
           <label>
             Reclamar En Tienda
-            <input type="checkbox" name="metodo" value="tienda" onclick="seleccionarSolo(this)">
+            <input type="checkbox" name="metodo" value="tienda">
           </label>
         </div>
         <hr />
@@ -245,46 +239,41 @@
 
   <!-- MODAL REGISTRO -->
   <div class="login-overlay" id="register-overlay">
-    <div class="login-modal registro-modal">
-      <button class="login-close js-close-register" aria-label="Cerrar registro">×</button>
+        <div class="login-modal registro-modal">
+            <button class="login-close js-close-register" aria-label="Cerrar registro">×</button>
 
-      <div class="login-header">
-        <h2>Crear cuenta</h2>
-        <p>Regístrate para guardar tus datos y compras.</p>
-      </div>
+            <div class="login-header">
+                <h2>Crear cuenta</h2>
+                <p>Regístrate para guardar tus datos y compras.</p>
+            </div>
 
-      <form id="register-form" class="register-form" autocomplete="on">
-        <div class="login-field">
-          <label for="reg-name">Usuario / Nombre</label>
-          <input type="text" id="reg-name" name="name" placeholder="Usuario/Nombre" required />
+            <form id="form-usuario" class="register-form" autocomplete="on">
+                <div class="login-field">
+                    <label for="reg-name">Usuario / Nombre</label>
+                    <input type="text"  name="nombre" placeholder="Usuario/Nombre" required />
+                </div>
+
+                <div class="login-field">
+                    <label for="reg-email">Correo electrónico</label>
+                    <input type="email" name="correo" placeholder="Correo electrónico" required />
+
+                <div class="login-field">
+                    <label for="reg-pass">Contraseña</label>
+                    <input type="password" name="password" placeholder="Contraseña" required />
+                </div>
+
+
+                <button type="submit" class="login-submit">Registrarse</button>
+
+                <p class="login-help">
+                    ¿Ya tienes una cuenta?
+                    <a href="#" class="js-back-to-login">Ingresar</a>
+                </p>
+
+                <p id="register-msg" class="msg" aria-live="polite"></p>
+            </form>
         </div>
-
-        <div class="login-field">
-          <label for="reg-email">Correo electrónico</label>
-          <input type="email" id="reg-email" name="email" placeholder="Email" required />
-        </div>
-
-        <div class="login-field">
-          <label for="reg-pass">Contraseña</label>
-          <input type="password" id="reg-pass" name="password" placeholder="Contraseña" required />
-        </div>
-
-        <div class="login-field">
-          <label for="reg-phone">Número de teléfono (opcional)</label>
-          <input type="tel" id="reg-phone" name="telefono" placeholder="Número De Teléfono" />
-        </div>
-
-        <button type="submit" class="login-submit">Registrarse</button>
-
-        <p class="login-help">
-          ¿Ya tienes una cuenta?
-          <a href="#" class="js-back-to-login">Ingresar</a>
-        </p>
-
-        <p id="register-msg" class="msg" aria-live="polite"></p>
-      </form>
     </div>
-  </div>
   <!-- FIN MODAL REGISTRO -->
 
   <!-- MODAL CHECKOUT PAGO -->
