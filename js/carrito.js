@@ -125,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const dataDescuento = precioEl.dataset ? precioEl.dataset.descuento : null;
             const dataPrecio = precioEl.dataset ? precioEl.dataset.precio : null;
 
-            let raw = precioEl.textContent; // valor por defecto: lo que se ve en pantalla
+            let raw = precioEl.textContent; // valor por defecto
 
             const numDescuento = dataDescuento !== undefined && dataDescuento !== null
                 ? Number(dataDescuento)
@@ -148,7 +148,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const imagen = imagenEl ? (imagenEl.src || imagenEl.getAttribute("src")) : "";
 
-        // Crear objeto producto (AHORA incluyendo material)
+        // Crear objeto producto
         const producto = { nombre, ref, material, precio, imagen, cantidad: 1 };
 
         const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
