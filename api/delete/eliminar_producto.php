@@ -1,41 +1,38 @@
 <?php
 header("Content-Type: application/json");
-include_once("../conexion.php");
+include_once "../conexion_pg.php";
 
 $data = json_decode(file_get_contents("php://input"), true);
 $referencia = $data["referencia"] ?? "";
 
 if (!$referencia) {
-    echo json_encode([
-        "mensaje" => "Referencia de producto no válida"
-    ]);
+    echo json_encode(["mensaje" => "Referencia de producto no válida"]);
     exit;
 }
 
-// 1) Buscar la imagen asociada para borrarla del disco
-$sqlImg = "SELECT imagen FROM productos WHERE referencia = '$referencia'";
-$resImg = $conn->query($sqlImg);
-
-if ($resImg && $resImg->num_rows > 0) {
-    $row = $resImg->fetch_assoc();
-    $fileName = $row["imagen"];
-
-    $filePath = __DIR__ . '/../../imagenes/' . $fileName;
-
-    if (is_file($filePath)) {
-        @unlink($filePath);
+try {
+    $conn = getConnection();
+    
+    $stmt = $conn->prepare("SELECT imagen, imagen2, imagen3 FROM productos WHERE referencia = :ref");
+    $stmt->execute(['ref' => $referencia]);
+    $producto = $stmt->fetch();
+    
+    if ($producto) {
+        foreach (['imagen', 'imagen2', 'imagen3'] as $imgField) {
+            if (!empty($producto[$imgField])) {
+                $filePath = __DIR__ . '/../../imagenes/' . $producto[$imgField];
+                if (is_file($filePath)) {
+                    @unlink($filePath);
+                }
+            }
+        }
     }
+    
+    $stmt = $conn->prepare("DELETE FROM productos WHERE referencia = :ref");
+    $stmt->execute(['ref' => $referencia]);
+    
+    echo json_encode(["mensaje" => "Producto eliminado correctamente"]);
+} catch (PDOException $e) {
+    echo json_encode(["mensaje" => "Error al eliminar el producto"]);
 }
-
-// 2) Borrar el registro de la BD
-$sql = "DELETE FROM productos WHERE referencia = '$referencia'";
-
-if ($conn->query($sql) === TRUE) {
-    echo json_encode([
-        "mensaje" => "Producto eliminado correctamente"
-    ]);
-} else {
-    echo json_encode([
-        "mensaje" => "Error al eliminar: " . $conn->error
-    ]);
-}
+?>

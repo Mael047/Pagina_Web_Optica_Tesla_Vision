@@ -1,0 +1,2953 @@
+[Wed Apr 15 20:21:38 2026] PHP 8.0.30 Development Server (http://localhost:8000) started
+[Wed Apr 15 20:25:56 2026] [::1]:52151 Accepted
+[Wed Apr 15 20:25:56 2026] [::1]:52152 Accepted
+[Wed Apr 15 20:25:56 2026] [::1]:52151 [200]: GET /
+[Wed Apr 15 20:25:56 2026] [::1]:52151 Closing
+[Wed Apr 15 20:25:56 2026] [::1]:52152 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:25:56 2026] [::1]:52152 Closing
+[Wed Apr 15 20:25:56 2026] [::1]:52161 Accepted
+[Wed Apr 15 20:25:56 2026] [::1]:52162 Accepted
+[Wed Apr 15 20:25:56 2026] [::1]:52161 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:25:56 2026] [::1]:52165 Accepted
+[Wed Apr 15 20:25:56 2026] [::1]:52162 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:25:56 2026] [::1]:52166 Accepted
+[Wed Apr 15 20:25:56 2026] [::1]:52165 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:25:56 2026] [::1]:52167 Accepted
+[Wed Apr 15 20:25:56 2026] [::1]:52166 [200]: GET /img/logo.png
+[Wed Apr 15 20:25:56 2026] [::1]:52161 Closing
+[Wed Apr 15 20:25:56 2026] [::1]:52169 Accepted
+[Wed Apr 15 20:25:56 2026] [::1]:52167 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:25:56 2026] [::1]:52162 Closing
+[Wed Apr 15 20:25:56 2026] [::1]:52173 Accepted
+[Wed Apr 15 20:25:56 2026] [::1]:52169 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:25:56 2026] [::1]:52165 Closing
+[Wed Apr 15 20:25:56 2026] [::1]:52174 Accepted
+[Wed Apr 15 20:25:56 2026] [::1]:52173 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:25:56 2026] [::1]:52166 Closing
+[Wed Apr 15 20:25:56 2026] [::1]:52175 Accepted
+[Wed Apr 15 20:25:56 2026] [::1]:52174 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:25:56 2026] [::1]:52167 Closing
+[Wed Apr 15 20:25:56 2026] [::1]:52176 Accepted
+[Wed Apr 15 20:25:56 2026] [::1]:52175 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:25:56 2026] [::1]:52177 Accepted
+[Wed Apr 15 20:25:56 2026] [::1]:52176 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:25:56 2026] [::1]:52169 Closing
+[Wed Apr 15 20:25:56 2026] [::1]:52178 Accepted
+[Wed Apr 15 20:25:56 2026] [::1]:52177 [200]: GET /js/auth.js
+[Wed Apr 15 20:25:56 2026] [::1]:52173 Closing
+[Wed Apr 15 20:25:56 2026] [::1]:52179 Accepted
+[Wed Apr 15 20:25:56 2026] [::1]:52178 [200]: GET /js/usuario.js
+[Wed Apr 15 20:25:56 2026] [::1]:52175 Closing
+[Wed Apr 15 20:25:56 2026] [::1]:52180 Accepted
+[Wed Apr 15 20:25:56 2026] [::1]:52179 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:25:56 2026] [::1]:52176 Closing
+[Wed Apr 15 20:25:56 2026] [::1]:52181 Accepted
+[Wed Apr 15 20:25:56 2026] [::1]:52180 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:25:56 2026] [::1]:52174 Closing
+[Wed Apr 15 20:25:56 2026] [::1]:52177 Closing
+[Wed Apr 15 20:25:56 2026] [::1]:52181 [200]: GET /img/loguito.png
+[Wed Apr 15 20:25:56 2026] [::1]:52178 Closing
+[Wed Apr 15 20:25:56 2026] [::1]:52182 Accepted
+[Wed Apr 15 20:25:56 2026] [::1]:52182 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:25:56 2026] [::1]:52179 Closing
+[Wed Apr 15 20:25:56 2026] [::1]:52180 Closing
+[Wed Apr 15 20:25:56 2026] [::1]:52181 Closing
+[Wed Apr 15 20:25:56 2026] [::1]:52182 Closing
+[Wed Apr 15 20:25:57 2026] [::1]:52187 Accepted
+[Wed Apr 15 20:25:57 2026] [::1]:52187 [404]: GET /favicon.ico - No such file or directory
+[Wed Apr 15 20:25:57 2026] [::1]:52187 Closing
+[Wed Apr 15 20:26:27 2026] [::1]:52206 Accepted
+[Wed Apr 15 20:26:27 2026] [::1]:52206 [200]: POST /api/auth/auth.php
+[Wed Apr 15 20:26:27 2026] [::1]:52206 Closing
+[Wed Apr 15 20:26:28 2026] [::1]:52210 Accepted
+[Wed Apr 15 20:26:28 2026] [::1]:52210 [200]: POST /api/auth/auth.php
+[Wed Apr 15 20:26:28 2026] [::1]:52210 Closing
+[Wed Apr 15 20:26:44 2026] [::1]:52222 Accepted
+[Wed Apr 15 20:26:44 2026] [::1]:52222 [200]: POST /api/auth/auth.php
+[Wed Apr 15 20:26:44 2026] [::1]:52222 Closing
+[Wed Apr 15 20:26:45 2026] [::1]:52224 Accepted
+[Wed Apr 15 20:26:45 2026] [::1]:52224 [200]: POST /api/auth/auth.php
+[Wed Apr 15 20:26:45 2026] [::1]:52224 Closing
+[Wed Apr 15 20:26:45 2026] [::1]:52226 Accepted
+[Wed Apr 15 20:26:45 2026] [::1]:52226 [200]: POST /api/auth/auth.php
+[Wed Apr 15 20:26:45 2026] [::1]:52226 Closing
+[Wed Apr 15 20:27:16 2026] [::1]:52257 Accepted
+[Wed Apr 15 20:27:16 2026] [::1]:52257 [200]: POST /api/auth/auth.php
+[Wed Apr 15 20:27:16 2026] [::1]:52257 Closing
+[Wed Apr 15 20:27:16 2026] [::1]:52263 Accepted
+[Wed Apr 15 20:27:16 2026] [::1]:52264 Accepted
+[Wed Apr 15 20:27:16 2026] [::1]:52263 [200]: GET /
+[Wed Apr 15 20:27:16 2026] [::1]:52263 Closing
+[Wed Apr 15 20:27:17 2026] [::1]:52264 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:27:17 2026] [::1]:52264 Closing
+[Wed Apr 15 20:27:17 2026] [::1]:52270 Accepted
+[Wed Apr 15 20:27:17 2026] [::1]:52270 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:27:17 2026] [::1]:52270 Closing
+[Wed Apr 15 20:27:17 2026] [::1]:52271 Accepted
+[Wed Apr 15 20:27:17 2026] [::1]:52272 Accepted
+[Wed Apr 15 20:27:17 2026] [::1]:52271 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:27:17 2026] [::1]:52271 Closing
+[Wed Apr 15 20:27:17 2026] [::1]:52273 Accepted
+[Wed Apr 15 20:27:17 2026] [::1]:52272 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:27:17 2026] [::1]:52273 [200]: GET /img/logo.png
+[Wed Apr 15 20:27:17 2026] [::1]:52272 Closing
+[Wed Apr 15 20:27:17 2026] [::1]:52273 Closing
+[Wed Apr 15 20:27:17 2026] [::1]:52274 Accepted
+[Wed Apr 15 20:27:17 2026] [::1]:52275 Accepted
+[Wed Apr 15 20:27:17 2026] [::1]:52274 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:27:17 2026] [::1]:52275 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:27:17 2026] [::1]:52276 Accepted
+[Wed Apr 15 20:27:17 2026] [::1]:52277 Accepted
+[Wed Apr 15 20:27:17 2026] [::1]:52274 Closing
+[Wed Apr 15 20:27:17 2026] [::1]:52276 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:27:17 2026] [::1]:52277 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:27:17 2026] [::1]:52275 Closing
+[Wed Apr 15 20:27:17 2026] [::1]:52278 Accepted
+[Wed Apr 15 20:27:17 2026] [::1]:52278 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:27:17 2026] [::1]:52276 Closing
+[Wed Apr 15 20:27:17 2026] [::1]:52279 Accepted
+[Wed Apr 15 20:27:17 2026] [::1]:52279 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:27:17 2026] [::1]:52277 Closing
+[Wed Apr 15 20:27:17 2026] [::1]:52278 Closing
+[Wed Apr 15 20:27:17 2026] [::1]:52279 Closing
+[Wed Apr 15 20:27:17 2026] [::1]:52280 Accepted
+[Wed Apr 15 20:27:17 2026] [::1]:52281 Accepted
+[Wed Apr 15 20:27:17 2026] [::1]:52280 [200]: GET /js/auth.js
+[Wed Apr 15 20:27:17 2026] [::1]:52281 [200]: GET /js/usuario.js
+[Wed Apr 15 20:27:17 2026] [::1]:52280 Closing
+[Wed Apr 15 20:27:17 2026] [::1]:52281 Closing
+[Wed Apr 15 20:27:17 2026] [::1]:52282 Accepted
+[Wed Apr 15 20:27:17 2026] [::1]:52283 Accepted
+[Wed Apr 15 20:27:17 2026] [::1]:52284 Accepted
+[Wed Apr 15 20:27:17 2026] [::1]:52282 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:27:17 2026] [::1]:52283 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:27:17 2026] [::1]:52284 [200]: GET /img/loguito.png
+[Wed Apr 15 20:27:17 2026] [::1]:52282 Closing
+[Wed Apr 15 20:27:17 2026] [::1]:52285 Accepted
+[Wed Apr 15 20:27:17 2026] [::1]:52284 Closing
+[Wed Apr 15 20:27:17 2026] [::1]:52285 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:27:17 2026] [::1]:52283 Closing
+[Wed Apr 15 20:27:17 2026] [::1]:52285 Closing
+[Wed Apr 15 20:27:21 2026] [::1]:52287 Accepted
+[Wed Apr 15 20:27:21 2026] [::1]:52287 [200]: POST /api/auth/auth.php
+[Wed Apr 15 20:27:21 2026] [::1]:52287 Closing
+[Wed Apr 15 20:27:21 2026] [::1]:52289 Accepted
+[Wed Apr 15 20:27:21 2026] [::1]:52289 [200]: POST /api/auth/auth.php
+[Wed Apr 15 20:27:21 2026] [::1]:52289 Closing
+[Wed Apr 15 20:27:21 2026] [::1]:52291 Accepted
+[Wed Apr 15 20:27:21 2026] [::1]:52291 [200]: POST /api/auth/auth.php
+[Wed Apr 15 20:27:21 2026] [::1]:52291 Closing
+[Wed Apr 15 20:27:22 2026] [::1]:52293 Accepted
+[Wed Apr 15 20:27:22 2026] [::1]:52293 [200]: POST /api/auth/auth.php
+[Wed Apr 15 20:27:22 2026] [::1]:52293 Closing
+[Wed Apr 15 20:27:22 2026] [::1]:52295 Accepted
+[Wed Apr 15 20:27:22 2026] [::1]:52295 [200]: POST /api/auth/auth.php
+[Wed Apr 15 20:27:22 2026] [::1]:52295 Closing
+[Wed Apr 15 20:28:22 2026] [::1]:52315 Accepted
+[Wed Apr 15 20:28:22 2026] [::1]:52315 [200]: POST /api/auth/auth.php
+[Wed Apr 15 20:28:22 2026] [::1]:52315 Closing
+[Wed Apr 15 20:28:22 2026] [::1]:52317 Accepted
+[Wed Apr 15 20:28:22 2026] [::1]:52317 [200]: POST /api/auth/auth.php
+[Wed Apr 15 20:28:22 2026] [::1]:52317 Closing
+[Wed Apr 15 20:28:22 2026] [::1]:52319 Accepted
+[Wed Apr 15 20:28:22 2026] [::1]:52319 [200]: POST /api/auth/auth.php
+[Wed Apr 15 20:28:22 2026] [::1]:52319 Closing
+[Wed Apr 15 20:28:36 2026] [::1]:52323 Accepted
+[Wed Apr 15 20:28:36 2026] [::1]:52323 [200]: GET /test_connection.php
+[Wed Apr 15 20:28:36 2026] [::1]:52323 Closing
+[Wed Apr 15 20:28:47 2026] [::1]:52327 Accepted
+[Wed Apr 15 20:28:47 2026] [::1]:52327 [200]: GET /test_login.php
+[Wed Apr 15 20:28:47 2026] [::1]:52327 Closing
+[Wed Apr 15 20:29:00 2026] [::1]:52330 Accepted
+[Wed Apr 15 20:29:00 2026] [::1]:52330 [200]: GET /test_login.php
+[Wed Apr 15 20:29:00 2026] [::1]:52330 Closing
+[Wed Apr 15 20:29:08 2026] [::1]:52335 Accepted
+[Wed Apr 15 20:29:09 2026] [::1]:52335 [200]: POST /api/post/usuario.php
+[Wed Apr 15 20:29:09 2026] [::1]:52335 Closing
+[Wed Apr 15 20:29:17 2026] [::1]:52339 Accepted
+[Wed Apr 15 20:29:17 2026] [::1]:52339 [200]: POST /api/post/usuario.php
+[Wed Apr 15 20:29:17 2026] [::1]:52339 Closing
+[Wed Apr 15 20:29:20 2026] [::1]:52344 Accepted
+[Wed Apr 15 20:29:20 2026] [::1]:52344 [200]: GET /test_login.php
+[Wed Apr 15 20:29:20 2026] [::1]:52344 Closing
+[Wed Apr 15 20:29:28 2026] [::1]:52347 Accepted
+[Wed Apr 15 20:29:29 2026] [::1]:52347 [200]: POST /api/auth/auth.php
+[Wed Apr 15 20:29:29 2026] [::1]:52347 Closing
+[Wed Apr 15 20:29:39 2026] [::1]:52373 Accepted
+[Wed Apr 15 20:29:39 2026] [::1]:52374 Accepted
+[Wed Apr 15 20:29:39 2026] [::1]:52373 [200]: GET /
+[Wed Apr 15 20:29:39 2026] [::1]:52373 Closing
+[Wed Apr 15 20:29:39 2026] [::1]:52374 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:29:39 2026] [::1]:52374 Closing
+[Wed Apr 15 20:29:39 2026] [::1]:52387 Accepted
+[Wed Apr 15 20:29:39 2026] [::1]:52387 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:29:39 2026] [::1]:52387 Closing
+[Wed Apr 15 20:29:39 2026] [::1]:52388 Accepted
+[Wed Apr 15 20:29:39 2026] [::1]:52389 Accepted
+[Wed Apr 15 20:29:39 2026] [::1]:52388 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:29:39 2026] [::1]:52389 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:29:39 2026] [::1]:52388 Closing
+[Wed Apr 15 20:29:39 2026] [::1]:52389 Closing
+[Wed Apr 15 20:29:39 2026] [::1]:52390 Accepted
+[Wed Apr 15 20:29:39 2026] [::1]:52391 Accepted
+[Wed Apr 15 20:29:39 2026] [::1]:52390 [200]: GET /img/logo.png
+[Wed Apr 15 20:29:39 2026] [::1]:52391 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:29:39 2026] [::1]:52390 Closing
+[Wed Apr 15 20:29:39 2026] [::1]:52391 Closing
+[Wed Apr 15 20:29:39 2026] [::1]:52392 Accepted
+[Wed Apr 15 20:29:39 2026] [::1]:52393 Accepted
+[Wed Apr 15 20:29:39 2026] [::1]:52394 Accepted
+[Wed Apr 15 20:29:39 2026] [::1]:52392 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:29:39 2026] [::1]:52393 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:29:39 2026] [::1]:52394 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:29:39 2026] [::1]:52395 Accepted
+[Wed Apr 15 20:29:39 2026] [::1]:52392 Closing
+[Wed Apr 15 20:29:39 2026] [::1]:52396 Accepted
+[Wed Apr 15 20:29:39 2026] [::1]:52395 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:29:39 2026] [::1]:52393 Closing
+[Wed Apr 15 20:29:39 2026] [::1]:52397 Accepted
+[Wed Apr 15 20:29:39 2026] [::1]:52396 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:29:39 2026] [::1]:52397 [200]: GET /js/auth.js
+[Wed Apr 15 20:29:39 2026] [::1]:52394 Closing
+[Wed Apr 15 20:29:39 2026] [::1]:52395 Closing
+[Wed Apr 15 20:29:39 2026] [::1]:52396 Closing
+[Wed Apr 15 20:29:39 2026] [::1]:52397 Closing
+[Wed Apr 15 20:29:39 2026] [::1]:52398 Accepted
+[Wed Apr 15 20:29:39 2026] [::1]:52399 Accepted
+[Wed Apr 15 20:29:39 2026] [::1]:52400 Accepted
+[Wed Apr 15 20:29:39 2026] [::1]:52398 [200]: GET /js/usuario.js
+[Wed Apr 15 20:29:39 2026] [::1]:52399 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:29:39 2026] [::1]:52400 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:29:39 2026] [::1]:52401 Accepted
+[Wed Apr 15 20:29:39 2026] [::1]:52398 Closing
+[Wed Apr 15 20:29:39 2026] [::1]:52402 Accepted
+[Wed Apr 15 20:29:39 2026] [::1]:52401 [200]: GET /img/loguito.png
+[Wed Apr 15 20:29:39 2026] [::1]:52399 Closing
+[Wed Apr 15 20:29:39 2026] [::1]:52400 Closing
+[Wed Apr 15 20:29:39 2026] [::1]:52402 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:29:39 2026] [::1]:52401 Closing
+[Wed Apr 15 20:29:39 2026] [::1]:52402 Closing
+[Wed Apr 15 20:29:44 2026] [::1]:52403 Accepted
+[Wed Apr 15 20:29:44 2026] [::1]:52403 [200]: POST /api/auth/auth.php
+[Wed Apr 15 20:29:44 2026] [::1]:52403 Closing
+[Wed Apr 15 20:29:44 2026] [::1]:52405 Accepted
+[Wed Apr 15 20:29:44 2026] [::1]:52406 Accepted
+[Wed Apr 15 20:29:44 2026] [::1]:52405 [200]: GET /profile_admin.html
+[Wed Apr 15 20:29:44 2026] [::1]:52405 Closing
+[Wed Apr 15 20:29:44 2026] [::1]:52406 [200]: GET /css/estilo_profile_admin.css
+[Wed Apr 15 20:29:44 2026] [::1]:52406 Closing
+[Wed Apr 15 20:29:44 2026] [::1]:52407 Accepted
+[Wed Apr 15 20:29:44 2026] [::1]:52407 [200]: GET /js/profile_admin.js
+[Wed Apr 15 20:29:44 2026] [::1]:52407 Closing
+[Wed Apr 15 20:29:44 2026] [::1]:52408 Accepted
+[Wed Apr 15 20:29:44 2026] [::1]:52409 Accepted
+[Wed Apr 15 20:29:44 2026] [::1]:52410 Accepted
+[Wed Apr 15 20:29:44 2026] [::1]:52408 [200]: GET /js/datos.js
+[Wed Apr 15 20:29:44 2026] [::1]:52409 [200]: GET /img/logo.png
+[Wed Apr 15 20:29:44 2026] [::1]:52410 [200]: GET /js/auth2.js
+[Wed Apr 15 20:29:44 2026] [::1]:52408 Closing
+[Wed Apr 15 20:29:44 2026] [::1]:52409 Closing
+[Wed Apr 15 20:29:44 2026] [::1]:52410 Closing
+[Wed Apr 15 20:29:44 2026] [::1]:52411 Accepted
+[Wed Apr 15 20:29:44 2026] [::1]:52411 [200]: GET /api/get/productos.php
+[Wed Apr 15 20:29:44 2026] [::1]:52411 Closing
+[Wed Apr 15 20:29:49 2026] [::1]:52417 Accepted
+[Wed Apr 15 20:29:49 2026] [::1]:52418 Accepted
+[Wed Apr 15 20:29:49 2026] [::1]:52417 [200]: GET /index.html
+[Wed Apr 15 20:29:49 2026] [::1]:52417 Closing
+[Wed Apr 15 20:29:49 2026] [::1]:52418 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:29:49 2026] [::1]:52418 Closing
+[Wed Apr 15 20:29:49 2026] [::1]:52419 Accepted
+[Wed Apr 15 20:29:49 2026] [::1]:52419 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:29:49 2026] [::1]:52419 Closing
+[Wed Apr 15 20:29:49 2026] [::1]:52420 Accepted
+[Wed Apr 15 20:29:49 2026] [::1]:52421 Accepted
+[Wed Apr 15 20:29:49 2026] [::1]:52422 Accepted
+[Wed Apr 15 20:29:49 2026] [::1]:52423 Accepted
+[Wed Apr 15 20:29:49 2026] [::1]:52420 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:29:49 2026] [::1]:52424 Accepted
+[Wed Apr 15 20:29:49 2026] [::1]:52421 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:29:49 2026] [::1]:52422 [200]: GET /img/logo.png
+[Wed Apr 15 20:29:49 2026] [::1]:52423 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:29:49 2026] [::1]:52424 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:29:49 2026] [::1]:52425 Accepted
+[Wed Apr 15 20:29:49 2026] [::1]:52420 Closing
+[Wed Apr 15 20:29:49 2026] [::1]:52425 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:29:49 2026] [::1]:52421 Closing
+[Wed Apr 15 20:29:49 2026] [::1]:52422 Closing
+[Wed Apr 15 20:29:49 2026] [::1]:52423 Closing
+[Wed Apr 15 20:29:49 2026] [::1]:52426 Accepted
+[Wed Apr 15 20:29:49 2026] [::1]:52424 Closing
+[Wed Apr 15 20:29:49 2026] [::1]:52426 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:29:49 2026] [::1]:52425 Closing
+[Wed Apr 15 20:29:49 2026] [::1]:52427 Accepted
+[Wed Apr 15 20:29:49 2026] [::1]:52427 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:29:49 2026] [::1]:52426 Closing
+[Wed Apr 15 20:29:49 2026] [::1]:52427 Closing
+[Wed Apr 15 20:29:49 2026] [::1]:52428 Accepted
+[Wed Apr 15 20:29:49 2026] [::1]:52429 Accepted
+[Wed Apr 15 20:29:49 2026] [::1]:52428 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:29:49 2026] [::1]:52429 [200]: GET /js/auth.js
+[Wed Apr 15 20:29:49 2026] [::1]:52428 Closing
+[Wed Apr 15 20:29:49 2026] [::1]:52429 Closing
+[Wed Apr 15 20:29:49 2026] [::1]:52430 Accepted
+[Wed Apr 15 20:29:49 2026] [::1]:52430 [200]: GET /js/usuario.js
+[Wed Apr 15 20:29:49 2026] [::1]:52430 Closing
+[Wed Apr 15 20:29:49 2026] [::1]:52431 Accepted
+[Wed Apr 15 20:29:49 2026] [::1]:52432 Accepted
+[Wed Apr 15 20:29:49 2026] [::1]:52431 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:29:49 2026] [::1]:52432 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:29:49 2026] [::1]:52431 Closing
+[Wed Apr 15 20:29:49 2026] [::1]:52432 Closing
+[Wed Apr 15 20:29:49 2026] [::1]:52433 Accepted
+[Wed Apr 15 20:29:49 2026] [::1]:52434 Accepted
+[Wed Apr 15 20:29:49 2026] [::1]:52433 [200]: GET /img/loguito.png
+[Wed Apr 15 20:29:49 2026] [::1]:52434 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:29:49 2026] [::1]:52433 Closing
+[Wed Apr 15 20:29:49 2026] [::1]:52434 Closing
+[Wed Apr 15 20:29:56 2026] [::1]:52440 Accepted
+[Wed Apr 15 20:29:56 2026] [::1]:52441 Accepted
+[Wed Apr 15 20:29:56 2026] [::1]:52440 [200]: GET /Catalogo.html
+[Wed Apr 15 20:29:56 2026] [::1]:52440 Closing
+[Wed Apr 15 20:29:56 2026] [::1]:52441 [200]: GET /css/estilo_catalogo.css
+[Wed Apr 15 20:29:56 2026] [::1]:52441 Closing
+[Wed Apr 15 20:29:56 2026] [::1]:52442 Accepted
+[Wed Apr 15 20:29:56 2026] [::1]:52442 [200]: GET /css/breadcrumb.css
+[Wed Apr 15 20:29:56 2026] [::1]:52442 Closing
+[Wed Apr 15 20:29:56 2026] [::1]:52443 Accepted
+[Wed Apr 15 20:29:56 2026] [::1]:52444 Accepted
+[Wed Apr 15 20:29:56 2026] [::1]:52445 Accepted
+[Wed Apr 15 20:29:56 2026] [::1]:52446 Accepted
+[Wed Apr 15 20:29:56 2026] [::1]:52443 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:29:56 2026] [::1]:52444 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:29:56 2026] [::1]:52445 [200]: GET /img/imagen-catalogo.png
+[Wed Apr 15 20:29:56 2026] [::1]:52446 [200]: GET /img/logo.png
+[Wed Apr 15 20:29:56 2026] [::1]:52447 Accepted
+[Wed Apr 15 20:29:56 2026] [::1]:52448 Accepted
+[Wed Apr 15 20:29:56 2026] [::1]:52447 [200]: GET /js/catalogo.js
+[Wed Apr 15 20:29:56 2026] [::1]:52443 Closing
+[Wed Apr 15 20:29:56 2026] [::1]:52444 Closing
+[Wed Apr 15 20:29:56 2026] [::1]:52449 Accepted
+[Wed Apr 15 20:29:56 2026] [::1]:52448 [200]: GET /js/precios.js
+[Wed Apr 15 20:29:56 2026] [::1]:52446 Closing
+[Wed Apr 15 20:29:56 2026] [::1]:52450 Accepted
+[Wed Apr 15 20:29:56 2026] [::1]:52449 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:29:56 2026] [::1]:52451 Accepted
+[Wed Apr 15 20:29:56 2026] [::1]:52450 [200]: GET /js/auth.js
+[Wed Apr 15 20:29:56 2026] [::1]:52447 Closing
+[Wed Apr 15 20:29:56 2026] [::1]:52451 [200]: GET /js/usuario.js
+[Wed Apr 15 20:29:56 2026] [::1]:52448 Closing
+[Wed Apr 15 20:29:56 2026] [::1]:52449 Closing
+[Wed Apr 15 20:29:56 2026] [::1]:52445 Closing
+[Wed Apr 15 20:29:56 2026] [::1]:52450 Closing
+[Wed Apr 15 20:29:56 2026] [::1]:52451 Closing
+[Wed Apr 15 20:29:56 2026] [::1]:52452 Accepted
+[Wed Apr 15 20:29:56 2026] [::1]:52452 [200]: GET /api/get/productos.php
+[Wed Apr 15 20:29:56 2026] [::1]:52452 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52454 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52455 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52454 [200]: GET /acc_catalogo.html
+[Wed Apr 15 20:29:58 2026] [::1]:52454 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52455 [200]: GET /css/estilo_catalogo.css
+[Wed Apr 15 20:29:58 2026] [::1]:52455 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52456 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52456 [200]: GET /css/breadcrumb.css
+[Wed Apr 15 20:29:58 2026] [::1]:52456 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52457 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52458 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52459 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52460 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52457 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:29:58 2026] [::1]:52461 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52458 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:29:58 2026] [::1]:52462 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52459 [200]: GET /img/logo.png
+[Wed Apr 15 20:29:58 2026] [::1]:52460 [200]: GET /img/imagen-catalogo.png
+[Wed Apr 15 20:29:58 2026] [::1]:52461 [200]: GET /js/catalogo.js
+[Wed Apr 15 20:29:58 2026] [::1]:52462 [200]: GET /js/precios.js
+[Wed Apr 15 20:29:58 2026] [::1]:52457 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52458 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52459 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52461 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52462 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52463 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52460 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52464 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52463 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:29:58 2026] [::1]:52464 [200]: GET /js/auth.js
+[Wed Apr 15 20:29:58 2026] [::1]:52465 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52463 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52465 [200]: GET /js/usuario.js
+[Wed Apr 15 20:29:58 2026] [::1]:52464 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52465 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52466 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52466 [200]: GET /api/get/productos.php
+[Wed Apr 15 20:29:58 2026] [::1]:52466 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52468 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52469 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52468 [200]: GET /Catalogo.html
+[Wed Apr 15 20:29:58 2026] [::1]:52468 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52469 [200]: GET /css/estilo_catalogo.css
+[Wed Apr 15 20:29:58 2026] [::1]:52469 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52470 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52470 [200]: GET /css/breadcrumb.css
+[Wed Apr 15 20:29:58 2026] [::1]:52470 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52471 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52472 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52473 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52474 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52471 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:29:58 2026] [::1]:52472 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:29:58 2026] [::1]:52475 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52473 [200]: GET /img/logo.png
+[Wed Apr 15 20:29:58 2026] [::1]:52474 [200]: GET /img/imagen-catalogo.png
+[Wed Apr 15 20:29:58 2026] [::1]:52476 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52475 [200]: GET /js/catalogo.js
+[Wed Apr 15 20:29:58 2026] [::1]:52476 [200]: GET /js/precios.js
+[Wed Apr 15 20:29:58 2026] [::1]:52471 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52472 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52473 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52475 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52476 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52477 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52478 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52474 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52477 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:29:58 2026] [::1]:52479 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52478 [200]: GET /js/auth.js
+[Wed Apr 15 20:29:58 2026] [::1]:52479 [200]: GET /js/usuario.js
+[Wed Apr 15 20:29:58 2026] [::1]:52477 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52478 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52479 Closing
+[Wed Apr 15 20:29:58 2026] [::1]:52480 Accepted
+[Wed Apr 15 20:29:58 2026] [::1]:52480 [200]: GET /api/get/productos.php
+[Wed Apr 15 20:29:58 2026] [::1]:52480 Closing
+[Wed Apr 15 20:33:15 2026] [::1]:52613 Accepted
+[Wed Apr 15 20:33:15 2026] [::1]:52618 Accepted
+[Wed Apr 15 20:33:15 2026] [::1]:52613 [200]: GET /index.html
+[Wed Apr 15 20:33:15 2026] [::1]:52613 Closing
+[Wed Apr 15 20:33:15 2026] [::1]:52618 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:33:15 2026] [::1]:52618 Closing
+[Wed Apr 15 20:33:15 2026] [::1]:52630 Accepted
+[Wed Apr 15 20:33:15 2026] [::1]:52630 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:33:15 2026] [::1]:52630 Closing
+[Wed Apr 15 20:33:15 2026] [::1]:52631 Accepted
+[Wed Apr 15 20:33:15 2026] [::1]:52632 Accepted
+[Wed Apr 15 20:33:15 2026] [::1]:52631 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:33:15 2026] [::1]:52632 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:33:15 2026] [::1]:52631 Closing
+[Wed Apr 15 20:33:15 2026] [::1]:52632 Closing
+[Wed Apr 15 20:33:15 2026] [::1]:52633 Accepted
+[Wed Apr 15 20:33:15 2026] [::1]:52633 [200]: GET /img/logo.png
+[Wed Apr 15 20:33:15 2026] [::1]:52633 Closing
+[Wed Apr 15 20:33:15 2026] [::1]:52634 Accepted
+[Wed Apr 15 20:33:15 2026] [::1]:52635 Accepted
+[Wed Apr 15 20:33:15 2026] [::1]:52636 Accepted
+[Wed Apr 15 20:33:15 2026] [::1]:52634 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:33:15 2026] [::1]:52635 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:33:15 2026] [::1]:52636 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:33:15 2026] [::1]:52637 Accepted
+[Wed Apr 15 20:33:15 2026] [::1]:52637 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:33:15 2026] [::1]:52634 Closing
+[Wed Apr 15 20:33:15 2026] [::1]:52638 Accepted
+[Wed Apr 15 20:33:15 2026] [::1]:52639 Accepted
+[Wed Apr 15 20:33:15 2026] [::1]:52638 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:33:15 2026] [::1]:52635 Closing
+[Wed Apr 15 20:33:15 2026] [::1]:52636 Closing
+[Wed Apr 15 20:33:15 2026] [::1]:52639 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:33:15 2026] [::1]:52638 Closing
+[Wed Apr 15 20:33:15 2026] [::1]:52637 Closing
+[Wed Apr 15 20:33:15 2026] [::1]:52639 Closing
+[Wed Apr 15 20:33:15 2026] [::1]:52640 Accepted
+[Wed Apr 15 20:33:15 2026] [::1]:52640 [200]: GET /js/auth.js
+[Wed Apr 15 20:33:15 2026] [::1]:52640 Closing
+[Wed Apr 15 20:33:15 2026] [::1]:52641 Accepted
+[Wed Apr 15 20:33:15 2026] [::1]:52642 Accepted
+[Wed Apr 15 20:33:15 2026] [::1]:52643 Accepted
+[Wed Apr 15 20:33:15 2026] [::1]:52644 Accepted
+[Wed Apr 15 20:33:15 2026] [::1]:52641 [200]: GET /js/usuario.js
+[Wed Apr 15 20:33:15 2026] [::1]:52642 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:33:15 2026] [::1]:52641 Closing
+[Wed Apr 15 20:33:15 2026] [::1]:52643 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:33:15 2026] [::1]:52644 [200]: GET /img/loguito.png
+[Wed Apr 15 20:33:15 2026] [::1]:52642 Closing
+[Wed Apr 15 20:33:15 2026] [::1]:52644 Closing
+[Wed Apr 15 20:33:15 2026] [::1]:52645 Accepted
+[Wed Apr 15 20:33:15 2026] [::1]:52643 Closing
+[Wed Apr 15 20:33:15 2026] [::1]:52645 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:33:15 2026] [::1]:52645 Closing
+[Wed Apr 15 20:49:12 2026] [::1]:53620 Accepted
+[Wed Apr 15 20:49:12 2026] [::1]:53620 [200]: GET /api/get/productos.php
+[Wed Apr 15 20:49:12 2026] [::1]:53620 Closing
+[Wed Apr 15 20:49:48 2026] [::1]:53639 Accepted
+[Wed Apr 15 20:49:48 2026] [::1]:53640 Accepted
+[Wed Apr 15 20:49:48 2026] [::1]:53639 [200]: GET /index.html
+[Wed Apr 15 20:49:48 2026] [::1]:53639 Closing
+[Wed Apr 15 20:49:48 2026] [::1]:53640 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:49:48 2026] [::1]:53640 Closing
+[Wed Apr 15 20:49:48 2026] [::1]:53652 Accepted
+[Wed Apr 15 20:49:48 2026] [::1]:53652 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:49:48 2026] [::1]:53652 Closing
+[Wed Apr 15 20:49:48 2026] [::1]:53653 Accepted
+[Wed Apr 15 20:49:48 2026] [::1]:53654 Accepted
+[Wed Apr 15 20:49:48 2026] [::1]:53653 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:49:48 2026] [::1]:53654 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:49:48 2026] [::1]:53653 Closing
+[Wed Apr 15 20:49:48 2026] [::1]:53654 Closing
+[Wed Apr 15 20:49:48 2026] [::1]:53655 Accepted
+[Wed Apr 15 20:49:48 2026] [::1]:53655 [200]: GET /img/logo.png
+[Wed Apr 15 20:49:48 2026] [::1]:53655 Closing
+[Wed Apr 15 20:49:48 2026] [::1]:53656 Accepted
+[Wed Apr 15 20:49:48 2026] [::1]:53657 Accepted
+[Wed Apr 15 20:49:48 2026] [::1]:53658 Accepted
+[Wed Apr 15 20:49:48 2026] [::1]:53656 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:49:48 2026] [::1]:53657 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:49:48 2026] [::1]:53658 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:49:48 2026] [::1]:53659 Accepted
+[Wed Apr 15 20:49:48 2026] [::1]:53660 Accepted
+[Wed Apr 15 20:49:48 2026] [::1]:53659 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:49:48 2026] [::1]:53656 Closing
+[Wed Apr 15 20:49:48 2026] [::1]:53661 Accepted
+[Wed Apr 15 20:49:48 2026] [::1]:53660 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:49:48 2026] [::1]:53661 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:49:48 2026] [::1]:53657 Closing
+[Wed Apr 15 20:49:48 2026] [::1]:53658 Closing
+[Wed Apr 15 20:49:48 2026] [::1]:53660 Closing
+[Wed Apr 15 20:49:48 2026] [::1]:53661 Closing
+[Wed Apr 15 20:49:48 2026] [::1]:53659 Closing
+[Wed Apr 15 20:49:48 2026] [::1]:53662 Accepted
+[Wed Apr 15 20:49:48 2026] [::1]:53663 Accepted
+[Wed Apr 15 20:49:48 2026] [::1]:53664 Accepted
+[Wed Apr 15 20:49:48 2026] [::1]:53662 [200]: GET /js/auth.js
+[Wed Apr 15 20:49:48 2026] [::1]:53663 [200]: GET /js/usuario.js
+[Wed Apr 15 20:49:48 2026] [::1]:53664 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:49:48 2026] [::1]:53665 Accepted
+[Wed Apr 15 20:49:48 2026] [::1]:53666 Accepted
+[Wed Apr 15 20:49:48 2026] [::1]:53662 Closing
+[Wed Apr 15 20:49:48 2026] [::1]:53665 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:49:48 2026] [::1]:53663 Closing
+[Wed Apr 15 20:49:48 2026] [::1]:53666 [200]: GET /img/loguito.png
+[Wed Apr 15 20:49:48 2026] [::1]:53664 Closing
+[Wed Apr 15 20:49:48 2026] [::1]:53665 Closing
+[Wed Apr 15 20:49:48 2026] [::1]:53666 Closing
+[Wed Apr 15 20:49:48 2026] [::1]:53667 Accepted
+[Wed Apr 15 20:49:48 2026] [::1]:53667 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:49:48 2026] [::1]:53667 Closing
+[Wed Apr 15 20:49:49 2026] [::1]:53671 Accepted
+[Wed Apr 15 20:49:49 2026] [::1]:53672 Accepted
+[Wed Apr 15 20:49:49 2026] [::1]:53671 [200]: GET /index.html
+[Wed Apr 15 20:49:49 2026] [::1]:53671 Closing
+[Wed Apr 15 20:49:49 2026] [::1]:53672 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:49:49 2026] [::1]:53672 Closing
+[Wed Apr 15 20:49:49 2026] [::1]:53673 Accepted
+[Wed Apr 15 20:49:49 2026] [::1]:53673 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:49:49 2026] [::1]:53673 Closing
+[Wed Apr 15 20:49:49 2026] [::1]:53674 Accepted
+[Wed Apr 15 20:49:49 2026] [::1]:53675 Accepted
+[Wed Apr 15 20:49:49 2026] [::1]:53676 Accepted
+[Wed Apr 15 20:49:49 2026] [::1]:53677 Accepted
+[Wed Apr 15 20:49:49 2026] [::1]:53674 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:49:49 2026] [::1]:53678 Accepted
+[Wed Apr 15 20:49:49 2026] [::1]:53675 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:49:49 2026] [::1]:53676 [200]: GET /img/logo.png
+[Wed Apr 15 20:49:49 2026] [::1]:53679 Accepted
+[Wed Apr 15 20:49:49 2026] [::1]:53677 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:49:49 2026] [::1]:53678 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:49:49 2026] [::1]:53679 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:49:49 2026] [::1]:53674 Closing
+[Wed Apr 15 20:49:49 2026] [::1]:53675 Closing
+[Wed Apr 15 20:49:49 2026] [::1]:53676 Closing
+[Wed Apr 15 20:49:49 2026] [::1]:53677 Closing
+[Wed Apr 15 20:49:49 2026] [::1]:53680 Accepted
+[Wed Apr 15 20:49:49 2026] [::1]:53678 Closing
+[Wed Apr 15 20:49:49 2026] [::1]:53679 Closing
+[Wed Apr 15 20:49:49 2026] [::1]:53680 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:49:49 2026] [::1]:53680 Closing
+[Wed Apr 15 20:49:49 2026] [::1]:53681 Accepted
+[Wed Apr 15 20:49:49 2026] [::1]:53682 Accepted
+[Wed Apr 15 20:49:49 2026] [::1]:53681 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:49:49 2026] [::1]:53682 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:49:49 2026] [::1]:53681 Closing
+[Wed Apr 15 20:49:49 2026] [::1]:53682 Closing
+[Wed Apr 15 20:49:49 2026] [::1]:53683 Accepted
+[Wed Apr 15 20:49:49 2026] [::1]:53683 [200]: GET /js/auth.js
+[Wed Apr 15 20:49:49 2026] [::1]:53683 Closing
+[Wed Apr 15 20:49:49 2026] [::1]:53684 Accepted
+[Wed Apr 15 20:49:49 2026] [::1]:53684 [200]: GET /js/usuario.js
+[Wed Apr 15 20:49:49 2026] [::1]:53684 Closing
+[Wed Apr 15 20:49:49 2026] [::1]:53685 Accepted
+[Wed Apr 15 20:49:49 2026] [::1]:53686 Accepted
+[Wed Apr 15 20:49:49 2026] [::1]:53687 Accepted
+[Wed Apr 15 20:49:49 2026] [::1]:53685 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:49:49 2026] [::1]:53688 Accepted
+[Wed Apr 15 20:49:49 2026] [::1]:53685 Closing
+[Wed Apr 15 20:49:49 2026] [::1]:53686 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:49:49 2026] [::1]:53687 [200]: GET /img/loguito.png
+[Wed Apr 15 20:49:49 2026] [::1]:53688 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:49:49 2026] [::1]:53686 Closing
+[Wed Apr 15 20:49:49 2026] [::1]:53687 Closing
+[Wed Apr 15 20:49:49 2026] [::1]:53688 Closing
+[Wed Apr 15 20:50:05 2026] [::1]:53703 Accepted
+[Wed Apr 15 20:50:05 2026] [::1]:53704 Accepted
+[Wed Apr 15 20:50:05 2026] [::1]:53703 [200]: GET /
+[Wed Apr 15 20:50:05 2026] [::1]:53703 Closing
+[Wed Apr 15 20:50:05 2026] [::1]:53704 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:50:05 2026] [::1]:53704 Closing
+[Wed Apr 15 20:50:05 2026] [::1]:53705 Accepted
+[Wed Apr 15 20:50:05 2026] [::1]:53705 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:50:05 2026] [::1]:53705 Closing
+[Wed Apr 15 20:50:05 2026] [::1]:53706 Accepted
+[Wed Apr 15 20:50:05 2026] [::1]:53707 Accepted
+[Wed Apr 15 20:50:05 2026] [::1]:53706 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:50:05 2026] [::1]:53707 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:50:05 2026] [::1]:53706 Closing
+[Wed Apr 15 20:50:05 2026] [::1]:53707 Closing
+[Wed Apr 15 20:50:05 2026] [::1]:53708 Accepted
+[Wed Apr 15 20:50:05 2026] [::1]:53708 [200]: GET /img/logo.png
+[Wed Apr 15 20:50:05 2026] [::1]:53708 Closing
+[Wed Apr 15 20:50:05 2026] [::1]:53709 Accepted
+[Wed Apr 15 20:50:05 2026] [::1]:53709 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:50:05 2026] [::1]:53709 Closing
+[Wed Apr 15 20:50:05 2026] [::1]:53710 Accepted
+[Wed Apr 15 20:50:05 2026] [::1]:53710 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:50:05 2026] [::1]:53710 Closing
+[Wed Apr 15 20:50:05 2026] [::1]:53711 Accepted
+[Wed Apr 15 20:50:05 2026] [::1]:53711 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:50:05 2026] [::1]:53711 Closing
+[Wed Apr 15 20:50:05 2026] [::1]:53712 Accepted
+[Wed Apr 15 20:50:05 2026] [::1]:53713 Accepted
+[Wed Apr 15 20:50:05 2026] [::1]:53714 Accepted
+[Wed Apr 15 20:50:05 2026] [::1]:53715 Accepted
+[Wed Apr 15 20:50:05 2026] [::1]:53712 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:50:05 2026] [::1]:53713 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:50:05 2026] [::1]:53714 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:50:05 2026] [::1]:53716 Accepted
+[Wed Apr 15 20:50:05 2026] [::1]:53715 [200]: GET /js/auth.js
+[Wed Apr 15 20:50:05 2026] [::1]:53717 Accepted
+[Wed Apr 15 20:50:05 2026] [::1]:53716 [200]: GET /js/usuario.js
+[Wed Apr 15 20:50:05 2026] [::1]:53717 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:50:05 2026] [::1]:53713 Closing
+[Wed Apr 15 20:50:05 2026] [::1]:53714 Closing
+[Wed Apr 15 20:50:05 2026] [::1]:53715 Closing
+[Wed Apr 15 20:50:05 2026] [::1]:53716 Closing
+[Wed Apr 15 20:50:05 2026] [::1]:53712 Closing
+[Wed Apr 15 20:50:05 2026] [::1]:53717 Closing
+[Wed Apr 15 20:50:05 2026] [::1]:53718 Accepted
+[Wed Apr 15 20:50:05 2026] [::1]:53719 Accepted
+[Wed Apr 15 20:50:05 2026] [::1]:53718 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:50:05 2026] [::1]:53719 [200]: GET /img/loguito.png
+[Wed Apr 15 20:50:05 2026] [::1]:53720 Accepted
+[Wed Apr 15 20:50:05 2026] [::1]:53718 Closing
+[Wed Apr 15 20:50:05 2026] [::1]:53719 Closing
+[Wed Apr 15 20:50:05 2026] [::1]:53720 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:50:05 2026] [::1]:53720 Closing
+[Wed Apr 15 20:50:36 2026] [::1]:53762 Accepted
+[Wed Apr 15 20:50:36 2026] [::1]:53762 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:50:36 2026] [::1]:53762 Closing
+[Wed Apr 15 20:50:36 2026] [::1]:53763 Accepted
+[Wed Apr 15 20:50:36 2026] [::1]:53764 Accepted
+[Wed Apr 15 20:50:36 2026] [::1]:53765 Accepted
+[Wed Apr 15 20:50:36 2026] [::1]:53763 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:50:36 2026] [::1]:53764 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:50:36 2026] [::1]:53765 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:50:36 2026] [::1]:53763 Closing
+[Wed Apr 15 20:50:36 2026] [::1]:53764 Closing
+[Wed Apr 15 20:50:36 2026] [::1]:53765 Closing
+[Wed Apr 15 20:53:29 2026] [::1]:53950 Accepted
+[Wed Apr 15 20:53:29 2026] [::1]:53951 Accepted
+[Wed Apr 15 20:53:29 2026] [::1]:53950 [200]: GET /
+[Wed Apr 15 20:53:29 2026] [::1]:53950 Closing
+[Wed Apr 15 20:53:29 2026] [::1]:53951 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:53:29 2026] [::1]:53951 Closing
+[Wed Apr 15 20:53:29 2026] [::1]:53963 Accepted
+[Wed Apr 15 20:53:29 2026] [::1]:53963 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:53:29 2026] [::1]:53963 Closing
+[Wed Apr 15 20:53:29 2026] [::1]:53964 Accepted
+[Wed Apr 15 20:53:29 2026] [::1]:53965 Accepted
+[Wed Apr 15 20:53:29 2026] [::1]:53964 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:53:29 2026] [::1]:53965 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:53:29 2026] [::1]:53964 Closing
+[Wed Apr 15 20:53:29 2026] [::1]:53965 Closing
+[Wed Apr 15 20:53:29 2026] [::1]:53966 Accepted
+[Wed Apr 15 20:53:29 2026] [::1]:53967 Accepted
+[Wed Apr 15 20:53:29 2026] [::1]:53966 [200]: GET /img/logo.png
+[Wed Apr 15 20:53:29 2026] [::1]:53967 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:53:29 2026] [::1]:53966 Closing
+[Wed Apr 15 20:53:29 2026] [::1]:53967 Closing
+[Wed Apr 15 20:53:29 2026] [::1]:53968 Accepted
+[Wed Apr 15 20:53:29 2026] [::1]:53969 Accepted
+[Wed Apr 15 20:53:29 2026] [::1]:53968 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:53:29 2026] [::1]:53970 Accepted
+[Wed Apr 15 20:53:29 2026] [::1]:53969 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:53:29 2026] [::1]:53970 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:53:29 2026] [::1]:53971 Accepted
+[Wed Apr 15 20:53:29 2026] [::1]:53968 Closing
+[Wed Apr 15 20:53:29 2026] [::1]:53972 Accepted
+[Wed Apr 15 20:53:29 2026] [::1]:53971 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:53:29 2026] [::1]:53969 Closing
+[Wed Apr 15 20:53:29 2026] [::1]:53973 Accepted
+[Wed Apr 15 20:53:29 2026] [::1]:53972 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:53:29 2026] [::1]:53973 [200]: GET /js/auth.js
+[Wed Apr 15 20:53:29 2026] [::1]:53970 Closing
+[Wed Apr 15 20:53:29 2026] [::1]:53971 Closing
+[Wed Apr 15 20:53:29 2026] [::1]:53972 Closing
+[Wed Apr 15 20:53:29 2026] [::1]:53973 Closing
+[Wed Apr 15 20:53:29 2026] [::1]:53974 Accepted
+[Wed Apr 15 20:53:29 2026] [::1]:53975 Accepted
+[Wed Apr 15 20:53:29 2026] [::1]:53976 Accepted
+[Wed Apr 15 20:53:29 2026] [::1]:53974 [200]: GET /js/usuario.js
+[Wed Apr 15 20:53:29 2026] [::1]:53975 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:53:29 2026] [::1]:53976 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:53:29 2026] [::1]:53977 Accepted
+[Wed Apr 15 20:53:29 2026] [::1]:53978 Accepted
+[Wed Apr 15 20:53:29 2026] [::1]:53977 [200]: GET /img/loguito.png
+[Wed Apr 15 20:53:29 2026] [::1]:53974 Closing
+[Wed Apr 15 20:53:29 2026] [::1]:53978 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:53:29 2026] [::1]:53975 Closing
+[Wed Apr 15 20:53:29 2026] [::1]:53976 Closing
+[Wed Apr 15 20:53:29 2026] [::1]:53977 Closing
+[Wed Apr 15 20:53:29 2026] [::1]:53978 Closing
+[Wed Apr 15 20:55:04 2026] [::1]:54118 Accepted
+[Wed Apr 15 20:55:04 2026] [::1]:54119 Accepted
+[Wed Apr 15 20:55:04 2026] [::1]:54118 [200]: GET /
+[Wed Apr 15 20:55:04 2026] [::1]:54118 Closing
+[Wed Apr 15 20:55:04 2026] [::1]:54119 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:55:04 2026] [::1]:54119 Closing
+[Wed Apr 15 20:55:04 2026] [::1]:54125 Accepted
+[Wed Apr 15 20:55:04 2026] [::1]:54125 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:55:04 2026] [::1]:54125 Closing
+[Wed Apr 15 20:55:04 2026] [::1]:54126 Accepted
+[Wed Apr 15 20:55:04 2026] [::1]:54126 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:55:04 2026] [::1]:54126 Closing
+[Wed Apr 15 20:55:04 2026] [::1]:54127 Accepted
+[Wed Apr 15 20:55:04 2026] [::1]:54127 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:55:04 2026] [::1]:54127 Closing
+[Wed Apr 15 20:55:04 2026] [::1]:54128 Accepted
+[Wed Apr 15 20:55:04 2026] [::1]:54129 Accepted
+[Wed Apr 15 20:55:04 2026] [::1]:54128 [200]: GET /img/logo.png
+[Wed Apr 15 20:55:04 2026] [::1]:54129 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:55:04 2026] [::1]:54128 Closing
+[Wed Apr 15 20:55:04 2026] [::1]:54129 Closing
+[Wed Apr 15 20:55:04 2026] [::1]:54130 Accepted
+[Wed Apr 15 20:55:04 2026] [::1]:54131 Accepted
+[Wed Apr 15 20:55:04 2026] [::1]:54130 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:55:04 2026] [::1]:54132 Accepted
+[Wed Apr 15 20:55:04 2026] [::1]:54131 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:55:04 2026] [::1]:54132 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:55:04 2026] [::1]:54130 Closing
+[Wed Apr 15 20:55:04 2026] [::1]:54131 Closing
+[Wed Apr 15 20:55:04 2026] [::1]:54133 Accepted
+[Wed Apr 15 20:55:04 2026] [::1]:54134 Accepted
+[Wed Apr 15 20:55:04 2026] [::1]:54132 Closing
+[Wed Apr 15 20:55:04 2026] [::1]:54135 Accepted
+[Wed Apr 15 20:55:04 2026] [::1]:54133 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:55:04 2026] [::1]:54134 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:55:04 2026] [::1]:54135 [200]: GET /js/auth.js
+[Wed Apr 15 20:55:04 2026] [::1]:54133 Closing
+[Wed Apr 15 20:55:04 2026] [::1]:54134 Closing
+[Wed Apr 15 20:55:04 2026] [::1]:54135 Closing
+[Wed Apr 15 20:55:04 2026] [::1]:54136 Accepted
+[Wed Apr 15 20:55:04 2026] [::1]:54137 Accepted
+[Wed Apr 15 20:55:04 2026] [::1]:54136 [200]: GET /js/usuario.js
+[Wed Apr 15 20:55:04 2026] [::1]:54137 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:55:04 2026] [::1]:54138 Accepted
+[Wed Apr 15 20:55:04 2026] [::1]:54136 Closing
+[Wed Apr 15 20:55:04 2026] [::1]:54138 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:55:04 2026] [::1]:54139 Accepted
+[Wed Apr 15 20:55:04 2026] [::1]:54137 Closing
+[Wed Apr 15 20:55:04 2026] [::1]:54140 Accepted
+[Wed Apr 15 20:55:04 2026] [::1]:54139 [200]: GET /img/loguito.png
+[Wed Apr 15 20:55:04 2026] [::1]:54138 Closing
+[Wed Apr 15 20:55:04 2026] [::1]:54140 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:55:04 2026] [::1]:54139 Closing
+[Wed Apr 15 20:55:04 2026] [::1]:54140 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54153 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54154 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54153 [200]: GET /
+[Wed Apr 15 20:55:08 2026] [::1]:54153 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54154 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:55:08 2026] [::1]:54154 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54155 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54155 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:55:08 2026] [::1]:54155 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54156 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54156 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:55:08 2026] [::1]:54156 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54157 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54157 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:55:08 2026] [::1]:54157 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54158 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54159 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54158 [200]: GET /img/logo.png
+[Wed Apr 15 20:55:08 2026] [::1]:54159 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:55:08 2026] [::1]:54158 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54159 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54160 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54160 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:55:08 2026] [::1]:54160 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54161 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54162 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54163 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54164 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54165 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54161 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:55:08 2026] [::1]:54162 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:55:08 2026] [::1]:54163 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:55:08 2026] [::1]:54164 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:55:08 2026] [::1]:54165 [200]: GET /js/auth.js
+[Wed Apr 15 20:55:08 2026] [::1]:54161 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54163 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54164 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54165 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54162 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54166 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54166 [200]: GET /js/usuario.js
+[Wed Apr 15 20:55:08 2026] [::1]:54166 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54167 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54168 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54169 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54170 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54167 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:55:08 2026] [::1]:54168 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:55:08 2026] [::1]:54169 [200]: GET /img/loguito.png
+[Wed Apr 15 20:55:08 2026] [::1]:54170 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:55:08 2026] [::1]:54167 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54168 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54169 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54170 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54171 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54172 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54171 [200]: GET /
+[Wed Apr 15 20:55:08 2026] [::1]:54171 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54172 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:55:08 2026] [::1]:54172 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54173 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54173 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:55:08 2026] [::1]:54173 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54174 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54175 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54176 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54174 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:55:08 2026] [::1]:54177 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54175 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:55:08 2026] [::1]:54176 [200]: GET /img/logo.png
+[Wed Apr 15 20:55:08 2026] [::1]:54177 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:55:08 2026] [::1]:54174 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54175 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54176 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54177 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54178 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54178 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:55:08 2026] [::1]:54178 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54179 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54180 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54179 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:55:08 2026] [::1]:54180 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:55:08 2026] [::1]:54181 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54179 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54181 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:55:08 2026] [::1]:54182 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54183 Accepted
+[Wed Apr 15 20:55:08 2026] [::1]:54180 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54182 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:55:08 2026] [::1]:54181 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54183 [200]: GET /js/auth.js
+[Wed Apr 15 20:55:08 2026] [::1]:54182 Closing
+[Wed Apr 15 20:55:08 2026] [::1]:54183 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54184 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54184 [200]: GET /js/usuario.js
+[Wed Apr 15 20:55:09 2026] [::1]:54184 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54185 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54186 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54187 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54185 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:55:09 2026] [::1]:54186 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:55:09 2026] [::1]:54187 [200]: GET /img/loguito.png
+[Wed Apr 15 20:55:09 2026] [::1]:54188 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54185 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54187 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54188 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:55:09 2026] [::1]:54186 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54188 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54189 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54190 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54189 [200]: GET /
+[Wed Apr 15 20:55:09 2026] [::1]:54189 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54190 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:55:09 2026] [::1]:54190 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54191 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54191 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:55:09 2026] [::1]:54191 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54192 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54193 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54194 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54192 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:55:09 2026] [::1]:54193 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:55:09 2026] [::1]:54195 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54194 [200]: GET /img/logo.png
+[Wed Apr 15 20:55:09 2026] [::1]:54195 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:55:09 2026] [::1]:54192 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54193 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54194 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54195 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54196 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54197 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54198 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54196 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:55:09 2026] [::1]:54197 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:55:09 2026] [::1]:54198 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:55:09 2026] [::1]:54199 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54200 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54199 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:55:09 2026] [::1]:54201 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54200 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:55:09 2026] [::1]:54201 [200]: GET /js/auth.js
+[Wed Apr 15 20:55:09 2026] [::1]:54196 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54197 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54199 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54198 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54200 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54201 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54202 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54203 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54204 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54202 [200]: GET /js/usuario.js
+[Wed Apr 15 20:55:09 2026] [::1]:54203 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:55:09 2026] [::1]:54204 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:55:09 2026] [::1]:54202 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54205 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54206 Accepted
+[Wed Apr 15 20:55:09 2026] [::1]:54203 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54205 [200]: GET /img/loguito.png
+[Wed Apr 15 20:55:09 2026] [::1]:54204 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54206 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:55:09 2026] [::1]:54205 Closing
+[Wed Apr 15 20:55:09 2026] [::1]:54206 Closing
+[Wed Apr 15 20:57:10 2026] [::1]:54386 Accepted
+[Wed Apr 15 20:57:10 2026] [::1]:54387 Accepted
+[Wed Apr 15 20:57:10 2026] [::1]:54386 [200]: GET /
+[Wed Apr 15 20:57:10 2026] [::1]:54386 Closing
+[Wed Apr 15 20:57:10 2026] [::1]:54387 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:57:10 2026] [::1]:54387 Closing
+[Wed Apr 15 20:57:10 2026] [::1]:54393 Accepted
+[Wed Apr 15 20:57:10 2026] [::1]:54393 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:57:10 2026] [::1]:54393 Closing
+[Wed Apr 15 20:57:10 2026] [::1]:54394 Accepted
+[Wed Apr 15 20:57:10 2026] [::1]:54394 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:57:10 2026] [::1]:54394 Closing
+[Wed Apr 15 20:57:10 2026] [::1]:54395 Accepted
+[Wed Apr 15 20:57:10 2026] [::1]:54395 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:57:10 2026] [::1]:54395 Closing
+[Wed Apr 15 20:57:10 2026] [::1]:54396 Accepted
+[Wed Apr 15 20:57:10 2026] [::1]:54397 Accepted
+[Wed Apr 15 20:57:10 2026] [::1]:54396 [200]: GET /img/logo.png
+[Wed Apr 15 20:57:10 2026] [::1]:54397 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:57:10 2026] [::1]:54398 Accepted
+[Wed Apr 15 20:57:10 2026] [::1]:54398 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:57:10 2026] [::1]:54396 Closing
+[Wed Apr 15 20:57:10 2026] [::1]:54397 Closing
+[Wed Apr 15 20:57:10 2026] [::1]:54399 Accepted
+[Wed Apr 15 20:57:10 2026] [::1]:54400 Accepted
+[Wed Apr 15 20:57:10 2026] [::1]:54401 Accepted
+[Wed Apr 15 20:57:10 2026] [::1]:54398 Closing
+[Wed Apr 15 20:57:10 2026] [::1]:54399 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:57:10 2026] [::1]:54400 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:57:10 2026] [::1]:54401 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:57:10 2026] [::1]:54399 Closing
+[Wed Apr 15 20:57:10 2026] [::1]:54401 Closing
+[Wed Apr 15 20:57:10 2026] [::1]:54400 Closing
+[Wed Apr 15 20:57:10 2026] [::1]:54402 Accepted
+[Wed Apr 15 20:57:10 2026] [::1]:54402 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:57:10 2026] [::1]:54402 Closing
+[Wed Apr 15 20:57:10 2026] [::1]:54403 Accepted
+[Wed Apr 15 20:57:10 2026] [::1]:54403 [200]: GET /js/auth.js
+[Wed Apr 15 20:57:10 2026] [::1]:54403 Closing
+[Wed Apr 15 20:57:10 2026] [::1]:54404 Accepted
+[Wed Apr 15 20:57:10 2026] [::1]:54405 Accepted
+[Wed Apr 15 20:57:10 2026] [::1]:54404 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:57:10 2026] [::1]:54405 [200]: GET /js/usuario.js
+[Wed Apr 15 20:57:10 2026] [::1]:54406 Accepted
+[Wed Apr 15 20:57:10 2026] [::1]:54407 Accepted
+[Wed Apr 15 20:57:10 2026] [::1]:54404 Closing
+[Wed Apr 15 20:57:10 2026] [::1]:54405 Closing
+[Wed Apr 15 20:57:10 2026] [::1]:54406 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:57:10 2026] [::1]:54407 [200]: GET /img/loguito.png
+[Wed Apr 15 20:57:10 2026] [::1]:54406 Closing
+[Wed Apr 15 20:57:10 2026] [::1]:54407 Closing
+[Wed Apr 15 20:57:10 2026] [::1]:54408 Accepted
+[Wed Apr 15 20:57:10 2026] [::1]:54408 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:57:10 2026] [::1]:54408 Closing
+[Wed Apr 15 20:57:12 2026] [::1]:54412 Accepted
+[Wed Apr 15 20:57:12 2026] [::1]:54413 Accepted
+[Wed Apr 15 20:57:12 2026] [::1]:54412 [200]: GET /
+[Wed Apr 15 20:57:12 2026] [::1]:54412 Closing
+[Wed Apr 15 20:57:12 2026] [::1]:54413 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:57:12 2026] [::1]:54413 Closing
+[Wed Apr 15 20:57:12 2026] [::1]:54414 Accepted
+[Wed Apr 15 20:57:12 2026] [::1]:54414 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:57:12 2026] [::1]:54414 Closing
+[Wed Apr 15 20:57:12 2026] [::1]:54415 Accepted
+[Wed Apr 15 20:57:12 2026] [::1]:54416 Accepted
+[Wed Apr 15 20:57:12 2026] [::1]:54417 Accepted
+[Wed Apr 15 20:57:12 2026] [::1]:54415 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:57:12 2026] [::1]:54416 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:57:12 2026] [::1]:54418 Accepted
+[Wed Apr 15 20:57:12 2026] [::1]:54417 [200]: GET /img/logo.png
+[Wed Apr 15 20:57:12 2026] [::1]:54418 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:57:12 2026] [::1]:54415 Closing
+[Wed Apr 15 20:57:12 2026] [::1]:54416 Closing
+[Wed Apr 15 20:57:12 2026] [::1]:54417 Closing
+[Wed Apr 15 20:57:12 2026] [::1]:54418 Closing
+[Wed Apr 15 20:57:12 2026] [::1]:54419 Accepted
+[Wed Apr 15 20:57:12 2026] [::1]:54420 Accepted
+[Wed Apr 15 20:57:12 2026] [::1]:54421 Accepted
+[Wed Apr 15 20:57:12 2026] [::1]:54422 Accepted
+[Wed Apr 15 20:57:12 2026] [::1]:54419 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:57:12 2026] [::1]:54423 Accepted
+[Wed Apr 15 20:57:12 2026] [::1]:54420 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:57:12 2026] [::1]:54421 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:57:12 2026] [::1]:54422 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:57:12 2026] [::1]:54424 Accepted
+[Wed Apr 15 20:57:12 2026] [::1]:54423 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:57:12 2026] [::1]:54424 [200]: GET /js/auth.js
+[Wed Apr 15 20:57:12 2026] [::1]:54419 Closing
+[Wed Apr 15 20:57:12 2026] [::1]:54422 Closing
+[Wed Apr 15 20:57:12 2026] [::1]:54420 Closing
+[Wed Apr 15 20:57:12 2026] [::1]:54423 Closing
+[Wed Apr 15 20:57:12 2026] [::1]:54424 Closing
+[Wed Apr 15 20:57:12 2026] [::1]:54421 Closing
+[Wed Apr 15 20:57:12 2026] [::1]:54425 Accepted
+[Wed Apr 15 20:57:12 2026] [::1]:54426 Accepted
+[Wed Apr 15 20:57:12 2026] [::1]:54425 [200]: GET /js/usuario.js
+[Wed Apr 15 20:57:12 2026] [::1]:54426 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:57:12 2026] [::1]:54427 Accepted
+[Wed Apr 15 20:57:12 2026] [::1]:54428 Accepted
+[Wed Apr 15 20:57:12 2026] [::1]:54425 Closing
+[Wed Apr 15 20:57:12 2026] [::1]:54429 Accepted
+[Wed Apr 15 20:57:12 2026] [::1]:54426 Closing
+[Wed Apr 15 20:57:12 2026] [::1]:54427 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:57:12 2026] [::1]:54428 [200]: GET /img/loguito.png
+[Wed Apr 15 20:57:12 2026] [::1]:54429 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:57:12 2026] [::1]:54428 Closing
+[Wed Apr 15 20:57:12 2026] [::1]:54427 Closing
+[Wed Apr 15 20:57:12 2026] [::1]:54429 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54431 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54432 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54431 [200]: GET /
+[Wed Apr 15 20:57:15 2026] [::1]:54431 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54432 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:57:15 2026] [::1]:54432 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54434 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54435 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54436 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54434 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:57:15 2026] [::1]:54435 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:57:15 2026] [::1]:54436 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:57:15 2026] [::1]:54437 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54437 [200]: GET /img/logo.png
+[Wed Apr 15 20:57:15 2026] [::1]:54434 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54438 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54435 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54436 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54438 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:57:15 2026] [::1]:54437 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54438 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54439 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54439 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:57:15 2026] [::1]:54440 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54441 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54440 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:57:15 2026] [::1]:54441 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:57:15 2026] [::1]:54439 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54442 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54440 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54443 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54444 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54442 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:57:15 2026] [::1]:54443 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:57:15 2026] [::1]:54441 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54444 [200]: GET /js/auth.js
+[Wed Apr 15 20:57:15 2026] [::1]:54442 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54443 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54444 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54445 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54445 [200]: GET /js/usuario.js
+[Wed Apr 15 20:57:15 2026] [::1]:54445 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54446 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54447 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54448 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54449 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54446 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:57:15 2026] [::1]:54447 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:57:15 2026] [::1]:54448 [200]: GET /img/loguito.png
+[Wed Apr 15 20:57:15 2026] [::1]:54449 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:57:15 2026] [::1]:54446 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54448 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54447 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54449 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54450 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54451 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54450 [200]: GET /
+[Wed Apr 15 20:57:15 2026] [::1]:54450 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54451 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:57:15 2026] [::1]:54451 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54452 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54452 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:57:15 2026] [::1]:54452 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54453 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54454 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54455 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54453 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:57:15 2026] [::1]:54454 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:57:15 2026] [::1]:54456 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54455 [200]: GET /img/logo.png
+[Wed Apr 15 20:57:15 2026] [::1]:54456 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:57:15 2026] [::1]:54453 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54454 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54455 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54456 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54457 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54458 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54457 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:57:15 2026] [::1]:54458 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:57:15 2026] [::1]:54459 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54460 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54459 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:57:15 2026] [::1]:54461 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54460 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:57:15 2026] [::1]:54462 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54457 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54458 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54461 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:57:15 2026] [::1]:54462 [200]: GET /js/auth.js
+[Wed Apr 15 20:57:15 2026] [::1]:54460 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54459 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54461 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54462 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54463 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54464 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54463 [200]: GET /js/usuario.js
+[Wed Apr 15 20:57:15 2026] [::1]:54464 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:57:15 2026] [::1]:54465 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54463 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54465 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:57:15 2026] [::1]:54466 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54464 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54466 [200]: GET /img/loguito.png
+[Wed Apr 15 20:57:15 2026] [::1]:54467 Accepted
+[Wed Apr 15 20:57:15 2026] [::1]:54465 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54466 Closing
+[Wed Apr 15 20:57:15 2026] [::1]:54467 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:57:15 2026] [::1]:54467 Closing
+[Wed Apr 15 20:57:16 2026] [::1]:54468 Accepted
+[Wed Apr 15 20:57:16 2026] [::1]:54469 Accepted
+[Wed Apr 15 20:57:16 2026] [::1]:54468 [200]: GET /index.html
+[Wed Apr 15 20:57:16 2026] [::1]:54468 Closing
+[Wed Apr 15 20:57:16 2026] [::1]:54469 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:57:16 2026] [::1]:54469 Closing
+[Wed Apr 15 20:57:16 2026] [::1]:54470 Accepted
+[Wed Apr 15 20:57:16 2026] [::1]:54470 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:57:16 2026] [::1]:54470 Closing
+[Wed Apr 15 20:57:16 2026] [::1]:54471 Accepted
+[Wed Apr 15 20:57:16 2026] [::1]:54472 Accepted
+[Wed Apr 15 20:57:16 2026] [::1]:54473 Accepted
+[Wed Apr 15 20:57:16 2026] [::1]:54471 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:57:16 2026] [::1]:54472 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:57:16 2026] [::1]:54474 Accepted
+[Wed Apr 15 20:57:16 2026] [::1]:54473 [200]: GET /img/logo.png
+[Wed Apr 15 20:57:16 2026] [::1]:54474 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:57:16 2026] [::1]:54471 Closing
+[Wed Apr 15 20:57:16 2026] [::1]:54475 Accepted
+[Wed Apr 15 20:57:16 2026] [::1]:54472 Closing
+[Wed Apr 15 20:57:16 2026] [::1]:54476 Accepted
+[Wed Apr 15 20:57:16 2026] [::1]:54473 Closing
+[Wed Apr 15 20:57:16 2026] [::1]:54475 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:57:16 2026] [::1]:54476 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:57:16 2026] [::1]:54474 Closing
+[Wed Apr 15 20:57:16 2026] [::1]:54477 Accepted
+[Wed Apr 15 20:57:16 2026] [::1]:54475 Closing
+[Wed Apr 15 20:57:16 2026] [::1]:54476 Closing
+[Wed Apr 15 20:57:16 2026] [::1]:54478 Accepted
+[Wed Apr 15 20:57:16 2026] [::1]:54477 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:57:16 2026] [::1]:54478 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:57:16 2026] [::1]:54478 Closing
+[Wed Apr 15 20:57:16 2026] [::1]:54477 Closing
+[Wed Apr 15 20:57:16 2026] [::1]:54479 Accepted
+[Wed Apr 15 20:57:16 2026] [::1]:54480 Accepted
+[Wed Apr 15 20:57:16 2026] [::1]:54481 Accepted
+[Wed Apr 15 20:57:16 2026] [::1]:54479 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:57:16 2026] [::1]:54480 [200]: GET /js/auth.js
+[Wed Apr 15 20:57:16 2026] [::1]:54481 [200]: GET /js/usuario.js
+[Wed Apr 15 20:57:16 2026] [::1]:54482 Accepted
+[Wed Apr 15 20:57:16 2026] [::1]:54482 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:57:16 2026] [::1]:54479 Closing
+[Wed Apr 15 20:57:16 2026] [::1]:54480 Closing
+[Wed Apr 15 20:57:16 2026] [::1]:54481 Closing
+[Wed Apr 15 20:57:16 2026] [::1]:54483 Accepted
+[Wed Apr 15 20:57:16 2026] [::1]:54484 Accepted
+[Wed Apr 15 20:57:16 2026] [::1]:54482 Closing
+[Wed Apr 15 20:57:16 2026] [::1]:54483 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:57:16 2026] [::1]:54484 [200]: GET /img/loguito.png
+[Wed Apr 15 20:57:16 2026] [::1]:54483 Closing
+[Wed Apr 15 20:57:16 2026] [::1]:54484 Closing
+[Wed Apr 15 20:57:16 2026] [::1]:54485 Accepted
+[Wed Apr 15 20:57:16 2026] [::1]:54485 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:57:16 2026] [::1]:54485 Closing
+[Wed Apr 15 20:57:17 2026] [::1]:54489 Accepted
+[Wed Apr 15 20:57:17 2026] [::1]:54490 Accepted
+[Wed Apr 15 20:57:17 2026] [::1]:54489 [200]: GET /index.html
+[Wed Apr 15 20:57:17 2026] [::1]:54489 Closing
+[Wed Apr 15 20:57:17 2026] [::1]:54490 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:57:17 2026] [::1]:54490 Closing
+[Wed Apr 15 20:57:17 2026] [::1]:54491 Accepted
+[Wed Apr 15 20:57:17 2026] [::1]:54491 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:57:17 2026] [::1]:54491 Closing
+[Wed Apr 15 20:57:17 2026] [::1]:54492 Accepted
+[Wed Apr 15 20:57:17 2026] [::1]:54493 Accepted
+[Wed Apr 15 20:57:17 2026] [::1]:54494 Accepted
+[Wed Apr 15 20:57:17 2026] [::1]:54492 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:57:17 2026] [::1]:54493 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:57:17 2026] [::1]:54495 Accepted
+[Wed Apr 15 20:57:17 2026] [::1]:54494 [200]: GET /img/logo.png
+[Wed Apr 15 20:57:17 2026] [::1]:54495 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:57:17 2026] [::1]:54492 Closing
+[Wed Apr 15 20:57:17 2026] [::1]:54493 Closing
+[Wed Apr 15 20:57:17 2026] [::1]:54494 Closing
+[Wed Apr 15 20:57:17 2026] [::1]:54495 Closing
+[Wed Apr 15 20:57:17 2026] [::1]:54496 Accepted
+[Wed Apr 15 20:57:17 2026] [::1]:54497 Accepted
+[Wed Apr 15 20:57:17 2026] [::1]:54498 Accepted
+[Wed Apr 15 20:57:17 2026] [::1]:54496 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:57:17 2026] [::1]:54497 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:57:17 2026] [::1]:54498 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:57:17 2026] [::1]:54499 Accepted
+[Wed Apr 15 20:57:17 2026] [::1]:54500 Accepted
+[Wed Apr 15 20:57:17 2026] [::1]:54499 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:57:17 2026] [::1]:54501 Accepted
+[Wed Apr 15 20:57:17 2026] [::1]:54500 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:57:17 2026] [::1]:54496 Closing
+[Wed Apr 15 20:57:17 2026] [::1]:54501 [200]: GET /js/auth.js
+[Wed Apr 15 20:57:17 2026] [::1]:54497 Closing
+[Wed Apr 15 20:57:17 2026] [::1]:54499 Closing
+[Wed Apr 15 20:57:17 2026] [::1]:54498 Closing
+[Wed Apr 15 20:57:17 2026] [::1]:54500 Closing
+[Wed Apr 15 20:57:17 2026] [::1]:54501 Closing
+[Wed Apr 15 20:57:17 2026] [::1]:54502 Accepted
+[Wed Apr 15 20:57:17 2026] [::1]:54502 [200]: GET /js/usuario.js
+[Wed Apr 15 20:57:17 2026] [::1]:54502 Closing
+[Wed Apr 15 20:57:17 2026] [::1]:54503 Accepted
+[Wed Apr 15 20:57:17 2026] [::1]:54504 Accepted
+[Wed Apr 15 20:57:17 2026] [::1]:54503 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:57:17 2026] [::1]:54504 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:57:17 2026] [::1]:54505 Accepted
+[Wed Apr 15 20:57:17 2026] [::1]:54506 Accepted
+[Wed Apr 15 20:57:17 2026] [::1]:54505 [200]: GET /img/loguito.png
+[Wed Apr 15 20:57:17 2026] [::1]:54506 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:57:17 2026] [::1]:54503 Closing
+[Wed Apr 15 20:57:17 2026] [::1]:54504 Closing
+[Wed Apr 15 20:57:17 2026] [::1]:54505 Closing
+[Wed Apr 15 20:57:17 2026] [::1]:54506 Closing
+[Wed Apr 15 20:57:18 2026] [::1]:54507 Accepted
+[Wed Apr 15 20:57:18 2026] [::1]:54508 Accepted
+[Wed Apr 15 20:57:18 2026] [::1]:54507 [200]: GET /index.html
+[Wed Apr 15 20:57:18 2026] [::1]:54507 Closing
+[Wed Apr 15 20:57:18 2026] [::1]:54508 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:57:18 2026] [::1]:54508 Closing
+[Wed Apr 15 20:57:18 2026] [::1]:54509 Accepted
+[Wed Apr 15 20:57:18 2026] [::1]:54509 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:57:18 2026] [::1]:54509 Closing
+[Wed Apr 15 20:57:18 2026] [::1]:54510 Accepted
+[Wed Apr 15 20:57:18 2026] [::1]:54511 Accepted
+[Wed Apr 15 20:57:18 2026] [::1]:54512 Accepted
+[Wed Apr 15 20:57:18 2026] [::1]:54510 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:57:18 2026] [::1]:54511 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:57:18 2026] [::1]:54513 Accepted
+[Wed Apr 15 20:57:18 2026] [::1]:54512 [200]: GET /img/logo.png
+[Wed Apr 15 20:57:18 2026] [::1]:54513 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:57:18 2026] [::1]:54510 Closing
+[Wed Apr 15 20:57:18 2026] [::1]:54511 Closing
+[Wed Apr 15 20:57:18 2026] [::1]:54512 Closing
+[Wed Apr 15 20:57:18 2026] [::1]:54513 Closing
+[Wed Apr 15 20:57:18 2026] [::1]:54514 Accepted
+[Wed Apr 15 20:57:18 2026] [::1]:54515 Accepted
+[Wed Apr 15 20:57:18 2026] [::1]:54516 Accepted
+[Wed Apr 15 20:57:18 2026] [::1]:54514 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:57:18 2026] [::1]:54515 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:57:18 2026] [::1]:54516 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:57:18 2026] [::1]:54517 Accepted
+[Wed Apr 15 20:57:18 2026] [::1]:54517 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:57:18 2026] [::1]:54518 Accepted
+[Wed Apr 15 20:57:18 2026] [::1]:54514 Closing
+[Wed Apr 15 20:57:18 2026] [::1]:54519 Accepted
+[Wed Apr 15 20:57:18 2026] [::1]:54518 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:57:18 2026] [::1]:54515 Closing
+[Wed Apr 15 20:57:18 2026] [::1]:54519 [200]: GET /js/auth.js
+[Wed Apr 15 20:57:18 2026] [::1]:54517 Closing
+[Wed Apr 15 20:57:18 2026] [::1]:54516 Closing
+[Wed Apr 15 20:57:18 2026] [::1]:54518 Closing
+[Wed Apr 15 20:57:18 2026] [::1]:54519 Closing
+[Wed Apr 15 20:57:18 2026] [::1]:54520 Accepted
+[Wed Apr 15 20:57:18 2026] [::1]:54521 Accepted
+[Wed Apr 15 20:57:18 2026] [::1]:54522 Accepted
+[Wed Apr 15 20:57:18 2026] [::1]:54520 [200]: GET /js/usuario.js
+[Wed Apr 15 20:57:18 2026] [::1]:54521 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:57:18 2026] [::1]:54522 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:57:18 2026] [::1]:54523 Accepted
+[Wed Apr 15 20:57:18 2026] [::1]:54524 Accepted
+[Wed Apr 15 20:57:18 2026] [::1]:54523 [200]: GET /img/loguito.png
+[Wed Apr 15 20:57:18 2026] [::1]:54520 Closing
+[Wed Apr 15 20:57:18 2026] [::1]:54524 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:57:18 2026] [::1]:54521 Closing
+[Wed Apr 15 20:57:18 2026] [::1]:54522 Closing
+[Wed Apr 15 20:57:18 2026] [::1]:54523 Closing
+[Wed Apr 15 20:57:18 2026] [::1]:54524 Closing
+[Wed Apr 15 20:57:21 2026] [::1]:54529 Accepted
+[Wed Apr 15 20:57:21 2026] [::1]:54530 Accepted
+[Wed Apr 15 20:57:21 2026] [::1]:54529 [200]: GET /index.html
+[Wed Apr 15 20:57:21 2026] [::1]:54529 Closing
+[Wed Apr 15 20:57:21 2026] [::1]:54530 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:57:21 2026] [::1]:54530 Closing
+[Wed Apr 15 20:57:21 2026] [::1]:54531 Accepted
+[Wed Apr 15 20:57:21 2026] [::1]:54531 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:57:21 2026] [::1]:54531 Closing
+[Wed Apr 15 20:57:21 2026] [::1]:54532 Accepted
+[Wed Apr 15 20:57:21 2026] [::1]:54533 Accepted
+[Wed Apr 15 20:57:21 2026] [::1]:54532 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:57:21 2026] [::1]:54533 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:57:21 2026] [::1]:54532 Closing
+[Wed Apr 15 20:57:21 2026] [::1]:54533 Closing
+[Wed Apr 15 20:57:21 2026] [::1]:54534 Accepted
+[Wed Apr 15 20:57:21 2026] [::1]:54535 Accepted
+[Wed Apr 15 20:57:21 2026] [::1]:54534 [200]: GET /img/logo.png
+[Wed Apr 15 20:57:21 2026] [::1]:54535 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:57:21 2026] [::1]:54534 Closing
+[Wed Apr 15 20:57:21 2026] [::1]:54535 Closing
+[Wed Apr 15 20:57:21 2026] [::1]:54536 Accepted
+[Wed Apr 15 20:57:21 2026] [::1]:54537 Accepted
+[Wed Apr 15 20:57:21 2026] [::1]:54538 Accepted
+[Wed Apr 15 20:57:21 2026] [::1]:54536 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:57:21 2026] [::1]:54537 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:57:21 2026] [::1]:54538 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:57:21 2026] [::1]:54539 Accepted
+[Wed Apr 15 20:57:21 2026] [::1]:54539 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:57:21 2026] [::1]:54540 Accepted
+[Wed Apr 15 20:57:21 2026] [::1]:54536 Closing
+[Wed Apr 15 20:57:21 2026] [::1]:54541 Accepted
+[Wed Apr 15 20:57:21 2026] [::1]:54540 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:57:21 2026] [::1]:54537 Closing
+[Wed Apr 15 20:57:21 2026] [::1]:54541 [200]: GET /js/auth.js
+[Wed Apr 15 20:57:21 2026] [::1]:54539 Closing
+[Wed Apr 15 20:57:21 2026] [::1]:54538 Closing
+[Wed Apr 15 20:57:21 2026] [::1]:54540 Closing
+[Wed Apr 15 20:57:21 2026] [::1]:54541 Closing
+[Wed Apr 15 20:57:21 2026] [::1]:54542 Accepted
+[Wed Apr 15 20:57:21 2026] [::1]:54542 [200]: GET /js/usuario.js
+[Wed Apr 15 20:57:21 2026] [::1]:54542 Closing
+[Wed Apr 15 20:57:21 2026] [::1]:54543 Accepted
+[Wed Apr 15 20:57:21 2026] [::1]:54544 Accepted
+[Wed Apr 15 20:57:21 2026] [::1]:54543 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:57:21 2026] [::1]:54544 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:57:21 2026] [::1]:54545 Accepted
+[Wed Apr 15 20:57:21 2026] [::1]:54546 Accepted
+[Wed Apr 15 20:57:21 2026] [::1]:54543 Closing
+[Wed Apr 15 20:57:21 2026] [::1]:54545 [200]: GET /img/loguito.png
+[Wed Apr 15 20:57:21 2026] [::1]:54546 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:57:21 2026] [::1]:54544 Closing
+[Wed Apr 15 20:57:21 2026] [::1]:54545 Closing
+[Wed Apr 15 20:57:21 2026] [::1]:54546 Closing
+[Wed Apr 15 20:57:26 2026] [::1]:54557 Accepted
+[Wed Apr 15 20:57:26 2026] [::1]:54558 Accepted
+[Wed Apr 15 20:57:26 2026] [::1]:54557 [200]: GET /index.html
+[Wed Apr 15 20:57:26 2026] [::1]:54557 Closing
+[Wed Apr 15 20:57:26 2026] [::1]:54558 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 20:57:26 2026] [::1]:54558 Closing
+[Wed Apr 15 20:57:26 2026] [::1]:54559 Accepted
+[Wed Apr 15 20:57:26 2026] [::1]:54559 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 20:57:26 2026] [::1]:54559 Closing
+[Wed Apr 15 20:57:26 2026] [::1]:54560 Accepted
+[Wed Apr 15 20:57:26 2026] [::1]:54560 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 20:57:26 2026] [::1]:54560 Closing
+[Wed Apr 15 20:57:26 2026] [::1]:54561 Accepted
+[Wed Apr 15 20:57:26 2026] [::1]:54561 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 20:57:26 2026] [::1]:54561 Closing
+[Wed Apr 15 20:57:26 2026] [::1]:54562 Accepted
+[Wed Apr 15 20:57:26 2026] [::1]:54563 Accepted
+[Wed Apr 15 20:57:26 2026] [::1]:54562 [200]: GET /img/logo.png
+[Wed Apr 15 20:57:26 2026] [::1]:54563 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 20:57:26 2026] [::1]:54562 Closing
+[Wed Apr 15 20:57:26 2026] [::1]:54563 Closing
+[Wed Apr 15 20:57:26 2026] [::1]:54564 Accepted
+[Wed Apr 15 20:57:26 2026] [::1]:54565 Accepted
+[Wed Apr 15 20:57:26 2026] [::1]:54566 Accepted
+[Wed Apr 15 20:57:26 2026] [::1]:54564 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 20:57:26 2026] [::1]:54565 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 20:57:26 2026] [::1]:54566 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 20:57:26 2026] [::1]:54567 Accepted
+[Wed Apr 15 20:57:26 2026] [::1]:54567 [200]: GET /js/carrusel.js
+[Wed Apr 15 20:57:26 2026] [::1]:54564 Closing
+[Wed Apr 15 20:57:26 2026] [::1]:54565 Closing
+[Wed Apr 15 20:57:26 2026] [::1]:54566 Closing
+[Wed Apr 15 20:57:26 2026] [::1]:54567 Closing
+[Wed Apr 15 20:57:26 2026] [::1]:54568 Accepted
+[Wed Apr 15 20:57:26 2026] [::1]:54569 Accepted
+[Wed Apr 15 20:57:26 2026] [::1]:54568 [200]: GET /js/login-modal.js
+[Wed Apr 15 20:57:26 2026] [::1]:54569 [200]: GET /js/auth.js
+[Wed Apr 15 20:57:26 2026] [::1]:54568 Closing
+[Wed Apr 15 20:57:26 2026] [::1]:54569 Closing
+[Wed Apr 15 20:57:26 2026] [::1]:54570 Accepted
+[Wed Apr 15 20:57:26 2026] [::1]:54571 Accepted
+[Wed Apr 15 20:57:26 2026] [::1]:54572 Accepted
+[Wed Apr 15 20:57:26 2026] [::1]:54570 [200]: GET /js/usuario.js
+[Wed Apr 15 20:57:26 2026] [::1]:54571 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 20:57:26 2026] [::1]:54572 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 20:57:26 2026] [::1]:54570 Closing
+[Wed Apr 15 20:57:26 2026] [::1]:54571 Closing
+[Wed Apr 15 20:57:26 2026] [::1]:54572 Closing
+[Wed Apr 15 20:57:26 2026] [::1]:54573 Accepted
+[Wed Apr 15 20:57:26 2026] [::1]:54574 Accepted
+[Wed Apr 15 20:57:26 2026] [::1]:54573 [200]: GET /img/loguito.png
+[Wed Apr 15 20:57:26 2026] [::1]:54573 Closing
+[Wed Apr 15 20:57:26 2026] [::1]:54574 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 20:57:26 2026] [::1]:54574 Closing
+[Wed Apr 15 21:04:10 2026] [::1]:54977 Accepted
+[Wed Apr 15 21:04:10 2026] [::1]:54978 Accepted
+[Wed Apr 15 21:04:10 2026] [::1]:54977 [200]: GET /index.html
+[Wed Apr 15 21:04:10 2026] [::1]:54977 Closing
+[Wed Apr 15 21:04:10 2026] [::1]:54978 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:04:10 2026] [::1]:54978 Closing
+[Wed Apr 15 21:04:10 2026] [::1]:54990 Accepted
+[Wed Apr 15 21:04:10 2026] [::1]:54990 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 21:04:10 2026] [::1]:54990 Closing
+[Wed Apr 15 21:04:10 2026] [::1]:54991 Accepted
+[Wed Apr 15 21:04:10 2026] [::1]:54991 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:04:10 2026] [::1]:54991 Closing
+[Wed Apr 15 21:04:10 2026] [::1]:54992 Accepted
+[Wed Apr 15 21:04:10 2026] [::1]:54992 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 21:04:10 2026] [::1]:54992 Closing
+[Wed Apr 15 21:04:10 2026] [::1]:54993 Accepted
+[Wed Apr 15 21:04:10 2026] [::1]:54994 Accepted
+[Wed Apr 15 21:04:10 2026] [::1]:54993 [200]: GET /img/logo.png
+[Wed Apr 15 21:04:10 2026] [::1]:54994 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 21:04:10 2026] [::1]:54993 Closing
+[Wed Apr 15 21:04:10 2026] [::1]:54994 Closing
+[Wed Apr 15 21:04:10 2026] [::1]:54995 Accepted
+[Wed Apr 15 21:04:10 2026] [::1]:54995 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 21:04:10 2026] [::1]:54996 Accepted
+[Wed Apr 15 21:04:10 2026] [::1]:54997 Accepted
+[Wed Apr 15 21:04:10 2026] [::1]:54996 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 21:04:10 2026] [::1]:54998 Accepted
+[Wed Apr 15 21:04:10 2026] [::1]:54997 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 21:04:10 2026] [::1]:54999 Accepted
+[Wed Apr 15 21:04:10 2026] [::1]:54998 [200]: GET /js/carrusel.js
+[Wed Apr 15 21:04:10 2026] [::1]:54995 Closing
+[Wed Apr 15 21:04:10 2026] [::1]:55000 Accepted
+[Wed Apr 15 21:04:10 2026] [::1]:54999 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:04:10 2026] [::1]:55000 [200]: GET /js/auth.js
+[Wed Apr 15 21:04:10 2026] [::1]:54996 Closing
+[Wed Apr 15 21:04:10 2026] [::1]:55001 Accepted
+[Wed Apr 15 21:04:10 2026] [::1]:54998 Closing
+[Wed Apr 15 21:04:10 2026] [::1]:55001 [200]: GET /js/usuario.js
+[Wed Apr 15 21:04:10 2026] [::1]:54999 Closing
+[Wed Apr 15 21:04:10 2026] [::1]:54997 Closing
+[Wed Apr 15 21:04:10 2026] [::1]:55000 Closing
+[Wed Apr 15 21:04:10 2026] [::1]:55002 Accepted
+[Wed Apr 15 21:04:10 2026] [::1]:55001 Closing
+[Wed Apr 15 21:04:10 2026] [::1]:55002 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 21:04:10 2026] [::1]:55003 Accepted
+[Wed Apr 15 21:04:10 2026] [::1]:55002 Closing
+[Wed Apr 15 21:04:10 2026] [::1]:55003 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 21:04:10 2026] [::1]:55003 Closing
+[Wed Apr 15 21:04:10 2026] [::1]:55004 Accepted
+[Wed Apr 15 21:04:10 2026] [::1]:55005 Accepted
+[Wed Apr 15 21:04:10 2026] [::1]:55004 [200]: GET /img/loguito.png
+[Wed Apr 15 21:04:10 2026] [::1]:55005 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 21:04:10 2026] [::1]:55004 Closing
+[Wed Apr 15 21:04:10 2026] [::1]:55005 Closing
+[Wed Apr 15 21:04:18 2026] [::1]:55013 Accepted
+[Wed Apr 15 21:04:18 2026] [::1]:55014 Accepted
+[Wed Apr 15 21:04:18 2026] [::1]:55013 [200]: GET /index.html
+[Wed Apr 15 21:04:18 2026] [::1]:55013 Closing
+[Wed Apr 15 21:04:18 2026] [::1]:55014 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:04:18 2026] [::1]:55014 Closing
+[Wed Apr 15 21:04:18 2026] [::1]:55015 Accepted
+[Wed Apr 15 21:04:18 2026] [::1]:55015 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 21:04:18 2026] [::1]:55015 Closing
+[Wed Apr 15 21:04:18 2026] [::1]:55016 Accepted
+[Wed Apr 15 21:04:18 2026] [::1]:55017 Accepted
+[Wed Apr 15 21:04:18 2026] [::1]:55018 Accepted
+[Wed Apr 15 21:04:18 2026] [::1]:55016 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:04:18 2026] [::1]:55019 Accepted
+[Wed Apr 15 21:04:18 2026] [::1]:55017 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 21:04:18 2026] [::1]:55018 [200]: GET /img/logo.png
+[Wed Apr 15 21:04:18 2026] [::1]:55019 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 21:04:18 2026] [::1]:55016 Closing
+[Wed Apr 15 21:04:18 2026] [::1]:55017 Closing
+[Wed Apr 15 21:04:18 2026] [::1]:55018 Closing
+[Wed Apr 15 21:04:18 2026] [::1]:55019 Closing
+[Wed Apr 15 21:04:18 2026] [::1]:55020 Accepted
+[Wed Apr 15 21:04:18 2026] [::1]:55021 Accepted
+[Wed Apr 15 21:04:18 2026] [::1]:55022 Accepted
+[Wed Apr 15 21:04:18 2026] [::1]:55020 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 21:04:18 2026] [::1]:55021 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 21:04:18 2026] [::1]:55022 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 21:04:18 2026] [::1]:55023 Accepted
+[Wed Apr 15 21:04:18 2026] [::1]:55023 [200]: GET /js/carrusel.js
+[Wed Apr 15 21:04:18 2026] [::1]:55024 Accepted
+[Wed Apr 15 21:04:18 2026] [::1]:55020 Closing
+[Wed Apr 15 21:04:18 2026] [::1]:55025 Accepted
+[Wed Apr 15 21:04:18 2026] [::1]:55024 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:04:18 2026] [::1]:55021 Closing
+[Wed Apr 15 21:04:18 2026] [::1]:55025 [200]: GET /js/auth.js
+[Wed Apr 15 21:04:18 2026] [::1]:55023 Closing
+[Wed Apr 15 21:04:18 2026] [::1]:55022 Closing
+[Wed Apr 15 21:04:18 2026] [::1]:55024 Closing
+[Wed Apr 15 21:04:18 2026] [::1]:55025 Closing
+[Wed Apr 15 21:04:18 2026] [::1]:55026 Accepted
+[Wed Apr 15 21:04:18 2026] [::1]:55026 [200]: GET /js/usuario.js
+[Wed Apr 15 21:04:18 2026] [::1]:55026 Closing
+[Wed Apr 15 21:04:18 2026] [::1]:55027 Accepted
+[Wed Apr 15 21:04:18 2026] [::1]:55028 Accepted
+[Wed Apr 15 21:04:18 2026] [::1]:55027 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 21:04:18 2026] [::1]:55028 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 21:04:18 2026] [::1]:55027 Closing
+[Wed Apr 15 21:04:18 2026] [::1]:55029 Accepted
+[Wed Apr 15 21:04:18 2026] [::1]:55028 Closing
+[Wed Apr 15 21:04:18 2026] [::1]:55030 Accepted
+[Wed Apr 15 21:04:18 2026] [::1]:55029 [200]: GET /img/loguito.png
+[Wed Apr 15 21:04:18 2026] [::1]:55030 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 21:04:18 2026] [::1]:55029 Closing
+[Wed Apr 15 21:04:18 2026] [::1]:55030 Closing
+[Wed Apr 15 21:09:01 2026] [::1]:55328 Accepted
+[Wed Apr 15 21:09:01 2026] [::1]:55329 Accepted
+[Wed Apr 15 21:09:01 2026] [::1]:55328 [200]: GET /index.html
+[Wed Apr 15 21:09:01 2026] [::1]:55328 Closing
+[Wed Apr 15 21:09:01 2026] [::1]:55329 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:09:01 2026] [::1]:55329 Closing
+[Wed Apr 15 21:09:01 2026] [::1]:55341 Accepted
+[Wed Apr 15 21:09:01 2026] [::1]:55341 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 21:09:01 2026] [::1]:55341 Closing
+[Wed Apr 15 21:09:01 2026] [::1]:55342 Accepted
+[Wed Apr 15 21:09:01 2026] [::1]:55342 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:09:01 2026] [::1]:55342 Closing
+[Wed Apr 15 21:09:01 2026] [::1]:55343 Accepted
+[Wed Apr 15 21:09:01 2026] [::1]:55343 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 21:09:01 2026] [::1]:55343 Closing
+[Wed Apr 15 21:09:01 2026] [::1]:55344 Accepted
+[Wed Apr 15 21:09:01 2026] [::1]:55345 Accepted
+[Wed Apr 15 21:09:01 2026] [::1]:55344 [200]: GET /img/logo.png
+[Wed Apr 15 21:09:01 2026] [::1]:55345 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 21:09:01 2026] [::1]:55344 Closing
+[Wed Apr 15 21:09:01 2026] [::1]:55345 Closing
+[Wed Apr 15 21:09:01 2026] [::1]:55346 Accepted
+[Wed Apr 15 21:09:01 2026] [::1]:55347 Accepted
+[Wed Apr 15 21:09:01 2026] [::1]:55348 Accepted
+[Wed Apr 15 21:09:01 2026] [::1]:55349 Accepted
+[Wed Apr 15 21:09:01 2026] [::1]:55346 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 21:09:01 2026] [::1]:55347 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 21:09:01 2026] [::1]:55348 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 21:09:01 2026] [::1]:55349 [200]: GET /js/carrusel.js
+[Wed Apr 15 21:09:01 2026] [::1]:55350 Accepted
+[Wed Apr 15 21:09:01 2026] [::1]:55350 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:09:01 2026] [::1]:55346 Closing
+[Wed Apr 15 21:09:01 2026] [::1]:55351 Accepted
+[Wed Apr 15 21:09:01 2026] [::1]:55347 Closing
+[Wed Apr 15 21:09:01 2026] [::1]:55349 Closing
+[Wed Apr 15 21:09:01 2026] [::1]:55351 [200]: GET /js/auth.js
+[Wed Apr 15 21:09:01 2026] [::1]:55350 Closing
+[Wed Apr 15 21:09:01 2026] [::1]:55348 Closing
+[Wed Apr 15 21:09:01 2026] [::1]:55351 Closing
+[Wed Apr 15 21:09:01 2026] [::1]:55352 Accepted
+[Wed Apr 15 21:09:01 2026] [::1]:55353 Accepted
+[Wed Apr 15 21:09:01 2026] [::1]:55354 Accepted
+[Wed Apr 15 21:09:01 2026] [::1]:55352 [200]: GET /js/usuario.js
+[Wed Apr 15 21:09:01 2026] [::1]:55353 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 21:09:01 2026] [::1]:55354 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 21:09:01 2026] [::1]:55352 Closing
+[Wed Apr 15 21:09:01 2026] [::1]:55353 Closing
+[Wed Apr 15 21:09:01 2026] [::1]:55354 Closing
+[Wed Apr 15 21:09:01 2026] [::1]:55355 Accepted
+[Wed Apr 15 21:09:01 2026] [::1]:55356 Accepted
+[Wed Apr 15 21:09:01 2026] [::1]:55355 [200]: GET /img/loguito.png
+[Wed Apr 15 21:09:01 2026] [::1]:55356 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 21:09:01 2026] [::1]:55355 Closing
+[Wed Apr 15 21:09:01 2026] [::1]:55356 Closing
+[Wed Apr 15 21:12:55 2026] [::1]:55614 Accepted
+[Wed Apr 15 21:12:55 2026] [::1]:55614 [200]: POST /api/post/registro.php
+[Wed Apr 15 21:12:55 2026] [::1]:55614 Closing
+[Wed Apr 15 21:12:57 2026] [::1]:55619 Accepted
+[Wed Apr 15 21:12:57 2026] [::1]:55619 [200]: POST /api/post/registro.php
+[Wed Apr 15 21:12:57 2026] [::1]:55619 Closing
+[Wed Apr 15 21:12:59 2026] [::1]:55623 Accepted
+[Wed Apr 15 21:12:59 2026] [::1]:55623 [200]: POST /api/post/registro.php
+[Wed Apr 15 21:12:59 2026] [::1]:55623 Closing
+[Wed Apr 15 21:13:00 2026] [::1]:55628 Accepted
+[Wed Apr 15 21:13:00 2026] [::1]:55628 [200]: POST /api/post/registro.php
+[Wed Apr 15 21:13:00 2026] [::1]:55628 Closing
+[Wed Apr 15 21:13:02 2026] [::1]:55632 Accepted
+[Wed Apr 15 21:13:03 2026] [::1]:55632 [200]: POST /api/post/registro.php
+[Wed Apr 15 21:13:03 2026] [::1]:55632 Closing
+[Wed Apr 15 21:13:13 2026] [::1]:55645 Accepted
+[Wed Apr 15 21:13:14 2026] [::1]:55645 [200]: POST /api/post/registro.php
+[Wed Apr 15 21:13:14 2026] [::1]:55645 Closing
+[Wed Apr 15 21:13:15 2026] [::1]:55647 Accepted
+[Wed Apr 15 21:13:15 2026] [::1]:55647 [200]: POST /api/post/registro.php
+[Wed Apr 15 21:13:15 2026] [::1]:55647 Closing
+[Wed Apr 15 21:13:16 2026] [::1]:55651 Accepted
+[Wed Apr 15 21:13:16 2026] [::1]:55651 [200]: POST /api/post/registro.php
+[Wed Apr 15 21:13:16 2026] [::1]:55651 Closing
+[Wed Apr 15 21:13:18 2026] [::1]:55654 Accepted
+[Wed Apr 15 21:13:18 2026] [::1]:55654 [200]: POST /api/post/registro.php
+[Wed Apr 15 21:13:18 2026] [::1]:55654 Closing
+[Wed Apr 15 21:13:19 2026] [::1]:55657 Accepted
+[Wed Apr 15 21:13:20 2026] [::1]:55657 [200]: POST /api/post/registro.php
+[Wed Apr 15 21:13:20 2026] [::1]:55657 Closing
+[Wed Apr 15 21:16:52 2026] [::1]:55848 Accepted
+[Wed Apr 15 21:16:52 2026] [::1]:55848 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:16:52 2026] [::1]:55848 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55897 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55898 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55897 [200]: GET /index.html
+[Wed Apr 15 21:17:27 2026] [::1]:55897 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55898 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:17:27 2026] [::1]:55898 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55910 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55910 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 21:17:27 2026] [::1]:55910 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55911 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55911 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:17:27 2026] [::1]:55911 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55912 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55912 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 21:17:27 2026] [::1]:55912 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55913 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55914 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55913 [200]: GET /img/logo.png
+[Wed Apr 15 21:17:27 2026] [::1]:55914 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 21:17:27 2026] [::1]:55913 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55914 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55915 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55916 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55915 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 21:17:27 2026] [::1]:55916 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 21:17:27 2026] [::1]:55915 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55917 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55916 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55918 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55917 [200]: GET /js/ofertas.js
+[Wed Apr 15 21:17:27 2026] [::1]:55919 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55920 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55918 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 21:17:27 2026] [::1]:55917 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55919 [200]: GET /js/carrusel.js
+[Wed Apr 15 21:17:27 2026] [::1]:55920 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:17:27 2026] [::1]:55919 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55920 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55918 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55921 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55922 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55923 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55921 [200]: GET /js/auth.js
+[Wed Apr 15 21:17:27 2026] [::1]:55922 [200]: GET /js/usuario.js
+[Wed Apr 15 21:17:27 2026] [::1]:55923 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 21:17:27 2026] [::1]:55924 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55925 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55921 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55924 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 21:17:27 2026] [::1]:55925 [200]: GET /img/loguito.png
+[Wed Apr 15 21:17:27 2026] [::1]:55922 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55923 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55925 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55924 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55926 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55926 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 21:17:27 2026] [::1]:55926 Closing
+[Wed Apr 15 21:17:27 2026] [::1]:55927 Accepted
+[Wed Apr 15 21:17:27 2026] [::1]:55927 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:17:27 2026] [::1]:55927 Closing
+[Wed Apr 15 21:17:49 2026] [::1]:55949 Accepted
+[Wed Apr 15 21:17:49 2026] [::1]:55950 Accepted
+[Wed Apr 15 21:17:49 2026] [::1]:55949 [200]: GET /producto.html?ref=OAK001
+[Wed Apr 15 21:17:49 2026] [::1]:55949 Closing
+[Wed Apr 15 21:17:49 2026] [::1]:55950 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:17:49 2026] [::1]:55950 Closing
+[Wed Apr 15 21:17:49 2026] [::1]:55951 Accepted
+[Wed Apr 15 21:17:49 2026] [::1]:55951 [200]: GET /css/estilos_paginas/productos.css
+[Wed Apr 15 21:17:49 2026] [::1]:55951 Closing
+[Wed Apr 15 21:17:49 2026] [::1]:55952 Accepted
+[Wed Apr 15 21:17:49 2026] [::1]:55953 Accepted
+[Wed Apr 15 21:17:49 2026] [::1]:55952 [200]: GET /css/estilo_carrusel_producto.css
+[Wed Apr 15 21:17:49 2026] [::1]:55954 Accepted
+[Wed Apr 15 21:17:49 2026] [::1]:55953 [200]: GET /css/estilo_carrito.css
+[Wed Apr 15 21:17:49 2026] [::1]:55955 Accepted
+[Wed Apr 15 21:17:49 2026] [::1]:55954 [200]: GET /css/breadcrumb.css
+[Wed Apr 15 21:17:49 2026] [::1]:55956 Accepted
+[Wed Apr 15 21:17:49 2026] [::1]:55955 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:17:49 2026] [::1]:55952 Closing
+[Wed Apr 15 21:17:49 2026] [::1]:55956 [200]: GET /img/logo.png
+[Wed Apr 15 21:17:49 2026] [::1]:55953 Closing
+[Wed Apr 15 21:17:49 2026] [::1]:55954 Closing
+[Wed Apr 15 21:17:49 2026] [::1]:55955 Closing
+[Wed Apr 15 21:17:49 2026] [::1]:55956 Closing
+[Wed Apr 15 21:17:49 2026] [::1]:55957 Accepted
+[Wed Apr 15 21:17:49 2026] [::1]:55957 [200]: GET /js/carrusel_producto.js
+[Wed Apr 15 21:17:49 2026] [::1]:55957 Closing
+[Wed Apr 15 21:17:49 2026] [::1]:55958 Accepted
+[Wed Apr 15 21:17:49 2026] [::1]:55959 Accepted
+[Wed Apr 15 21:17:49 2026] [::1]:55958 [200]: GET /js/precios.js
+[Wed Apr 15 21:17:49 2026] [::1]:55960 Accepted
+[Wed Apr 15 21:17:49 2026] [::1]:55961 Accepted
+[Wed Apr 15 21:17:49 2026] [::1]:55959 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:17:49 2026] [::1]:55958 Closing
+[Wed Apr 15 21:17:49 2026] [::1]:55962 Accepted
+[Wed Apr 15 21:17:49 2026] [::1]:55960 [200]: GET /js/detalle_producto.js
+[Wed Apr 15 21:17:49 2026] [::1]:55961 [200]: GET /js/tryon.js
+[Wed Apr 15 21:17:49 2026] [::1]:55962 [200]: GET /js/carrito.js
+[Wed Apr 15 21:17:49 2026] [::1]:55959 Closing
+[Wed Apr 15 21:17:49 2026] [::1]:55960 Closing
+[Wed Apr 15 21:17:49 2026] [::1]:55961 Closing
+[Wed Apr 15 21:17:49 2026] [::1]:55962 Closing
+[Wed Apr 15 21:17:49 2026] [::1]:55963 Accepted
+[Wed Apr 15 21:17:49 2026] [::1]:55963 [200]: GET /js/auth.js
+[Wed Apr 15 21:17:49 2026] [::1]:55963 Closing
+[Wed Apr 15 21:17:49 2026] [::1]:55964 Accepted
+[Wed Apr 15 21:17:49 2026] [::1]:55965 Accepted
+[Wed Apr 15 21:17:49 2026] [::1]:55964 [200]: GET /js/usuario.js
+[Wed Apr 15 21:17:49 2026] [::1]:55965 [200]: GET /producto.html?ref=OAK001
+[Wed Apr 15 21:17:49 2026] [::1]:55964 Closing
+[Wed Apr 15 21:17:49 2026] [::1]:55965 Closing
+[Wed Apr 15 21:17:49 2026] [::1]:55966 Accepted
+[Wed Apr 15 21:17:49 2026] [::1]:55966 [200]: GET /api/get/producto.php?ref=OAK001
+[Wed Apr 15 21:17:49 2026] [::1]:55966 Closing
+[Wed Apr 15 21:17:49 2026] [::1]:55967 Accepted
+[Wed Apr 15 21:17:49 2026] [::1]:55967 [200]: GET /api/get/get_usuario.php?correo=admin%40teslavision.com
+[Wed Apr 15 21:17:49 2026] [::1]:55967 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55973 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55974 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55973 [200]: GET /index.html
+[Wed Apr 15 21:17:57 2026] [::1]:55973 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55974 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:17:57 2026] [::1]:55974 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55975 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55975 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 21:17:57 2026] [::1]:55975 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55976 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55977 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55978 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55976 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:17:57 2026] [::1]:55977 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 21:17:57 2026] [::1]:55979 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55978 [200]: GET /img/logo.png
+[Wed Apr 15 21:17:57 2026] [::1]:55979 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 21:17:57 2026] [::1]:55976 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55980 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55977 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55981 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55978 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55980 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 21:17:57 2026] [::1]:55981 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 21:17:57 2026] [::1]:55979 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55982 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55983 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55984 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55982 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 21:17:57 2026] [::1]:55983 [200]: GET /js/carrusel.js
+[Wed Apr 15 21:17:57 2026] [::1]:55984 [200]: GET /js/ofertas.js
+[Wed Apr 15 21:17:57 2026] [::1]:55980 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55981 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55983 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55985 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55984 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55985 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:17:57 2026] [::1]:55982 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55985 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55986 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55986 [200]: GET /img/loguito.png
+[Wed Apr 15 21:17:57 2026] [::1]:55986 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55987 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55988 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55987 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 21:17:57 2026] [::1]:55988 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 21:17:57 2026] [::1]:55987 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55988 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55989 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55989 [200]: GET /js/auth.js
+[Wed Apr 15 21:17:57 2026] [::1]:55989 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55990 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55990 [200]: GET /js/usuario.js
+[Wed Apr 15 21:17:57 2026] [::1]:55990 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55991 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55991 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 21:17:57 2026] [::1]:55991 Closing
+[Wed Apr 15 21:17:57 2026] [::1]:55992 Accepted
+[Wed Apr 15 21:17:57 2026] [::1]:55992 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:17:57 2026] [::1]:55992 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56004 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56005 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56004 [200]: GET /index.html
+[Wed Apr 15 21:18:10 2026] [::1]:56004 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56005 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:18:10 2026] [::1]:56005 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56006 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56006 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 21:18:10 2026] [::1]:56006 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56007 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56008 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56009 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56007 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:18:10 2026] [::1]:56008 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 21:18:10 2026] [::1]:56010 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56009 [200]: GET /img/logo.png
+[Wed Apr 15 21:18:10 2026] [::1]:56010 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 21:18:10 2026] [::1]:56007 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56008 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56009 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56010 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56011 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56011 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 21:18:10 2026] [::1]:56011 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56012 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56013 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56014 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56015 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56012 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 21:18:10 2026] [::1]:56013 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 21:18:10 2026] [::1]:56014 [200]: GET /js/carrusel.js
+[Wed Apr 15 21:18:10 2026] [::1]:56015 [200]: GET /js/ofertas.js
+[Wed Apr 15 21:18:10 2026] [::1]:56016 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56017 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56016 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:18:10 2026] [::1]:56017 [200]: GET /js/auth.js
+[Wed Apr 15 21:18:10 2026] [::1]:56012 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56014 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56015 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56016 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56013 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56017 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56018 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56019 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56020 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56021 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56022 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56018 [200]: GET /js/usuario.js
+[Wed Apr 15 21:18:10 2026] [::1]:56019 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 21:18:10 2026] [::1]:56020 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 21:18:10 2026] [::1]:56021 [200]: GET /img/loguito.png
+[Wed Apr 15 21:18:10 2026] [::1]:56022 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 21:18:10 2026] [::1]:56018 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56021 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56019 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56020 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56022 Closing
+[Wed Apr 15 21:18:10 2026] [::1]:56023 Accepted
+[Wed Apr 15 21:18:10 2026] [::1]:56023 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:18:10 2026] [::1]:56023 Closing
+[Wed Apr 15 21:18:13 2026] [::1]:56026 Accepted
+[Wed Apr 15 21:18:13 2026] [::1]:56027 Accepted
+[Wed Apr 15 21:18:13 2026] [::1]:56026 [200]: GET /profile_admin.html
+[Wed Apr 15 21:18:13 2026] [::1]:56026 Closing
+[Wed Apr 15 21:18:13 2026] [::1]:56027 [200]: GET /css/estilo_profile_admin.css
+[Wed Apr 15 21:18:13 2026] [::1]:56027 Closing
+[Wed Apr 15 21:18:13 2026] [::1]:56028 Accepted
+[Wed Apr 15 21:18:13 2026] [::1]:56028 [200]: GET /js/profile_admin.js
+[Wed Apr 15 21:18:13 2026] [::1]:56028 Closing
+[Wed Apr 15 21:18:13 2026] [::1]:56029 Accepted
+[Wed Apr 15 21:18:13 2026] [::1]:56030 Accepted
+[Wed Apr 15 21:18:13 2026] [::1]:56031 Accepted
+[Wed Apr 15 21:18:13 2026] [::1]:56029 [200]: GET /img/logo.png
+[Wed Apr 15 21:18:13 2026] [::1]:56030 [200]: GET /js/datos.js
+[Wed Apr 15 21:18:13 2026] [::1]:56031 [200]: GET /js/auth2.js
+[Wed Apr 15 21:18:13 2026] [::1]:56029 Closing
+[Wed Apr 15 21:18:13 2026] [::1]:56030 Closing
+[Wed Apr 15 21:18:13 2026] [::1]:56031 Closing
+[Wed Apr 15 21:18:13 2026] [::1]:56032 Accepted
+[Wed Apr 15 21:18:13 2026] [::1]:56032 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:18:13 2026] [::1]:56032 Closing
+[Wed Apr 15 21:18:15 2026] [::1]:56038 Accepted
+[Wed Apr 15 21:18:15 2026] [::1]:56039 Accepted
+[Wed Apr 15 21:18:15 2026] [::1]:56038 [200]: GET /index.html
+[Wed Apr 15 21:18:15 2026] [::1]:56038 Closing
+[Wed Apr 15 21:18:16 2026] [::1]:56039 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:18:16 2026] [::1]:56039 Closing
+[Wed Apr 15 21:18:16 2026] [::1]:56040 Accepted
+[Wed Apr 15 21:18:16 2026] [::1]:56040 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 21:18:16 2026] [::1]:56040 Closing
+[Wed Apr 15 21:18:16 2026] [::1]:56041 Accepted
+[Wed Apr 15 21:18:16 2026] [::1]:56042 Accepted
+[Wed Apr 15 21:18:16 2026] [::1]:56043 Accepted
+[Wed Apr 15 21:18:16 2026] [::1]:56041 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:18:16 2026] [::1]:56042 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 21:18:16 2026] [::1]:56044 Accepted
+[Wed Apr 15 21:18:16 2026] [::1]:56043 [200]: GET /img/logo.png
+[Wed Apr 15 21:18:16 2026] [::1]:56044 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 21:18:16 2026] [::1]:56041 Closing
+[Wed Apr 15 21:18:16 2026] [::1]:56042 Closing
+[Wed Apr 15 21:18:16 2026] [::1]:56043 Closing
+[Wed Apr 15 21:18:16 2026] [::1]:56044 Closing
+[Wed Apr 15 21:18:16 2026] [::1]:56045 Accepted
+[Wed Apr 15 21:18:16 2026] [::1]:56046 Accepted
+[Wed Apr 15 21:18:16 2026] [::1]:56045 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 21:18:16 2026] [::1]:56046 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 21:18:16 2026] [::1]:56045 Closing
+[Wed Apr 15 21:18:16 2026] [::1]:56047 Accepted
+[Wed Apr 15 21:18:16 2026] [::1]:56046 Closing
+[Wed Apr 15 21:18:16 2026] [::1]:56048 Accepted
+[Wed Apr 15 21:18:16 2026] [::1]:56047 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 21:18:16 2026] [::1]:56048 [200]: GET /js/carrusel.js
+[Wed Apr 15 21:18:16 2026] [::1]:56048 Closing
+[Wed Apr 15 21:18:16 2026] [::1]:56047 Closing
+[Wed Apr 15 21:18:16 2026] [::1]:56049 Accepted
+[Wed Apr 15 21:18:16 2026] [::1]:56049 [200]: GET /js/ofertas.js
+[Wed Apr 15 21:18:16 2026] [::1]:56049 Closing
+[Wed Apr 15 21:18:16 2026] [::1]:56050 Accepted
+[Wed Apr 15 21:18:16 2026] [::1]:56050 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:18:16 2026] [::1]:56050 Closing
+[Wed Apr 15 21:18:16 2026] [::1]:56051 Accepted
+[Wed Apr 15 21:18:16 2026] [::1]:56052 Accepted
+[Wed Apr 15 21:18:16 2026] [::1]:56053 Accepted
+[Wed Apr 15 21:18:16 2026] [::1]:56051 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 21:18:16 2026] [::1]:56052 [200]: GET /js/auth.js
+[Wed Apr 15 21:18:16 2026] [::1]:56053 [200]: GET /js/usuario.js
+[Wed Apr 15 21:18:16 2026] [::1]:56051 Closing
+[Wed Apr 15 21:18:16 2026] [::1]:56052 Closing
+[Wed Apr 15 21:18:16 2026] [::1]:56053 Closing
+[Wed Apr 15 21:18:16 2026] [::1]:56054 Accepted
+[Wed Apr 15 21:18:16 2026] [::1]:56055 Accepted
+[Wed Apr 15 21:18:16 2026] [::1]:56054 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 21:18:16 2026] [::1]:56055 [200]: GET /img/loguito.png
+[Wed Apr 15 21:18:16 2026] [::1]:56054 Closing
+[Wed Apr 15 21:18:16 2026] [::1]:56055 Closing
+[Wed Apr 15 21:18:16 2026] [::1]:56056 Accepted
+[Wed Apr 15 21:18:16 2026] [::1]:56056 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 21:18:16 2026] [::1]:56056 Closing
+[Wed Apr 15 21:18:16 2026] [::1]:56057 Accepted
+[Wed Apr 15 21:18:16 2026] [::1]:56057 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:18:16 2026] [::1]:56057 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56194 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56195 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56194 [200]: GET /index.html
+[Wed Apr 15 21:21:05 2026] [::1]:56194 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56195 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:21:05 2026] [::1]:56195 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56207 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56207 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 21:21:05 2026] [::1]:56207 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56208 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56208 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:21:05 2026] [::1]:56208 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56209 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56209 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 21:21:05 2026] [::1]:56209 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56210 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56211 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56210 [200]: GET /img/logo.png
+[Wed Apr 15 21:21:05 2026] [::1]:56211 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 21:21:05 2026] [::1]:56210 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56211 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56212 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56213 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56212 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 21:21:05 2026] [::1]:56214 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56213 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 21:21:05 2026] [::1]:56215 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56214 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 21:21:05 2026] [::1]:56216 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56215 [200]: GET /js/carrusel.js
+[Wed Apr 15 21:21:05 2026] [::1]:56217 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56216 [200]: GET /js/ofertas.js
+[Wed Apr 15 21:21:05 2026] [::1]:56212 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56217 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:21:05 2026] [::1]:56213 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56215 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56216 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56214 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56217 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56218 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56219 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56218 [200]: GET /js/auth.js
+[Wed Apr 15 21:21:05 2026] [::1]:56219 [200]: GET /js/usuario.js
+[Wed Apr 15 21:21:05 2026] [::1]:56218 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56220 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56219 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56221 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56222 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56220 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 21:21:05 2026] [::1]:56221 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 21:21:05 2026] [::1]:56223 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56222 [200]: GET /img/loguito.png
+[Wed Apr 15 21:21:05 2026] [::1]:56223 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 21:21:05 2026] [::1]:56220 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56221 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56222 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56223 Closing
+[Wed Apr 15 21:21:05 2026] [::1]:56224 Accepted
+[Wed Apr 15 21:21:05 2026] [::1]:56224 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:21:05 2026] [::1]:56224 Closing
+[Wed Apr 15 21:21:32 2026] [::1]:56251 Accepted
+[Wed Apr 15 21:21:32 2026] [::1]:56252 Accepted
+[Wed Apr 15 21:21:32 2026] [::1]:56251 [200]: GET /Catalogo.html
+[Wed Apr 15 21:21:32 2026] [::1]:56251 Closing
+[Wed Apr 15 21:21:32 2026] [::1]:56252 [200]: GET /css/estilo_catalogo.css
+[Wed Apr 15 21:21:32 2026] [::1]:56252 Closing
+[Wed Apr 15 21:21:32 2026] [::1]:56253 Accepted
+[Wed Apr 15 21:21:32 2026] [::1]:56253 [200]: GET /css/breadcrumb.css
+[Wed Apr 15 21:21:32 2026] [::1]:56253 Closing
+[Wed Apr 15 21:21:32 2026] [::1]:56254 Accepted
+[Wed Apr 15 21:21:32 2026] [::1]:56255 Accepted
+[Wed Apr 15 21:21:32 2026] [::1]:56256 Accepted
+[Wed Apr 15 21:21:32 2026] [::1]:56254 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:21:32 2026] [::1]:56257 Accepted
+[Wed Apr 15 21:21:32 2026] [::1]:56255 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:21:32 2026] [::1]:56256 [200]: GET /img/logo.png
+[Wed Apr 15 21:21:32 2026] [::1]:56257 [200]: GET /img/imagen-catalogo.png
+[Wed Apr 15 21:21:32 2026] [::1]:56254 Closing
+[Wed Apr 15 21:21:32 2026] [::1]:56258 Accepted
+[Wed Apr 15 21:21:32 2026] [::1]:56255 Closing
+[Wed Apr 15 21:21:32 2026] [::1]:56256 Closing
+[Wed Apr 15 21:21:32 2026] [::1]:56259 Accepted
+[Wed Apr 15 21:21:32 2026] [::1]:56258 [200]: GET /js/catalogo.js
+[Wed Apr 15 21:21:32 2026] [::1]:56259 [200]: GET /js/precios.js
+[Wed Apr 15 21:21:32 2026] [::1]:56258 Closing
+[Wed Apr 15 21:21:32 2026] [::1]:56259 Closing
+[Wed Apr 15 21:21:32 2026] [::1]:56257 Closing
+[Wed Apr 15 21:21:32 2026] [::1]:56260 Accepted
+[Wed Apr 15 21:21:32 2026] [::1]:56261 Accepted
+[Wed Apr 15 21:21:32 2026] [::1]:56262 Accepted
+[Wed Apr 15 21:21:32 2026] [::1]:56260 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:21:32 2026] [::1]:56261 [200]: GET /js/auth.js
+[Wed Apr 15 21:21:32 2026] [::1]:56262 [200]: GET /js/usuario.js
+[Wed Apr 15 21:21:32 2026] [::1]:56260 Closing
+[Wed Apr 15 21:21:32 2026] [::1]:56261 Closing
+[Wed Apr 15 21:21:32 2026] [::1]:56262 Closing
+[Wed Apr 15 21:21:32 2026] [::1]:56263 Accepted
+[Wed Apr 15 21:21:32 2026] [::1]:56263 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:21:32 2026] [::1]:56263 Closing
+[Wed Apr 15 21:21:34 2026] [::1]:56266 Accepted
+[Wed Apr 15 21:21:34 2026] [::1]:56267 Accepted
+[Wed Apr 15 21:21:34 2026] [::1]:56266 [200]: GET /producto.html?ref=GEN001
+[Wed Apr 15 21:21:34 2026] [::1]:56266 Closing
+[Wed Apr 15 21:21:34 2026] [::1]:56267 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:21:34 2026] [::1]:56267 Closing
+[Wed Apr 15 21:21:34 2026] [::1]:56268 Accepted
+[Wed Apr 15 21:21:34 2026] [::1]:56268 [200]: GET /css/estilos_paginas/productos.css
+[Wed Apr 15 21:21:34 2026] [::1]:56268 Closing
+[Wed Apr 15 21:21:34 2026] [::1]:56269 Accepted
+[Wed Apr 15 21:21:34 2026] [::1]:56270 Accepted
+[Wed Apr 15 21:21:34 2026] [::1]:56271 Accepted
+[Wed Apr 15 21:21:34 2026] [::1]:56269 [200]: GET /css/estilo_carrusel_producto.css
+[Wed Apr 15 21:21:34 2026] [::1]:56270 [200]: GET /css/estilo_carrito.css
+[Wed Apr 15 21:21:34 2026] [::1]:56271 [200]: GET /css/breadcrumb.css
+[Wed Apr 15 21:21:34 2026] [::1]:56272 Accepted
+[Wed Apr 15 21:21:34 2026] [::1]:56273 Accepted
+[Wed Apr 15 21:21:34 2026] [::1]:56272 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:21:34 2026] [::1]:56269 Closing
+[Wed Apr 15 21:21:34 2026] [::1]:56273 [200]: GET /img/logo.png
+[Wed Apr 15 21:21:34 2026] [::1]:56270 Closing
+[Wed Apr 15 21:21:34 2026] [::1]:56271 Closing
+[Wed Apr 15 21:21:34 2026] [::1]:56272 Closing
+[Wed Apr 15 21:21:34 2026] [::1]:56273 Closing
+[Wed Apr 15 21:21:34 2026] [::1]:56274 Accepted
+[Wed Apr 15 21:21:34 2026] [::1]:56274 [200]: GET /js/precios.js
+[Wed Apr 15 21:21:34 2026] [::1]:56275 Accepted
+[Wed Apr 15 21:21:34 2026] [::1]:56276 Accepted
+[Wed Apr 15 21:21:34 2026] [::1]:56277 Accepted
+[Wed Apr 15 21:21:34 2026] [::1]:56274 Closing
+[Wed Apr 15 21:21:34 2026] [::1]:56275 [200]: GET /js/carrusel_producto.js
+[Wed Apr 15 21:21:34 2026] [::1]:56276 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:21:34 2026] [::1]:56277 [200]: GET /js/detalle_producto.js
+[Wed Apr 15 21:21:34 2026] [::1]:56275 Closing
+[Wed Apr 15 21:21:34 2026] [::1]:56276 Closing
+[Wed Apr 15 21:21:34 2026] [::1]:56277 Closing
+[Wed Apr 15 21:21:34 2026] [::1]:56278 Accepted
+[Wed Apr 15 21:21:34 2026] [::1]:56279 Accepted
+[Wed Apr 15 21:21:34 2026] [::1]:56280 Accepted
+[Wed Apr 15 21:21:34 2026] [::1]:56278 [200]: GET /js/tryon.js
+[Wed Apr 15 21:21:34 2026] [::1]:56279 [200]: GET /js/carrito.js
+[Wed Apr 15 21:21:34 2026] [::1]:56280 [200]: GET /js/auth.js
+[Wed Apr 15 21:21:34 2026] [::1]:56278 Closing
+[Wed Apr 15 21:21:34 2026] [::1]:56279 Closing
+[Wed Apr 15 21:21:34 2026] [::1]:56280 Closing
+[Wed Apr 15 21:21:34 2026] [::1]:56281 Accepted
+[Wed Apr 15 21:21:34 2026] [::1]:56282 Accepted
+[Wed Apr 15 21:21:34 2026] [::1]:56281 [200]: GET /js/usuario.js
+[Wed Apr 15 21:21:34 2026] [::1]:56282 [200]: GET /producto.html?ref=GEN001
+[Wed Apr 15 21:21:34 2026] [::1]:56281 Closing
+[Wed Apr 15 21:21:34 2026] [::1]:56282 Closing
+[Wed Apr 15 21:21:34 2026] [::1]:56283 Accepted
+[Wed Apr 15 21:21:34 2026] [::1]:56283 [200]: GET /api/get/producto.php?ref=GEN001
+[Wed Apr 15 21:21:34 2026] [::1]:56283 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56287 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56288 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56287 [200]: GET /index.html
+[Wed Apr 15 21:21:37 2026] [::1]:56287 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56288 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:21:37 2026] [::1]:56288 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56289 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56290 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56289 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 21:21:37 2026] [::1]:56290 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:21:37 2026] [::1]:56289 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56290 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56291 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56292 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56291 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 21:21:37 2026] [::1]:56291 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56293 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56292 [200]: GET /img/logo.png
+[Wed Apr 15 21:21:37 2026] [::1]:56293 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 21:21:37 2026] [::1]:56292 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56293 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56294 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56295 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56296 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56297 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56298 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56299 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56294 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 21:21:37 2026] [::1]:56295 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 21:21:37 2026] [::1]:56296 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 21:21:37 2026] [::1]:56297 [200]: GET /js/carrusel.js
+[Wed Apr 15 21:21:37 2026] [::1]:56298 [200]: GET /js/ofertas.js
+[Wed Apr 15 21:21:37 2026] [::1]:56299 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:21:37 2026] [::1]:56294 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56295 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56297 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56298 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56299 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56296 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56300 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56301 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56302 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56303 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56304 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56300 [200]: GET /js/auth.js
+[Wed Apr 15 21:21:37 2026] [::1]:56301 [200]: GET /js/usuario.js
+[Wed Apr 15 21:21:37 2026] [::1]:56302 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 21:21:37 2026] [::1]:56303 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 21:21:37 2026] [::1]:56304 [200]: GET /img/loguito.png
+[Wed Apr 15 21:21:37 2026] [::1]:56300 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56301 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56304 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56305 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56302 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56303 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56305 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 21:21:37 2026] [::1]:56305 Closing
+[Wed Apr 15 21:21:37 2026] [::1]:56306 Accepted
+[Wed Apr 15 21:21:37 2026] [::1]:56306 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:21:37 2026] [::1]:56306 Closing
+[Wed Apr 15 21:21:43 2026] [::1]:56316 Accepted
+[Wed Apr 15 21:21:43 2026] [::1]:56317 Accepted
+[Wed Apr 15 21:21:43 2026] [::1]:56316 [200]: GET /Catalogo.html
+[Wed Apr 15 21:21:43 2026] [::1]:56316 Closing
+[Wed Apr 15 21:21:43 2026] [::1]:56317 [200]: GET /css/estilo_catalogo.css
+[Wed Apr 15 21:21:43 2026] [::1]:56317 Closing
+[Wed Apr 15 21:21:43 2026] [::1]:56318 Accepted
+[Wed Apr 15 21:21:43 2026] [::1]:56318 [200]: GET /css/breadcrumb.css
+[Wed Apr 15 21:21:43 2026] [::1]:56318 Closing
+[Wed Apr 15 21:21:43 2026] [::1]:56319 Accepted
+[Wed Apr 15 21:21:43 2026] [::1]:56320 Accepted
+[Wed Apr 15 21:21:43 2026] [::1]:56321 Accepted
+[Wed Apr 15 21:21:43 2026] [::1]:56319 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:21:43 2026] [::1]:56320 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:21:43 2026] [::1]:56322 Accepted
+[Wed Apr 15 21:21:43 2026] [::1]:56323 Accepted
+[Wed Apr 15 21:21:43 2026] [::1]:56319 Closing
+[Wed Apr 15 21:21:43 2026] [::1]:56324 Accepted
+[Wed Apr 15 21:21:43 2026] [::1]:56321 [200]: GET /img/logo.png
+[Wed Apr 15 21:21:43 2026] [::1]:56322 [200]: GET /img/imagen-catalogo.png
+[Wed Apr 15 21:21:43 2026] [::1]:56320 Closing
+[Wed Apr 15 21:21:43 2026] [::1]:56323 [200]: GET /js/catalogo.js
+[Wed Apr 15 21:21:43 2026] [::1]:56324 [200]: GET /js/precios.js
+[Wed Apr 15 21:21:43 2026] [::1]:56321 Closing
+[Wed Apr 15 21:21:43 2026] [::1]:56323 Closing
+[Wed Apr 15 21:21:43 2026] [::1]:56324 Closing
+[Wed Apr 15 21:21:43 2026] [::1]:56325 Accepted
+[Wed Apr 15 21:21:43 2026] [::1]:56326 Accepted
+[Wed Apr 15 21:21:43 2026] [::1]:56325 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:21:43 2026] [::1]:56322 Closing
+[Wed Apr 15 21:21:43 2026] [::1]:56325 Closing
+[Wed Apr 15 21:21:43 2026] [::1]:56326 [200]: GET /js/auth.js
+[Wed Apr 15 21:21:43 2026] [::1]:56326 Closing
+[Wed Apr 15 21:21:43 2026] [::1]:56327 Accepted
+[Wed Apr 15 21:21:43 2026] [::1]:56327 [200]: GET /js/usuario.js
+[Wed Apr 15 21:21:43 2026] [::1]:56327 Closing
+[Wed Apr 15 21:21:43 2026] [::1]:56328 Accepted
+[Wed Apr 15 21:21:43 2026] [::1]:56328 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:21:43 2026] [::1]:56328 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56337 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56338 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56337 [200]: GET /index.html
+[Wed Apr 15 21:21:51 2026] [::1]:56337 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56338 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:21:51 2026] [::1]:56338 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56339 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56339 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 21:21:51 2026] [::1]:56339 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56340 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56341 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56342 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56340 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:21:51 2026] [::1]:56341 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 21:21:51 2026] [::1]:56343 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56342 [200]: GET /img/logo.png
+[Wed Apr 15 21:21:51 2026] [::1]:56343 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 21:21:51 2026] [::1]:56340 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56341 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56342 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56343 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56344 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56345 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56346 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56344 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 21:21:51 2026] [::1]:56345 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 21:21:51 2026] [::1]:56347 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56346 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 21:21:51 2026] [::1]:56347 [200]: GET /js/carrusel.js
+[Wed Apr 15 21:21:51 2026] [::1]:56348 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56349 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56348 [200]: GET /js/ofertas.js
+[Wed Apr 15 21:21:51 2026] [::1]:56344 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56345 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56349 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:21:51 2026] [::1]:56347 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56346 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56348 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56349 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56350 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56351 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56352 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56350 [200]: GET /js/auth.js
+[Wed Apr 15 21:21:51 2026] [::1]:56351 [200]: GET /js/usuario.js
+[Wed Apr 15 21:21:51 2026] [::1]:56350 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56352 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 21:21:51 2026] [::1]:56351 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56353 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56352 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56354 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56355 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56353 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 21:21:51 2026] [::1]:56354 [200]: GET /img/loguito.png
+[Wed Apr 15 21:21:51 2026] [::1]:56355 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 21:21:51 2026] [::1]:56353 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56354 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56355 Closing
+[Wed Apr 15 21:21:51 2026] [::1]:56356 Accepted
+[Wed Apr 15 21:21:51 2026] [::1]:56356 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:21:51 2026] [::1]:56356 Closing
+[Wed Apr 15 21:21:53 2026] [::1]:56359 Accepted
+[Wed Apr 15 21:21:53 2026] [::1]:56360 Accepted
+[Wed Apr 15 21:21:53 2026] [::1]:56359 [200]: GET /Catalogo.html
+[Wed Apr 15 21:21:53 2026] [::1]:56359 Closing
+[Wed Apr 15 21:21:54 2026] [::1]:56360 [200]: GET /css/estilo_catalogo.css
+[Wed Apr 15 21:21:54 2026] [::1]:56360 Closing
+[Wed Apr 15 21:21:54 2026] [::1]:56361 Accepted
+[Wed Apr 15 21:21:54 2026] [::1]:56361 [200]: GET /css/breadcrumb.css
+[Wed Apr 15 21:21:54 2026] [::1]:56361 Closing
+[Wed Apr 15 21:21:54 2026] [::1]:56362 Accepted
+[Wed Apr 15 21:21:54 2026] [::1]:56363 Accepted
+[Wed Apr 15 21:21:54 2026] [::1]:56364 Accepted
+[Wed Apr 15 21:21:54 2026] [::1]:56362 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:21:54 2026] [::1]:56365 Accepted
+[Wed Apr 15 21:21:54 2026] [::1]:56363 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:21:54 2026] [::1]:56364 [200]: GET /img/logo.png
+[Wed Apr 15 21:21:54 2026] [::1]:56365 [200]: GET /img/imagen-catalogo.png
+[Wed Apr 15 21:21:54 2026] [::1]:56366 Accepted
+[Wed Apr 15 21:21:54 2026] [::1]:56362 Closing
+[Wed Apr 15 21:21:54 2026] [::1]:56367 Accepted
+[Wed Apr 15 21:21:54 2026] [::1]:56363 Closing
+[Wed Apr 15 21:21:54 2026] [::1]:56366 [200]: GET /js/catalogo.js
+[Wed Apr 15 21:21:54 2026] [::1]:56367 [200]: GET /js/precios.js
+[Wed Apr 15 21:21:54 2026] [::1]:56364 Closing
+[Wed Apr 15 21:21:54 2026] [::1]:56366 Closing
+[Wed Apr 15 21:21:54 2026] [::1]:56367 Closing
+[Wed Apr 15 21:21:54 2026] [::1]:56368 Accepted
+[Wed Apr 15 21:21:54 2026] [::1]:56368 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:21:54 2026] [::1]:56365 Closing
+[Wed Apr 15 21:21:54 2026] [::1]:56369 Accepted
+[Wed Apr 15 21:21:54 2026] [::1]:56370 Accepted
+[Wed Apr 15 21:21:54 2026] [::1]:56368 Closing
+[Wed Apr 15 21:21:54 2026] [::1]:56369 [200]: GET /js/auth.js
+[Wed Apr 15 21:21:54 2026] [::1]:56370 [200]: GET /js/usuario.js
+[Wed Apr 15 21:21:54 2026] [::1]:56369 Closing
+[Wed Apr 15 21:21:54 2026] [::1]:56370 Closing
+[Wed Apr 15 21:21:54 2026] [::1]:56371 Accepted
+[Wed Apr 15 21:21:54 2026] [::1]:56371 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:21:54 2026] [::1]:56371 Closing
+[Wed Apr 15 21:21:58 2026] [::1]:56377 Accepted
+[Wed Apr 15 21:21:58 2026] [::1]:56378 Accepted
+[Wed Apr 15 21:21:58 2026] [::1]:56377 [200]: GET /acc_catalogo.html
+[Wed Apr 15 21:21:58 2026] [::1]:56377 Closing
+[Wed Apr 15 21:21:58 2026] [::1]:56378 [200]: GET /css/estilo_catalogo.css
+[Wed Apr 15 21:21:58 2026] [::1]:56378 Closing
+[Wed Apr 15 21:21:58 2026] [::1]:56379 Accepted
+[Wed Apr 15 21:21:58 2026] [::1]:56379 [200]: GET /css/breadcrumb.css
+[Wed Apr 15 21:21:58 2026] [::1]:56379 Closing
+[Wed Apr 15 21:21:58 2026] [::1]:56380 Accepted
+[Wed Apr 15 21:21:58 2026] [::1]:56381 Accepted
+[Wed Apr 15 21:21:58 2026] [::1]:56382 Accepted
+[Wed Apr 15 21:21:58 2026] [::1]:56380 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:21:58 2026] [::1]:56381 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:21:58 2026] [::1]:56383 Accepted
+[Wed Apr 15 21:21:58 2026] [::1]:56382 [200]: GET /img/logo.png
+[Wed Apr 15 21:21:58 2026] [::1]:56384 Accepted
+[Wed Apr 15 21:21:58 2026] [::1]:56383 [200]: GET /img/imagen-catalogo.png
+[Wed Apr 15 21:21:58 2026] [::1]:56385 Accepted
+[Wed Apr 15 21:21:58 2026] [::1]:56384 [200]: GET /js/catalogo.js
+[Wed Apr 15 21:21:58 2026] [::1]:56380 Closing
+[Wed Apr 15 21:21:58 2026] [::1]:56381 Closing
+[Wed Apr 15 21:21:58 2026] [::1]:56386 Accepted
+[Wed Apr 15 21:21:58 2026] [::1]:56385 [200]: GET /js/precios.js
+[Wed Apr 15 21:21:58 2026] [::1]:56382 Closing
+[Wed Apr 15 21:21:58 2026] [::1]:56387 Accepted
+[Wed Apr 15 21:21:58 2026] [::1]:56386 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:21:58 2026] [::1]:56388 Accepted
+[Wed Apr 15 21:21:58 2026] [::1]:56387 [200]: GET /js/auth.js
+[Wed Apr 15 21:21:58 2026] [::1]:56384 Closing
+[Wed Apr 15 21:21:58 2026] [::1]:56388 [200]: GET /js/usuario.js
+[Wed Apr 15 21:21:58 2026] [::1]:56385 Closing
+[Wed Apr 15 21:21:58 2026] [::1]:56386 Closing
+[Wed Apr 15 21:21:58 2026] [::1]:56387 Closing
+[Wed Apr 15 21:21:58 2026] [::1]:56383 Closing
+[Wed Apr 15 21:21:58 2026] [::1]:56388 Closing
+[Wed Apr 15 21:21:58 2026] [::1]:56389 Accepted
+[Wed Apr 15 21:21:58 2026] [::1]:56389 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:21:58 2026] [::1]:56389 Closing
+[Wed Apr 15 21:22:02 2026] [::1]:56411 Accepted
+[Wed Apr 15 21:22:02 2026] [::1]:56412 Accepted
+[Wed Apr 15 21:22:02 2026] [::1]:56411 [200]: GET /producto.html?ref=ACC001
+[Wed Apr 15 21:22:02 2026] [::1]:56411 Closing
+[Wed Apr 15 21:22:02 2026] [::1]:56412 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:22:02 2026] [::1]:56412 Closing
+[Wed Apr 15 21:22:02 2026] [::1]:56413 Accepted
+[Wed Apr 15 21:22:02 2026] [::1]:56413 [200]: GET /css/estilos_paginas/productos.css
+[Wed Apr 15 21:22:02 2026] [::1]:56413 Closing
+[Wed Apr 15 21:22:02 2026] [::1]:56414 Accepted
+[Wed Apr 15 21:22:02 2026] [::1]:56415 Accepted
+[Wed Apr 15 21:22:02 2026] [::1]:56416 Accepted
+[Wed Apr 15 21:22:02 2026] [::1]:56414 [200]: GET /css/estilo_carrusel_producto.css
+[Wed Apr 15 21:22:02 2026] [::1]:56415 [200]: GET /css/estilo_carrito.css
+[Wed Apr 15 21:22:02 2026] [::1]:56417 Accepted
+[Wed Apr 15 21:22:02 2026] [::1]:56416 [200]: GET /css/breadcrumb.css
+[Wed Apr 15 21:22:02 2026] [::1]:56418 Accepted
+[Wed Apr 15 21:22:02 2026] [::1]:56417 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:22:02 2026] [::1]:56418 [200]: GET /img/logo.png
+[Wed Apr 15 21:22:02 2026] [::1]:56414 Closing
+[Wed Apr 15 21:22:02 2026] [::1]:56415 Closing
+[Wed Apr 15 21:22:02 2026] [::1]:56416 Closing
+[Wed Apr 15 21:22:02 2026] [::1]:56417 Closing
+[Wed Apr 15 21:22:02 2026] [::1]:56418 Closing
+[Wed Apr 15 21:22:02 2026] [::1]:56419 Accepted
+[Wed Apr 15 21:22:02 2026] [::1]:56420 Accepted
+[Wed Apr 15 21:22:02 2026] [::1]:56421 Accepted
+[Wed Apr 15 21:22:02 2026] [::1]:56419 [200]: GET /js/precios.js
+[Wed Apr 15 21:22:02 2026] [::1]:56420 [200]: GET /js/carrusel_producto.js
+[Wed Apr 15 21:22:02 2026] [::1]:56421 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:22:02 2026] [::1]:56422 Accepted
+[Wed Apr 15 21:22:02 2026] [::1]:56423 Accepted
+[Wed Apr 15 21:22:02 2026] [::1]:56422 [200]: GET /js/detalle_producto.js
+[Wed Apr 15 21:22:02 2026] [::1]:56419 Closing
+[Wed Apr 15 21:22:02 2026] [::1]:56424 Accepted
+[Wed Apr 15 21:22:02 2026] [::1]:56423 [200]: GET /js/tryon.js
+[Wed Apr 15 21:22:02 2026] [::1]:56420 Closing
+[Wed Apr 15 21:22:02 2026] [::1]:56421 Closing
+[Wed Apr 15 21:22:02 2026] [::1]:56425 Accepted
+[Wed Apr 15 21:22:02 2026] [::1]:56424 [200]: GET /js/carrito.js
+[Wed Apr 15 21:22:02 2026] [::1]:56426 Accepted
+[Wed Apr 15 21:22:02 2026] [::1]:56422 Closing
+[Wed Apr 15 21:22:02 2026] [::1]:56427 Accepted
+[Wed Apr 15 21:22:02 2026] [::1]:56425 [200]: GET /js/auth.js
+[Wed Apr 15 21:22:02 2026] [::1]:56426 [200]: GET /js/usuario.js
+[Wed Apr 15 21:22:02 2026] [::1]:56423 Closing
+[Wed Apr 15 21:22:02 2026] [::1]:56427 [200]: GET /producto.html?ref=ACC001
+[Wed Apr 15 21:22:02 2026] [::1]:56424 Closing
+[Wed Apr 15 21:22:02 2026] [::1]:56425 Closing
+[Wed Apr 15 21:22:02 2026] [::1]:56426 Closing
+[Wed Apr 15 21:22:02 2026] [::1]:56427 Closing
+[Wed Apr 15 21:22:02 2026] [::1]:56428 Accepted
+[Wed Apr 15 21:22:02 2026] [::1]:56428 [200]: GET /api/get/producto.php?ref=ACC001
+[Wed Apr 15 21:22:02 2026] [::1]:56428 Closing
+[Wed Apr 15 21:22:25 2026] [::1]:56464 Accepted
+[Wed Apr 15 21:22:25 2026] [::1]:56465 Accepted
+[Wed Apr 15 21:22:25 2026] [::1]:56464 [200]: GET /carrito.html
+[Wed Apr 15 21:22:25 2026] [::1]:56464 Closing
+[Wed Apr 15 21:22:25 2026] [::1]:56465 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:22:25 2026] [::1]:56465 Closing
+[Wed Apr 15 21:22:25 2026] [::1]:56471 Accepted
+[Wed Apr 15 21:22:25 2026] [::1]:56471 [200]: GET /css/estilo_carrito.css
+[Wed Apr 15 21:22:25 2026] [::1]:56471 Closing
+[Wed Apr 15 21:22:25 2026] [::1]:56472 Accepted
+[Wed Apr 15 21:22:25 2026] [::1]:56473 Accepted
+[Wed Apr 15 21:22:25 2026] [::1]:56474 Accepted
+[Wed Apr 15 21:22:25 2026] [::1]:56475 Accepted
+[Wed Apr 15 21:22:25 2026] [::1]:56472 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:22:25 2026] [::1]:56473 [200]: GET /img/gafas1.png
+[Wed Apr 15 21:22:25 2026] [::1]:56474 [200]: GET /img/logo.png
+[Wed Apr 15 21:22:25 2026] [::1]:56475 [200]: GET /img/gafas2.png
+[Wed Apr 15 21:22:25 2026] [::1]:56476 Accepted
+[Wed Apr 15 21:22:25 2026] [::1]:56472 Closing
+[Wed Apr 15 21:22:25 2026] [::1]:56477 Accepted
+[Wed Apr 15 21:22:25 2026] [::1]:56476 [200]: GET /js/carrito.js
+[Wed Apr 15 21:22:25 2026] [::1]:56473 Closing
+[Wed Apr 15 21:22:25 2026] [::1]:56474 Closing
+[Wed Apr 15 21:22:25 2026] [::1]:56475 Closing
+[Wed Apr 15 21:22:25 2026] [::1]:56477 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:22:25 2026] [::1]:56476 Closing
+[Wed Apr 15 21:22:25 2026] [::1]:56477 Closing
+[Wed Apr 15 21:22:25 2026] [::1]:56478 Accepted
+[Wed Apr 15 21:22:25 2026] [::1]:56479 Accepted
+[Wed Apr 15 21:22:25 2026] [::1]:56478 [200]: GET /js/auth.js
+[Wed Apr 15 21:22:25 2026] [::1]:56479 [200]: GET /js/usuario.js
+[Wed Apr 15 21:22:25 2026] [::1]:56478 Closing
+[Wed Apr 15 21:22:25 2026] [::1]:56479 Closing
+[Wed Apr 15 21:22:25 2026] [::1]:56480 Accepted
+[Wed Apr 15 21:22:25 2026] [::1]:56480 [200]: GET /producto.html?ref=ACC001
+[Wed Apr 15 21:22:25 2026] [::1]:56480 Closing
+[Wed Apr 15 21:28:26 2026] [::1]:56908 Accepted
+[Wed Apr 15 21:28:26 2026] [::1]:56909 Accepted
+[Wed Apr 15 21:28:26 2026] [::1]:56908 [200]: GET /carrito.html
+[Wed Apr 15 21:28:26 2026] [::1]:56908 Closing
+[Wed Apr 15 21:28:26 2026] [::1]:56909 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:28:26 2026] [::1]:56909 Closing
+[Wed Apr 15 21:28:26 2026] [::1]:56921 Accepted
+[Wed Apr 15 21:28:26 2026] [::1]:56921 [200]: GET /css/estilo_carrito.css
+[Wed Apr 15 21:28:26 2026] [::1]:56921 Closing
+[Wed Apr 15 21:28:26 2026] [::1]:56922 Accepted
+[Wed Apr 15 21:28:26 2026] [::1]:56922 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:28:26 2026] [::1]:56922 Closing
+[Wed Apr 15 21:28:26 2026] [::1]:56923 Accepted
+[Wed Apr 15 21:28:26 2026] [::1]:56923 [200]: GET /img/logo.png
+[Wed Apr 15 21:28:26 2026] [::1]:56923 Closing
+[Wed Apr 15 21:28:26 2026] [::1]:56924 Accepted
+[Wed Apr 15 21:28:26 2026] [::1]:56924 [200]: GET /img/gafas1.png
+[Wed Apr 15 21:28:26 2026] [::1]:56924 Closing
+[Wed Apr 15 21:28:26 2026] [::1]:56925 Accepted
+[Wed Apr 15 21:28:26 2026] [::1]:56926 Accepted
+[Wed Apr 15 21:28:26 2026] [::1]:56927 Accepted
+[Wed Apr 15 21:28:26 2026] [::1]:56925 [200]: GET /img/gafas2.png
+[Wed Apr 15 21:28:26 2026] [::1]:56926 [200]: GET /js/carrito.js
+[Wed Apr 15 21:28:26 2026] [::1]:56927 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:28:26 2026] [::1]:56928 Accepted
+[Wed Apr 15 21:28:26 2026] [::1]:56929 Accepted
+[Wed Apr 15 21:28:26 2026] [::1]:56928 [200]: GET /js/auth.js
+[Wed Apr 15 21:28:26 2026] [::1]:56925 Closing
+[Wed Apr 15 21:28:26 2026] [::1]:56929 [200]: GET /js/usuario.js
+[Wed Apr 15 21:28:26 2026] [::1]:56926 Closing
+[Wed Apr 15 21:28:26 2026] [::1]:56927 Closing
+[Wed Apr 15 21:28:26 2026] [::1]:56928 Closing
+[Wed Apr 15 21:28:26 2026] [::1]:56929 Closing
+[Wed Apr 15 21:28:26 2026] [::1]:56930 Accepted
+[Wed Apr 15 21:28:26 2026] [::1]:56930 [200]: GET /producto.html?ref=ACC001
+[Wed Apr 15 21:28:26 2026] [::1]:56930 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56931 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56932 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56931 [200]: GET /index.html
+[Wed Apr 15 21:28:27 2026] [::1]:56931 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56932 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:28:27 2026] [::1]:56932 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56933 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56933 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 21:28:27 2026] [::1]:56933 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56934 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56935 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56936 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56934 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:28:27 2026] [::1]:56935 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 21:28:27 2026] [::1]:56937 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56936 [200]: GET /img/logo.png
+[Wed Apr 15 21:28:27 2026] [::1]:56938 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56937 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 21:28:27 2026] [::1]:56939 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56938 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 21:28:27 2026] [::1]:56934 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56935 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56940 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56939 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 21:28:27 2026] [::1]:56936 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56941 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56940 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 21:28:27 2026] [::1]:56937 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56942 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56941 [200]: GET /js/carrusel.js
+[Wed Apr 15 21:28:27 2026] [::1]:56943 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56942 [200]: GET /js/ofertas.js
+[Wed Apr 15 21:28:27 2026] [::1]:56938 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56943 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:28:27 2026] [::1]:56939 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56941 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56944 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56942 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56944 [200]: GET /js/auth.js
+[Wed Apr 15 21:28:27 2026] [::1]:56940 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56943 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56945 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56944 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56945 [200]: GET /js/usuario.js
+[Wed Apr 15 21:28:27 2026] [::1]:56946 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56947 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56946 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 21:28:27 2026] [::1]:56947 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 21:28:27 2026] [::1]:56945 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56948 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56949 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56948 [200]: GET /img/loguito.png
+[Wed Apr 15 21:28:27 2026] [::1]:56949 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 21:28:27 2026] [::1]:56946 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56947 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56948 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56949 Closing
+[Wed Apr 15 21:28:27 2026] [::1]:56950 Accepted
+[Wed Apr 15 21:28:27 2026] [::1]:56950 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:28:27 2026] [::1]:56950 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56953 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56954 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56953 [200]: GET /index.html
+[Wed Apr 15 21:28:29 2026] [::1]:56953 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56954 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:28:29 2026] [::1]:56954 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56955 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56955 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 21:28:29 2026] [::1]:56955 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56956 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56957 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56958 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56956 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:28:29 2026] [::1]:56959 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56957 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 21:28:29 2026] [::1]:56958 [200]: GET /img/logo.png
+[Wed Apr 15 21:28:29 2026] [::1]:56959 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 21:28:29 2026] [::1]:56956 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56957 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56958 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56959 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56960 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56961 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56962 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56960 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 21:28:29 2026] [::1]:56961 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 21:28:29 2026] [::1]:56962 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 21:28:29 2026] [::1]:56963 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56964 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56965 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56963 [200]: GET /js/carrusel.js
+[Wed Apr 15 21:28:29 2026] [::1]:56964 [200]: GET /js/ofertas.js
+[Wed Apr 15 21:28:29 2026] [::1]:56960 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56965 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:28:29 2026] [::1]:56961 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56962 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56963 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56964 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56965 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56966 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56966 [200]: GET /js/auth.js
+[Wed Apr 15 21:28:29 2026] [::1]:56967 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56966 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56967 [200]: GET /js/usuario.js
+[Wed Apr 15 21:28:29 2026] [::1]:56967 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56968 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56969 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56970 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56971 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56968 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 21:28:29 2026] [::1]:56969 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 21:28:29 2026] [::1]:56970 [200]: GET /img/loguito.png
+[Wed Apr 15 21:28:29 2026] [::1]:56971 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 21:28:29 2026] [::1]:56968 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56970 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56969 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56971 Closing
+[Wed Apr 15 21:28:29 2026] [::1]:56972 Accepted
+[Wed Apr 15 21:28:29 2026] [::1]:56972 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:28:29 2026] [::1]:56972 Closing
+[Wed Apr 15 21:28:32 2026] [::1]:56977 Accepted
+[Wed Apr 15 21:28:32 2026] [::1]:56978 Accepted
+[Wed Apr 15 21:28:32 2026] [::1]:56977 [200]: GET /producto.html?ref=OAK001
+[Wed Apr 15 21:28:32 2026] [::1]:56977 Closing
+[Wed Apr 15 21:28:32 2026] [::1]:56978 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:28:32 2026] [::1]:56978 Closing
+[Wed Apr 15 21:28:32 2026] [::1]:56979 Accepted
+[Wed Apr 15 21:28:32 2026] [::1]:56979 [200]: GET /css/estilos_paginas/productos.css
+[Wed Apr 15 21:28:32 2026] [::1]:56979 Closing
+[Wed Apr 15 21:28:32 2026] [::1]:56980 Accepted
+[Wed Apr 15 21:28:32 2026] [::1]:56981 Accepted
+[Wed Apr 15 21:28:32 2026] [::1]:56980 [200]: GET /css/estilo_carrusel_producto.css
+[Wed Apr 15 21:28:32 2026] [::1]:56982 Accepted
+[Wed Apr 15 21:28:32 2026] [::1]:56981 [200]: GET /css/estilo_carrito.css
+[Wed Apr 15 21:28:32 2026] [::1]:56983 Accepted
+[Wed Apr 15 21:28:32 2026] [::1]:56982 [200]: GET /css/breadcrumb.css
+[Wed Apr 15 21:28:32 2026] [::1]:56984 Accepted
+[Wed Apr 15 21:28:32 2026] [::1]:56983 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:28:32 2026] [::1]:56980 Closing
+[Wed Apr 15 21:28:32 2026] [::1]:56984 [200]: GET /img/logo.png
+[Wed Apr 15 21:28:32 2026] [::1]:56981 Closing
+[Wed Apr 15 21:28:32 2026] [::1]:56982 Closing
+[Wed Apr 15 21:28:32 2026] [::1]:56983 Closing
+[Wed Apr 15 21:28:32 2026] [::1]:56984 Closing
+[Wed Apr 15 21:28:32 2026] [::1]:56985 Accepted
+[Wed Apr 15 21:28:32 2026] [::1]:56986 Accepted
+[Wed Apr 15 21:28:32 2026] [::1]:56987 Accepted
+[Wed Apr 15 21:28:32 2026] [::1]:56985 [200]: GET /js/precios.js
+[Wed Apr 15 21:28:32 2026] [::1]:56986 [200]: GET /js/carrusel_producto.js
+[Wed Apr 15 21:28:32 2026] [::1]:56988 Accepted
+[Wed Apr 15 21:28:32 2026] [::1]:56987 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:28:32 2026] [::1]:56989 Accepted
+[Wed Apr 15 21:28:32 2026] [::1]:56988 [200]: GET /js/detalle_producto.js
+[Wed Apr 15 21:28:32 2026] [::1]:56990 Accepted
+[Wed Apr 15 21:28:32 2026] [::1]:56989 [200]: GET /js/tryon.js
+[Wed Apr 15 21:28:32 2026] [::1]:56985 Closing
+[Wed Apr 15 21:28:32 2026] [::1]:56986 Closing
+[Wed Apr 15 21:28:32 2026] [::1]:56990 [200]: GET /js/carrito.js
+[Wed Apr 15 21:28:32 2026] [::1]:56987 Closing
+[Wed Apr 15 21:28:32 2026] [::1]:56991 Accepted
+[Wed Apr 15 21:28:32 2026] [::1]:56988 Closing
+[Wed Apr 15 21:28:32 2026] [::1]:56992 Accepted
+[Wed Apr 15 21:28:32 2026] [::1]:56991 [200]: GET /js/auth.js
+[Wed Apr 15 21:28:32 2026] [::1]:56989 Closing
+[Wed Apr 15 21:28:32 2026] [::1]:56993 Accepted
+[Wed Apr 15 21:28:32 2026] [::1]:56992 [200]: GET /js/usuario.js
+[Wed Apr 15 21:28:32 2026] [::1]:56990 Closing
+[Wed Apr 15 21:28:32 2026] [::1]:56993 [200]: GET /producto.html?ref=OAK001
+[Wed Apr 15 21:28:32 2026] [::1]:56991 Closing
+[Wed Apr 15 21:28:32 2026] [::1]:56992 Closing
+[Wed Apr 15 21:28:32 2026] [::1]:56993 Closing
+[Wed Apr 15 21:28:32 2026] [::1]:56994 Accepted
+[Wed Apr 15 21:28:32 2026] [::1]:56994 [200]: GET /api/get/producto.php?ref=OAK001
+[Wed Apr 15 21:28:32 2026] [::1]:56994 Closing
+[Wed Apr 15 21:28:35 2026] [::1]:56997 Accepted
+[Wed Apr 15 21:28:35 2026] [::1]:56998 Accepted
+[Wed Apr 15 21:28:35 2026] [::1]:56997 [200]: GET /carrito.html
+[Wed Apr 15 21:28:35 2026] [::1]:56997 Closing
+[Wed Apr 15 21:28:36 2026] [::1]:56998 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:28:36 2026] [::1]:56998 Closing
+[Wed Apr 15 21:28:36 2026] [::1]:56999 Accepted
+[Wed Apr 15 21:28:36 2026] [::1]:56999 [200]: GET /css/estilo_carrito.css
+[Wed Apr 15 21:28:36 2026] [::1]:56999 Closing
+[Wed Apr 15 21:28:36 2026] [::1]:57000 Accepted
+[Wed Apr 15 21:28:36 2026] [::1]:57001 Accepted
+[Wed Apr 15 21:28:36 2026] [::1]:57002 Accepted
+[Wed Apr 15 21:28:36 2026] [::1]:57000 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:28:36 2026] [::1]:57001 [200]: GET /img/logo.png
+[Wed Apr 15 21:28:36 2026] [::1]:57002 [200]: GET /img/gafas1.png
+[Wed Apr 15 21:28:36 2026] [::1]:57000 Closing
+[Wed Apr 15 21:28:36 2026] [::1]:57001 Closing
+[Wed Apr 15 21:28:36 2026] [::1]:57002 Closing
+[Wed Apr 15 21:28:36 2026] [::1]:57003 Accepted
+[Wed Apr 15 21:28:36 2026] [::1]:57004 Accepted
+[Wed Apr 15 21:28:36 2026] [::1]:57005 Accepted
+[Wed Apr 15 21:28:36 2026] [::1]:57003 [200]: GET /img/gafas2.png
+[Wed Apr 15 21:28:36 2026] [::1]:57004 [200]: GET /js/carrito.js
+[Wed Apr 15 21:28:36 2026] [::1]:57005 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:28:36 2026] [::1]:57006 Accepted
+[Wed Apr 15 21:28:36 2026] [::1]:57003 Closing
+[Wed Apr 15 21:28:36 2026] [::1]:57004 Closing
+[Wed Apr 15 21:28:36 2026] [::1]:57007 Accepted
+[Wed Apr 15 21:28:36 2026] [::1]:57006 [200]: GET /js/auth.js
+[Wed Apr 15 21:28:36 2026] [::1]:57005 Closing
+[Wed Apr 15 21:28:36 2026] [::1]:57007 [200]: GET /js/usuario.js
+[Wed Apr 15 21:28:36 2026] [::1]:57006 Closing
+[Wed Apr 15 21:28:36 2026] [::1]:57007 Closing
+[Wed Apr 15 21:28:36 2026] [::1]:57008 Accepted
+[Wed Apr 15 21:28:36 2026] [::1]:57008 [200]: GET /producto.html?ref=ACC001
+[Wed Apr 15 21:28:36 2026] [::1]:57008 Closing
+[Wed Apr 15 21:28:42 2026] [::1]:57014 Accepted
+[Wed Apr 15 21:28:43 2026] [::1]:57014 [200]: POST /api/auth/auth.php
+[Wed Apr 15 21:28:43 2026] [::1]:57014 Closing
+[Wed Apr 15 21:28:43 2026] [::1]:57016 Accepted
+[Wed Apr 15 21:28:43 2026] [::1]:57017 Accepted
+[Wed Apr 15 21:28:43 2026] [::1]:57016 [200]: GET /profile_admin.html
+[Wed Apr 15 21:28:43 2026] [::1]:57016 Closing
+[Wed Apr 15 21:28:43 2026] [::1]:57017 [200]: GET /css/estilo_profile_admin.css
+[Wed Apr 15 21:28:43 2026] [::1]:57017 Closing
+[Wed Apr 15 21:28:43 2026] [::1]:57018 Accepted
+[Wed Apr 15 21:28:43 2026] [::1]:57018 [200]: GET /js/profile_admin.js
+[Wed Apr 15 21:28:43 2026] [::1]:57018 Closing
+[Wed Apr 15 21:28:43 2026] [::1]:57019 Accepted
+[Wed Apr 15 21:28:43 2026] [::1]:57020 Accepted
+[Wed Apr 15 21:28:43 2026] [::1]:57021 Accepted
+[Wed Apr 15 21:28:43 2026] [::1]:57019 [200]: GET /img/logo.png
+[Wed Apr 15 21:28:43 2026] [::1]:57020 [200]: GET /js/datos.js
+[Wed Apr 15 21:28:43 2026] [::1]:57021 [200]: GET /js/auth2.js
+[Wed Apr 15 21:28:43 2026] [::1]:57019 Closing
+[Wed Apr 15 21:28:43 2026] [::1]:57020 Closing
+[Wed Apr 15 21:28:43 2026] [::1]:57021 Closing
+[Wed Apr 15 21:28:43 2026] [::1]:57022 Accepted
+[Wed Apr 15 21:28:43 2026] [::1]:57022 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:28:43 2026] [::1]:57022 Closing
+[Wed Apr 15 21:28:49 2026] [::1]:57031 Accepted
+[Wed Apr 15 21:28:49 2026] [::1]:57032 Accepted
+[Wed Apr 15 21:28:49 2026] [::1]:57031 [200]: GET /index.html
+[Wed Apr 15 21:28:49 2026] [::1]:57031 Closing
+[Wed Apr 15 21:28:50 2026] [::1]:57032 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:28:50 2026] [::1]:57032 Closing
+[Wed Apr 15 21:28:50 2026] [::1]:57033 Accepted
+[Wed Apr 15 21:28:50 2026] [::1]:57033 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 21:28:50 2026] [::1]:57033 Closing
+[Wed Apr 15 21:28:50 2026] [::1]:57034 Accepted
+[Wed Apr 15 21:28:50 2026] [::1]:57035 Accepted
+[Wed Apr 15 21:28:50 2026] [::1]:57036 Accepted
+[Wed Apr 15 21:28:50 2026] [::1]:57034 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:28:50 2026] [::1]:57037 Accepted
+[Wed Apr 15 21:28:50 2026] [::1]:57035 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 21:28:50 2026] [::1]:57036 [200]: GET /img/logo.png
+[Wed Apr 15 21:28:50 2026] [::1]:57037 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 21:28:50 2026] [::1]:57034 Closing
+[Wed Apr 15 21:28:50 2026] [::1]:57035 Closing
+[Wed Apr 15 21:28:50 2026] [::1]:57036 Closing
+[Wed Apr 15 21:28:50 2026] [::1]:57037 Closing
+[Wed Apr 15 21:28:50 2026] [::1]:57038 Accepted
+[Wed Apr 15 21:28:50 2026] [::1]:57039 Accepted
+[Wed Apr 15 21:28:50 2026] [::1]:57040 Accepted
+[Wed Apr 15 21:28:50 2026] [::1]:57038 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 21:28:50 2026] [::1]:57039 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 21:28:50 2026] [::1]:57040 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 21:28:50 2026] [::1]:57041 Accepted
+[Wed Apr 15 21:28:50 2026] [::1]:57042 Accepted
+[Wed Apr 15 21:28:50 2026] [::1]:57041 [200]: GET /js/carrusel.js
+[Wed Apr 15 21:28:50 2026] [::1]:57043 Accepted
+[Wed Apr 15 21:28:50 2026] [::1]:57042 [200]: GET /js/ofertas.js
+[Wed Apr 15 21:28:50 2026] [::1]:57038 Closing
+[Wed Apr 15 21:28:50 2026] [::1]:57043 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:28:50 2026] [::1]:57039 Closing
+[Wed Apr 15 21:28:50 2026] [::1]:57041 Closing
+[Wed Apr 15 21:28:50 2026] [::1]:57040 Closing
+[Wed Apr 15 21:28:50 2026] [::1]:57042 Closing
+[Wed Apr 15 21:28:50 2026] [::1]:57043 Closing
+[Wed Apr 15 21:28:50 2026] [::1]:57044 Accepted
+[Wed Apr 15 21:28:50 2026] [::1]:57045 Accepted
+[Wed Apr 15 21:28:50 2026] [::1]:57046 Accepted
+[Wed Apr 15 21:28:50 2026] [::1]:57044 [200]: GET /js/auth.js
+[Wed Apr 15 21:28:50 2026] [::1]:57045 [200]: GET /js/usuario.js
+[Wed Apr 15 21:28:50 2026] [::1]:57046 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 21:28:50 2026] [::1]:57044 Closing
+[Wed Apr 15 21:28:50 2026] [::1]:57047 Accepted
+[Wed Apr 15 21:28:50 2026] [::1]:57045 Closing
+[Wed Apr 15 21:28:50 2026] [::1]:57048 Accepted
+[Wed Apr 15 21:28:50 2026] [::1]:57047 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 21:28:50 2026] [::1]:57046 Closing
+[Wed Apr 15 21:28:50 2026] [::1]:57049 Accepted
+[Wed Apr 15 21:28:50 2026] [::1]:57048 [200]: GET /img/loguito.png
+[Wed Apr 15 21:28:50 2026] [::1]:57049 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 21:28:50 2026] [::1]:57047 Closing
+[Wed Apr 15 21:28:50 2026] [::1]:57048 Closing
+[Wed Apr 15 21:28:50 2026] [::1]:57049 Closing
+[Wed Apr 15 21:28:50 2026] [::1]:57050 Accepted
+[Wed Apr 15 21:28:50 2026] [::1]:57050 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:28:50 2026] [::1]:57050 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57055 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57056 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57055 [200]: GET /index.html
+[Wed Apr 15 21:28:51 2026] [::1]:57055 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57056 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:28:51 2026] [::1]:57056 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57057 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57057 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 21:28:51 2026] [::1]:57057 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57058 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57059 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57060 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57058 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:28:51 2026] [::1]:57059 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 21:28:51 2026] [::1]:57061 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57060 [200]: GET /img/logo.png
+[Wed Apr 15 21:28:51 2026] [::1]:57061 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 21:28:51 2026] [::1]:57058 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57059 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57060 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57061 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57062 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57063 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57064 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57062 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 21:28:51 2026] [::1]:57063 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 21:28:51 2026] [::1]:57064 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 21:28:51 2026] [::1]:57065 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57066 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57065 [200]: GET /js/carrusel.js
+[Wed Apr 15 21:28:51 2026] [::1]:57067 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57066 [200]: GET /js/ofertas.js
+[Wed Apr 15 21:28:51 2026] [::1]:57062 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57067 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:28:51 2026] [::1]:57063 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57065 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57064 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57066 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57067 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57068 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57069 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57070 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57068 [200]: GET /js/auth.js
+[Wed Apr 15 21:28:51 2026] [::1]:57069 [200]: GET /js/usuario.js
+[Wed Apr 15 21:28:51 2026] [::1]:57070 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 21:28:51 2026] [::1]:57071 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57068 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57072 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57069 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57073 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57071 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 21:28:51 2026] [::1]:57072 [200]: GET /img/loguito.png
+[Wed Apr 15 21:28:51 2026] [::1]:57073 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 21:28:51 2026] [::1]:57070 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57072 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57071 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57073 Closing
+[Wed Apr 15 21:28:51 2026] [::1]:57074 Accepted
+[Wed Apr 15 21:28:51 2026] [::1]:57074 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:28:51 2026] [::1]:57074 Closing
+[Wed Apr 15 21:28:53 2026] [::1]:57077 Accepted
+[Wed Apr 15 21:28:53 2026] [::1]:57078 Accepted
+[Wed Apr 15 21:28:53 2026] [::1]:57077 [200]: GET /profile_admin.html
+[Wed Apr 15 21:28:53 2026] [::1]:57077 Closing
+[Wed Apr 15 21:28:53 2026] [::1]:57078 [200]: GET /css/estilo_profile_admin.css
+[Wed Apr 15 21:28:53 2026] [::1]:57078 Closing
+[Wed Apr 15 21:28:53 2026] [::1]:57079 Accepted
+[Wed Apr 15 21:28:53 2026] [::1]:57079 [200]: GET /js/profile_admin.js
+[Wed Apr 15 21:28:53 2026] [::1]:57079 Closing
+[Wed Apr 15 21:28:53 2026] [::1]:57080 Accepted
+[Wed Apr 15 21:28:53 2026] [::1]:57081 Accepted
+[Wed Apr 15 21:28:53 2026] [::1]:57082 Accepted
+[Wed Apr 15 21:28:53 2026] [::1]:57080 [200]: GET /img/logo.png
+[Wed Apr 15 21:28:53 2026] [::1]:57081 [200]: GET /js/datos.js
+[Wed Apr 15 21:28:53 2026] [::1]:57082 [200]: GET /js/auth2.js
+[Wed Apr 15 21:28:53 2026] [::1]:57080 Closing
+[Wed Apr 15 21:28:53 2026] [::1]:57081 Closing
+[Wed Apr 15 21:28:53 2026] [::1]:57082 Closing
+[Wed Apr 15 21:28:53 2026] [::1]:57083 Accepted
+[Wed Apr 15 21:28:53 2026] [::1]:57083 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:28:53 2026] [::1]:57083 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57086 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57087 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57086 [200]: GET /index.html
+[Wed Apr 15 21:28:56 2026] [::1]:57086 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57087 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:28:56 2026] [::1]:57087 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57088 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57088 [200]: GET /css/estilos_paginas/pagina_principal.css
+[Wed Apr 15 21:28:56 2026] [::1]:57088 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57089 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57090 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57091 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57089 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:28:56 2026] [::1]:57090 [200]: GET /css/estilo_carrusel.css
+[Wed Apr 15 21:28:56 2026] [::1]:57092 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57091 [200]: GET /img/logo.png
+[Wed Apr 15 21:28:56 2026] [::1]:57092 [200]: GET /img/gafas_Principal.png
+[Wed Apr 15 21:28:56 2026] [::1]:57089 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57090 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57091 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57092 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57093 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57094 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57095 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57096 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57097 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57098 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57093 [200]: GET /img/carrusel1_p.png
+[Wed Apr 15 21:28:56 2026] [::1]:57094 [200]: GET /img/carrusel2_p.png
+[Wed Apr 15 21:28:56 2026] [::1]:57095 [200]: GET /img/carrusel3_p.png
+[Wed Apr 15 21:28:56 2026] [::1]:57096 [200]: GET /js/carrusel.js
+[Wed Apr 15 21:28:56 2026] [::1]:57097 [200]: GET /js/ofertas.js
+[Wed Apr 15 21:28:56 2026] [::1]:57098 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:28:56 2026] [::1]:57093 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57096 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57097 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57094 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57098 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57095 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57099 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57100 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57101 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57102 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57103 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57099 [200]: GET /img/Gafas_muj_prin.png
+[Wed Apr 15 21:28:56 2026] [::1]:57100 [200]: GET /img/Acceso_princi.png
+[Wed Apr 15 21:28:56 2026] [::1]:57101 [200]: GET /img/loguito.png
+[Wed Apr 15 21:28:56 2026] [::1]:57102 [200]: GET /js/auth.js
+[Wed Apr 15 21:28:56 2026] [::1]:57103 [200]: GET /js/usuario.js
+[Wed Apr 15 21:28:56 2026] [::1]:57099 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57101 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57104 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57100 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57102 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57103 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57104 [200]: GET /img/img_tien_prin.png
+[Wed Apr 15 21:28:56 2026] [::1]:57104 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57105 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57105 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:28:56 2026] [::1]:57105 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57107 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57108 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57107 [200]: GET /Catalogo.html
+[Wed Apr 15 21:28:56 2026] [::1]:57107 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57108 [200]: GET /css/estilo_catalogo.css
+[Wed Apr 15 21:28:56 2026] [::1]:57108 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57109 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57109 [200]: GET /css/breadcrumb.css
+[Wed Apr 15 21:28:56 2026] [::1]:57109 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57110 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57110 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:28:56 2026] [::1]:57111 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57112 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57111 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:28:56 2026] [::1]:57112 [200]: GET /img/logo.png
+[Wed Apr 15 21:28:56 2026] [::1]:57110 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57113 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57111 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57112 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57113 [200]: GET /img/imagen-catalogo.png
+[Wed Apr 15 21:28:56 2026] [::1]:57113 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57114 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57115 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57114 [200]: GET /js/catalogo.js
+[Wed Apr 15 21:28:56 2026] [::1]:57116 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57117 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57118 Accepted
+[Wed Apr 15 21:28:56 2026] [::1]:57114 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57115 [200]: GET /js/precios.js
+[Wed Apr 15 21:28:56 2026] [::1]:57116 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:28:56 2026] [::1]:57117 [200]: GET /js/auth.js
+[Wed Apr 15 21:28:56 2026] [::1]:57118 [200]: GET /js/usuario.js
+[Wed Apr 15 21:28:56 2026] [::1]:57115 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57116 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57117 Closing
+[Wed Apr 15 21:28:56 2026] [::1]:57118 Closing
+[Wed Apr 15 21:28:57 2026] [::1]:57119 Accepted
+[Wed Apr 15 21:28:57 2026] [::1]:57119 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:28:57 2026] [::1]:57119 Closing
+[Wed Apr 15 21:28:57 2026] [::1]:57121 Accepted
+[Wed Apr 15 21:28:57 2026] [::1]:57122 Accepted
+[Wed Apr 15 21:28:57 2026] [::1]:57121 [200]: GET /acc_catalogo.html
+[Wed Apr 15 21:28:57 2026] [::1]:57121 Closing
+[Wed Apr 15 21:28:57 2026] [::1]:57122 [200]: GET /css/estilo_catalogo.css
+[Wed Apr 15 21:28:57 2026] [::1]:57122 Closing
+[Wed Apr 15 21:28:57 2026] [::1]:57123 Accepted
+[Wed Apr 15 21:28:57 2026] [::1]:57123 [200]: GET /css/breadcrumb.css
+[Wed Apr 15 21:28:57 2026] [::1]:57123 Closing
+[Wed Apr 15 21:28:57 2026] [::1]:57124 Accepted
+[Wed Apr 15 21:28:57 2026] [::1]:57125 Accepted
+[Wed Apr 15 21:28:57 2026] [::1]:57126 Accepted
+[Wed Apr 15 21:28:57 2026] [::1]:57124 [200]: GET /css/estilo_nav_bar.css
+[Wed Apr 15 21:28:57 2026] [::1]:57125 [200]: GET /css/estilo_footer.css
+[Wed Apr 15 21:28:57 2026] [::1]:57127 Accepted
+[Wed Apr 15 21:28:57 2026] [::1]:57126 [200]: GET /img/logo.png
+[Wed Apr 15 21:28:57 2026] [::1]:57127 [200]: GET /img/imagen-catalogo.png
+[Wed Apr 15 21:28:57 2026] [::1]:57124 Closing
+[Wed Apr 15 21:28:57 2026] [::1]:57125 Closing
+[Wed Apr 15 21:28:57 2026] [::1]:57126 Closing
+[Wed Apr 15 21:28:57 2026] [::1]:57128 Accepted
+[Wed Apr 15 21:28:57 2026] [::1]:57127 Closing
+[Wed Apr 15 21:28:57 2026] [::1]:57128 [200]: GET /js/catalogo.js
+[Wed Apr 15 21:28:57 2026] [::1]:57128 Closing
+[Wed Apr 15 21:28:57 2026] [::1]:57129 Accepted
+[Wed Apr 15 21:28:57 2026] [::1]:57130 Accepted
+[Wed Apr 15 21:28:57 2026] [::1]:57129 [200]: GET /js/precios.js
+[Wed Apr 15 21:28:57 2026] [::1]:57130 [200]: GET /js/login-modal.js
+[Wed Apr 15 21:28:57 2026] [::1]:57131 Accepted
+[Wed Apr 15 21:28:57 2026] [::1]:57131 [200]: GET /js/auth.js
+[Wed Apr 15 21:28:57 2026] [::1]:57129 Closing
+[Wed Apr 15 21:28:57 2026] [::1]:57130 Closing
+[Wed Apr 15 21:28:57 2026] [::1]:57131 Closing
+[Wed Apr 15 21:28:57 2026] [::1]:57132 Accepted
+[Wed Apr 15 21:28:57 2026] [::1]:57132 [200]: GET /js/usuario.js
+[Wed Apr 15 21:28:57 2026] [::1]:57132 Closing
+[Wed Apr 15 21:28:57 2026] [::1]:57133 Accepted
+[Wed Apr 15 21:28:57 2026] [::1]:57133 [200]: GET /api/get/productos.php
+[Wed Apr 15 21:28:57 2026] [::1]:57133 Closing

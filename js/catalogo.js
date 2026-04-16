@@ -3,12 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const marcaSelect = document.getElementById("marca");
     const materialSelect = document.getElementById("material");
 
-    // 🔹 leemos qué categoría debe mostrar esta página (gafas, accesorio, etc.)
     const categoriaPagina = (document.body.dataset.categoria || "").toLowerCase();
+    let productos = [];
 
-    let productos = []; // lo que viene de la BD
-
-    // 1) Traer productos desde el backend
     fetch("api/get/productos.php")
         .then(res => res.json())
         .then(data => {
@@ -18,11 +15,10 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(err => {
             console.error("Error cargando productos:", err);
             if (contenedor) {
-                contenedor.innerHTML = "<p>Error cargando el catálogo.</p>";
+                contenedor.innerHTML = "<p style='text-align:center; width:100%; padding:40px;'>Error cargando el catálogo.</p>";
             }
         });
 
-    // 2) Render según filtros
     function renderProductos() {
         if (!contenedor) return;
 
@@ -34,18 +30,12 @@ document.addEventListener("DOMContentLoaded", () => {
         productos.forEach(p => {
             const marcaProd = (p.marca || "").trim();
             const materialProd = (p.material || "").trim();
-            const categoriaProd = (p.categoria || "").trim().toLowerCase(); // 🔹 viene de la BD
+            const categoriaProd = (p.categoria || "").trim().toLowerCase();
 
-            // 🔹 filtro por categoría según la página
-            const coincideCategoria =
-                !categoriaPagina || categoriaProd === categoriaPagina;
+            const coincideCategoria = !categoriaPagina || categoriaProd === categoriaPagina;
+            const coincideMarca = !marcaSelect || marcaFiltro === "todos" || marcaProd === marcaFiltro;
+            const coincideMaterial = !materialSelect || materialFiltro === "todos" || materialProd === materialFiltro;
 
-            const coincideMarca =
-                !marcaSelect || marcaFiltro === "todos" || marcaProd === marcaFiltro;
-            const coincideMaterial =
-                !materialSelect || materialFiltro === "todos" || materialProd === materialFiltro;
-
-            // si no coincide con algo, no se muestra
             if (!coincideCategoria || !coincideMarca || !coincideMaterial) return;
 
             const card = document.createElement("div");
@@ -57,34 +47,48 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const valor = Number(p.valor || 0);
             const descuentoVal = Number(p.descuento || 0);
-            const hayDescuento = descuentoVal > 0;
+            const hayDescuento = descuentoVal > 0 && descuentoVal < valor;
 
             const precioOriginal = valor.toLocaleString("es-CO");
             let precioHtml = "";
+            let badgeHtml = "";
+            let imagenHtml = "";
 
             if (hayDescuento) {
                 const precioDesc = descuentoVal.toLocaleString("es-CO");
+                const porcentajeDesc = Math.round((1 - descuentoVal / valor) * 100);
+                badgeHtml = `<span class="badge-descuento">-${porcentajeDesc}%</span>`;
                 precioHtml = `
                     <div class="precio">
-                        <span class="precio-original">${precioOriginal}</span>
-                        <span class="precio-descuento">${precioDesc}</span>
+                        <span class="precio-original">$${precioOriginal}</span>
+                        <span class="precio-descuento">$${precioDesc}</span>
                     </div>
                 `;
             } else {
-                precioHtml = `<p class="precio">${precioOriginal}</p>`;
+                card.classList.add("sin-oferta");
+                precioHtml = `<div class="precio"><span class="precio-descuento">$${precioOriginal}</span></div>`;
+            }
+
+            if (p.imagen) {
+                imagenHtml = `<img src="imagenes/${p.imagen}" alt="${p.nombre}" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                              <div class="producto-placeholder" style="display:none;">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                              </div>`;
+            } else {
+                imagenHtml = `<div class="producto-placeholder">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+                              </div>`;
             }
 
             card.innerHTML = `
-                <figure>
-                    <img src="imagenes/${p.imagen}" alt="${p.nombre}">
-                </figure>
+                ${badgeHtml}
+                ${imagenHtml}
                 <h3>${p.nombre}</h3>
-                <h5>Referencia: ${p.referencia}</h5>
+                <h5>${p.marca || ''}</h5>
                 <h3>${p.material}</h3>
                 ${precioHtml}
             `;
 
-            // Al hacer clic, ir a detalle
             card.addEventListener("click", () => {
                 window.location.href = "producto.html?ref=" + encodeURIComponent(p.referencia);
             });
@@ -93,11 +97,10 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
         if (!contenedor.children.length) {
-            contenedor.innerHTML = "<p>No se encontraron productos con estos filtros.</p>";
+            contenedor.innerHTML = "<p style='text-align:center; width:100%; padding:40px;'>No se encontraron productos con estos filtros.</p>";
         }
     }
 
-    // 3) Filtros
     if (marcaSelect) {
         marcaSelect.addEventListener("change", renderProductos);
     }

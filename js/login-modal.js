@@ -13,6 +13,24 @@ function getCookie(cname) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+    // -------- Menú hamburguesa para móvil --------
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenuMobile = document.getElementById('navMenuMobile');
+
+    if (menuToggle && navMenuMobile) {
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navMenuMobile.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!menuToggle.contains(e.target) && !navMenuMobile.contains(e.target)) {
+                menuToggle.classList.remove('active');
+                navMenuMobile.classList.remove('active');
+            }
+        });
+    }
+
     // -------- Referencias generales --------
     const loginOverlay = document.getElementById('login-overlay');
     const registerOverlay = document.getElementById('register-overlay');

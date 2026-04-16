@@ -1,30 +1,41 @@
 <?php
-
-include_once "../conexion.php";
+header("Content-Type: application/json");
+include_once "../conexion_pg.php";
 
 $data = json_decode(file_get_contents("php://input"));
-$correo = $data->correo;
-$password = $data->password;
+$correo = trim($data->correo ?? '');
+$password = $data->password ?? '';
 
-$query = "SELECT * FROM usuario WHERE correo = '$correo' ";
-$result = $conn->query($query);
+if (empty($correo) || empty($password)) {
+    echo json_encode(["status" => "error", "mensaje" => "Correo y contraseña son requeridos."]);
+    exit;
+}
 
-if ($result->num_rows > 0) {
-    $data = $result->fetch_assoc();
-    if ($data && password_verify($password, $data["password"])) {
+try {
+    $conn = getConnection();
+    
+    $stmt = $conn->prepare("SELECT * FROM usuarios WHERE correo = :correo");
+    $stmt->execute(['correo' => $correo]);
+    $usuario = $stmt->fetch();
+    
+    if (!$usuario) {
+        echo json_encode(["status" => "error", "mensaje" => "Usuario no encontrado."]);
+        exit;
+    }
+    
+    if (password_verify($password, $usuario["password"])) {
         echo json_encode([
             "status" => "success",
             "mensaje" => "Login correcto",
-            "rol" => $data['rol'], 
-            "nombre" => $data['nombre'],
-            "correo" => $data['correo'],
-            "id" => $data['id']
+            "rol" => $usuario['rol'],
+            "nombre" => $usuario['nombre'],
+            "correo" => $usuario['correo'],
+            "id" => $usuario['id']
         ]);
     } else {
         echo json_encode(["status" => "error", "mensaje" => "Contraseña incorrecta."]);
     }
-} else {
-    echo json_encode(["status" => "error", "mensaje" => "Usuario no encontrado."]);
+} catch (PDOException $e) {
+    echo json_encode(["status" => "error", "mensaje" => "Error del servidor."]);
 }
-
 ?>

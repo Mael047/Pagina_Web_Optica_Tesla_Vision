@@ -12,13 +12,16 @@ main {
     width: 100%;
     margin: auto;
     background-color: #fff;
+    padding-top: 100px;
 }
 
 /* Imagen superior */
 .imagen-publicitaria {
     width: 100%;
-    height: 500px;
-    margin-top: 100px;
+    height: 400px;
+    margin-top: 0;
+    position: relative;
+    overflow: hidden;
 }
 
 .imagen-publicitaria figure {
@@ -30,6 +33,11 @@ main {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.imagen-publicitaria:hover img {
+    transform: scale(1.05);
 }
 
 /* Barra superior (filtros + breadcrumb) */
@@ -40,8 +48,18 @@ main {
     align-items: center;
     flex-wrap: wrap;
     gap: 15px;
-    margin: 20px auto;
+    margin: 30px auto;
     font-family: 'Lato', sans-serif;
+}
+
+.barra-superior .breadcrumb {
+    font-size: 14px;
+    color: #666;
+}
+
+.barra-superior .breadcrumb a {
+    color: #151e38;
+    text-decoration: none;
 }
 
 .filtros {
@@ -52,47 +70,104 @@ main {
 }
 
 .filtros label {
-    font-size: 18px;
-    color: #222;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
 }
 
 .filtros select {
-    padding: 5px 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
+    padding: 8px 15px;
+    border-radius: 25px;
+    border: 2px solid #e0e0e0;
+    background: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filtros select:hover {
+    border-color: #151e38;
+}
+
+.filtros select:focus {
+    outline: none;
+    border-color: #151e38;
+    box-shadow: 0 0 0 3px rgba(21, 30, 56, 0.1);
 }
 
 /* Contenedor de productos */
 .container-catalogo {
     width: 90%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
     justify-items: center;
     margin: 40px 0;
+    padding: 0 20px;
 }
 
 .producto {
     background-color: #fff;
     border-radius: 20px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    gap: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 25px;
+    gap: 12px;
+    transition: all 0.4s ease;
     font-family: 'Lato', sans-serif;
     text-align: center;
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Badge de descuento */
+.producto .badge-descuento {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: linear-gradient(135deg, #d62828 0%, #f72585 100%);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(214, 40, 40, 0.4);
+}
+
+/* Placeholder visual cuando no hay imagen */
+.producto .producto-placeholder {
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.producto .producto-placeholder svg {
+    width: 60px;
+    height: 60px;
+    fill: white;
 }
 
 .producto img {
     width: 80%;
-    max-width: 250px;
+    max-width: 200px;
     height: auto;
     object-fit: cover;
+    border-radius: 15px;
 }
 
 .producto h3 {
@@ -102,21 +177,9 @@ main {
 }
 
 .producto h5 {
-    font-size: 12px;
-    color: #000;
-    font-weight: 600;
-}
-
-.producto p {
-    font-size: 18px;
-    color: #000;
-    font-weight: bold;
-}
-
-.producto:hover {
-    transform: scale(1.03);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
+    font-size: 13px;
+    color: #888;
+    font-weight: 500;
 }
 
 /* Precios */
@@ -124,29 +187,42 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    font-weight: bold;
-    font-size: 18px;
+    gap: 12px;
+    margin-top: 5px;
 }
 
 .precio-original {
-    color: #777;
+    color: #999;
     text-decoration: line-through;
+    font-size: 16px;
 }
 
 .precio-descuento {
     color: #d62828;
-    font-size: 20px;
-    font-weight: 700;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.producto.sin-oferta .precio {
+    justify-content: center;
+}
+
+.producto.sin-oferta .precio-descuento {
+    color: #151e38;
+    font-size: 22px;
 }
 
 /* MEDIA QUERIES */
 
 /* Tablets */
 @media (max-width: 992px) {
+    main {
+        padding-top: 80px;
+    }
+
     .imagen-publicitaria {
-        height: 350px;
-        margin-top: 80px;
+        height: 300px;
+        margin-top: 0;
     }
 
     .container-catalogo {
@@ -166,9 +242,13 @@ main {
 
 /* Celulares */
 @media (max-width: 600px) {
+    main {
+        padding-top: 70px;
+    }
+
     .imagen-publicitaria {
-        height: 250px;
-        margin-top: 70px;
+        height: 200px;
+        margin-top: 0;
     }
 
     .barra-superior {
@@ -179,7 +259,12 @@ main {
     }
 
     .filtros label {
-        font-size: 16px;
+        font-size: 14px;
+    }
+
+    .filtros select {
+        font-size: 14px;
+        padding: 4px 8px;
     }
 
     .producto {
@@ -190,7 +275,7 @@ main {
 
     .producto img {
         width: 100%;
-        max-width: 200px;
+        max-width: 180px;
     }
 
     .producto h3 {
@@ -198,6 +283,24 @@ main {
     }
 
     .producto p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .imagen-publicitaria {
+        height: 150px;
+    }
+
+    .producto h3 {
+        font-size: 14px;
+    }
+
+    .precio {
+        font-size: 14px;
+    }
+
+    .precio-descuento {
         font-size: 16px;
     }
 }
