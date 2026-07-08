@@ -6,7 +6,7 @@ $data = json_decode(file_get_contents("php://input"), true);
 $referencia = $data["referencia"] ?? "";
 
 if (!$referencia) {
-    echo json_encode(["mensaje" => "Referencia de producto no válida"]);
+    echo json_encode(["status" => "error", "mensaje" => "Referencia de producto no válida"]);
     exit;
 }
 
@@ -31,8 +31,8 @@ try {
     $stmt = $conn->prepare("DELETE FROM productos WHERE referencia = :ref");
     $stmt->execute(['ref' => $referencia]);
     
-    echo json_encode(["mensaje" => "Producto eliminado correctamente"]);
+    echo json_encode(["status" => "success", "mensaje" => "Producto eliminado correctamente"]);
 } catch (PDOException $e) {
-    echo json_encode(["mensaje" => "Error al eliminar el producto"]);
+    echo json_encode(["status" => "error", "mensaje" => "Error al eliminar el producto"]);
 }
 ?>

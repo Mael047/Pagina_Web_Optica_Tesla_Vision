@@ -62,10 +62,6 @@ function renderProducto(p) {
 
     const fuentesBase = [p.imagen, p.imagen2, p.imagen3].filter(esImagenValida);
 
-    if (!fuentesBase.length) {
-        return; // sin fuentes válidas, no forzamos src para evitar 404
-    }
-
     let fuentes = [];
     if (fuentesBase.length === 1) {
         fuentes = [fuentesBase[0], fuentesBase[0], fuentesBase[0]];
@@ -81,6 +77,21 @@ function renderProducto(p) {
         imgEl.src = 'imagenes/' + src;
         imgEl.alt = p.nombre || 'Producto';
     });
+
+    // ===== MEDIDAS =====
+    const medAncho = document.getElementById('med-ancho');
+    const medPuente = document.getElementById('med-puente');
+    const medBrazo = document.getElementById('med-brazo');
+
+    if (medAncho) medAncho.textContent = 'Ancho del lente: ' + (p.ancho || '—');
+    if (medPuente) medPuente.textContent = 'Puente: ' + (p.puente || '—');
+    if (medBrazo) medBrazo.textContent = 'Brazo: ' + (p.brazo || '—');
+
+    const medidasSection = document.getElementById('medidas-producto');
+    if (medidasSection) {
+        const hasMedidas = p.ancho || p.puente || p.brazo;
+        medidasSection.style.display = hasMedidas ? 'block' : 'none';
+    }
 
     // ===== PRECIO =====
     if (precioEl) {

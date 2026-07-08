@@ -1,38 +1,67 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const carrusel = document.querySelector(".carrusel .item");
-    const imagenes = document.querySelectorAll(".carrusel .item img");
-    const puntos = document.querySelectorAll(".carrusel .punto");
+    const carruselItem = document.querySelector(".carrusel .item");
+    const puntosContainer = document.querySelector(".carrusel .puntos");
+    if (!carruselItem) return;
 
-    let indice = 0;
-    const total = imagenes.length;
+    fetch("api/get/carrusel.php")
+        .then(r => r.json())
+        .then(data => {
+            if (!data.length) {
+                carruselItem.innerHTML = '<img src="img/carrusel1_p.png" alt="Placeholder" class="img">';
+                if (puntosContainer) {
+                    puntosContainer.innerHTML = '<li class="punto activo"></li>';
+                }
+                initCarrusel();
+                return;
+            }
 
-    // Función para actualizar el carrusel
-    const actualizarCarrusel = () => {
-        const ancho = imagenes[0].clientWidth;
-        carrusel.style.transform = `translateX(-${indice * ancho}px)`;
+            carruselItem.innerHTML = data.map(g =>
+                `<img src="imagenes/${g.imagen}" alt="Carrusel" class="img">`
+            ).join('');
 
-        puntos.forEach((p, i) => {
-            p.classList.toggle("activo", i === indice);
+            if (puntosContainer) {
+                puntosContainer.innerHTML = data.map((_, i) =>
+                    `<li class="punto ${i === 0 ? 'activo' : ''}"></li>`
+                ).join('');
+            }
+
+            initCarrusel();
+        })
+        .catch(() => {
+            carruselItem.innerHTML = '<img src="img/carrusel1_p.png" alt="Placeholder" class="img">';
+            if (puntosContainer) {
+                puntosContainer.innerHTML = '<li class="punto activo"></li>';
+            }
+            initCarrusel();
         });
-    };
 
-    // Detectar clic en los puntos
-    puntos.forEach((punto, i) => {
-        punto.addEventListener("click", () => {
-            indice = i;
+    function initCarrusel() {
+        const imagenes = carruselItem.querySelectorAll("img");
+        const puntos = document.querySelectorAll(".carrusel .punto");
+        if (!imagenes.length) return;
+
+        let indice = 0;
+        const total = imagenes.length;
+
+        function actualizarCarrusel() {
+            const ancho = imagenes[0].clientWidth;
+            carruselItem.style.transform = `translateX(-${indice * ancho}px)`;
+            puntos.forEach((p, i) => p.classList.toggle("activo", i === indice));
+        }
+
+        puntos.forEach((punto, i) => {
+            punto.addEventListener("click", () => {
+                indice = i;
+                actualizarCarrusel();
+            });
+        });
+
+        setInterval(() => {
+            indice = (indice + 1) % total;
             actualizarCarrusel();
-        });
-    });
+        }, 4000);
 
-    // Carrusel automático
-    setInterval(() => {
-        indice = (indice + 1) % total;
+        window.addEventListener("resize", actualizarCarrusel);
         actualizarCarrusel();
-    }, 4000); // cambia cada 4 segundos
-
-    // Ajustar cuando cambia el tamaño de la ventana
-    window.addEventListener("resize", actualizarCarrusel);
-
-    // Inicialización
-    actualizarCarrusel();
+    }
 });

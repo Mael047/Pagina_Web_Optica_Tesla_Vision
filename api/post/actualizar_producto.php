@@ -7,18 +7,21 @@ $data = json_decode(file_get_contents("php://input"), true);
 $producto = $data["producto"] ?? "";
 $material = $data["material"] ?? "";
 $marca = $data["marca"] ?? "";
-$valor = $data["valor"] ?? 0;
-$descuento = $data["descuento"] ?? 0;
+$valor = isset($data["valor"]) && $data["valor"] !== "" ? (float)$data["valor"] : 0;
+$descuento = isset($data["descuento"]) && $data["descuento"] !== "" ? (float)$data["descuento"] : 0;
 $referencia = $data["referencia"] ?? "";
 $descripcion = $data["descripcion"] ?? "";
 $categoria = $data["categoria"] ?? "";
+$ancho = $data["ancho"] ?? "";
+$puente = $data["puente"] ?? "";
+$brazo = $data["brazo"] ?? "";
 $imagenBase64_1 = $data["imagen"] ?? "";
 $imagenBase64_2 = $data["imagen2"] ?? "";
 $imagenBase64_3 = $data["imagen3"] ?? "";
 $refOriginal = $data["referencia_original"] ?? "";
 
 if (!$refOriginal) {
-    echo json_encode(["mensaje" => "No se recibió la referencia original del producto."]);
+    echo json_encode(["status" => "error", "mensaje" => "No se recibió la referencia original del producto."]);
     exit;
 }
 
@@ -32,6 +35,9 @@ try {
     $sql = "UPDATE productos SET 
             nombre = :nombre, 
             material = :material, 
+            ancho = :ancho,
+            puente = :puente,
+            brazo = :brazo,
             valor = :valor, 
             descuento = :descuento, 
             referencia = :referencia, 
@@ -42,6 +48,9 @@ try {
     $params = [
         'nombre' => $producto,
         'material' => $material,
+        'ancho' => $ancho,
+        'puente' => $puente,
+        'brazo' => $brazo,
         'valor' => $valor,
         'descuento' => $descuento,
         'referencia' => $referencia,
@@ -69,9 +78,9 @@ try {
     $stmt = $conn->prepare($sql);
     $stmt->execute($params);
     
-    echo json_encode(["mensaje" => "Producto actualizado correctamente"]);
+    echo json_encode(["status" => "success", "mensaje" => "Producto actualizado correctamente"]);
 } catch (PDOException $e) {
-    echo json_encode(["mensaje" => "Error al actualizar el producto"]);
+    echo json_encode(["status" => "error", "mensaje" => "Error al actualizar el producto"]);
 }
 
 function guardarImagen($imagenBase64) {

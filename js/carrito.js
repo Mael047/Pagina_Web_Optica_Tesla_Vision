@@ -119,30 +119,10 @@ document.addEventListener("DOMContentLoaded", () => {
             if (material.includes(":")) material = material.split(":").slice(1).join(":").trim();
         }
 
-        // Precio: preferir data-descuento, luego data-precio, luego texto
+        // Precio: usar el texto visible (ya refleja descuento si existe)
         let precio = 0;
         if (precioEl) {
-            const dataDescuento = precioEl.dataset ? precioEl.dataset.descuento : null;
-            const dataPrecio = precioEl.dataset ? precioEl.dataset.precio : null;
-
-            let raw = precioEl.textContent; // valor por defecto
-
-            const numDescuento = dataDescuento !== undefined && dataDescuento !== null
-                ? Number(dataDescuento)
-                : NaN;
-            const numPrecio = dataPrecio !== undefined && dataPrecio !== null
-                ? Number(dataPrecio)
-                : NaN;
-
-            if (!Number.isNaN(numDescuento) && numDescuento > 0) {
-                // hay descuento válido
-                raw = dataDescuento;
-            } else if (!Number.isNaN(numPrecio) && numPrecio > 0) {
-                // no hay descuento, pero sí precio normal
-                raw = dataPrecio;
-            }
-
-            const cleaned = String(raw).replace(/[^\d]/g, "");
+            const cleaned = String(precioEl.textContent).replace(/[^\d]/g, "");
             precio = cleaned ? parseInt(cleaned, 10) : 0;
         }
 
@@ -155,10 +135,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const idx = carrito.findIndex(p => p.ref && producto.ref && p.ref === producto.ref);
 
         if (idx > -1) {
-            carrito[idx].cantidad = (carrito[idx].cantidad || 1) + 1;
-        } else {
-            carrito.push(producto);
+            showToast(`${nombre} ya está en tu carrito.`);
+            return;
         }
+
+        carrito.push(producto);
 
         localStorage.setItem("carrito", JSON.stringify(carrito));
 
@@ -246,9 +227,7 @@ document.addEventListener("DOMContentLoaded", () => {
             fila.classList.add("producto-fila");
 
             const precioUnitario = Number(item.precio) || 0;
-            const cantidad = Number(item.cantidad) || 1;
-            const subtotal = precioUnitario * cantidad;
-            total += subtotal;
+            total += precioUnitario;
 
             fila.innerHTML = `
         <div class="col-imagen"><img src="${item.imagen}" alt="${item.nombre}" style="max-width:80px;"/></div>
@@ -256,11 +235,8 @@ document.addEventListener("DOMContentLoaded", () => {
         <div class="col-detalles">
         <strong>${item.nombre}</strong><br/>Ref: ${item.ref || "N/A"}<br/>Material: ${item.material || "—"}
         </div>
-        <div class="col-examen">—</div>
         <div class="col-precio">
-        <div>Unit: $${formatearPrecio(precioUnitario)}</div>
-        <div>Cant: <input type="number" min="1" value="${cantidad}" class="cantidad-input" data-index="${index}" style="width:60px;"/></div>
-        <div>Subtotal: $${formatearPrecio(subtotal)}</div>
+        <div>$${formatearPrecio(precioUnitario)}</div>
         </div>
         <div class="col-eliminar"><button class="btn-eliminar" data-index="${index}">×</button></div>`;
 

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/estilo_profile_admin.css">
     <script src="js/profile_admin.js" defer></script>
     <script src="js/datos.js" defer></script>
+    <script src="js/admin.js" defer></script>
     <script src="js/auth2.js" defer></script>
 
 </head>
@@ -29,118 +30,224 @@
             <nav class="menu">
                 <p class="section-title">Store</p>
                 <ul>
-                    <li class="menu-item active"><span class="icon"></span> Gafas y Accesorios </li>
+                    <li class="menu-item active" data-section="productos"><span class="icon"></span> Gafas y Accesorios</li>
+                    <li class="menu-item" data-section="testimonios"><span class="icon"></span> Testimonios</li>
+                    <li class="menu-item" data-section="galeria"><span class="icon"></span> Galería</li>
+                    <li class="menu-item" data-section="carrusel"><span class="icon"></span> Carrusel Principal</li>
                 </ul>
             </nav>
         </aside>
 
         <!-- MAIN -->
         <main class="main-content">
-            <!-- Header / listado vacío -->
-            <header class="admin-header">
-                <div class="titulo">
-                    <span class="star">◎</span>
-                    <h1>Gafas</h1>
-                </div>
-                <p class="sub">Administra Productos De La Tienda</p>
 
-                <div class="acciones">
-                    <button class="btn-add"><span class="plus">＋</span> Añadir Nuevos Productos</button>
-                </div>
-            </header>
-
-            <section class="empty-state">
-                <p class="text-muted">No Tienes Ningun Producto Aún</p>
-            </section>
-
-            <hr class="divider">
-
-            <!-- FORMULARIO -->
-            <section class="product-form">
-                <h2>Nuevo Lente</h2>
-                <!-- Aquí empieza el form -->
-                <form id="formulario" enctype="multipart/form-data">
-                    <input type="hidden" name="referencia_original" id="referencia_original">
-                    <div class="form-grid">
-                        <div class="col imagen-col">
-                            <label class="label">Imagen</label>
-
-                            <!-- Imagen 1 -->
-                            <div class="image-placeholder">
-                                <div class="placeholder-icon">🖼️</div>
-                                <div class="placeholder-text">Cargar Imagen</div>
-                                <img id="preview1" src="" alt="Preview 1">
-                            </div>
-                            <input class="placeholder-text" type="file" name="imagen" id="imagen">
-
-                            <!-- Imagen 2 -->
-                            <div class="image-placeholder">
-                                <div class="placeholder-icon">🖼️</div>
-                                <div class="placeholder-text">Imagen 2 (opcional)</div>
-                                <img id="preview2" src="" alt="Preview 2">
-                            </div>
-                            <input class="placeholder-text" type="file" name="imagen2" id="imagen2">
-
-                            <!-- Imagen 3 -->
-                            <div class="image-placeholder">
-                                <div class="placeholder-icon">🖼️</div>
-                                <div class="placeholder-text">Imagen 3 (opcional)</div>
-                                <img id="preview3" src="" alt="Preview 3">
-                            </div>
-                            <input class="placeholder-text" type="file" name="imagen3" id="imagen3">
-
-
-                            <div class="form-actions">
-                                <button class="btn-confirm" type="submit">Confirmar</button>
-                                <button class="btn-cancel" type="button">Cancelar</button>
-                            </div>
-                        </div>
-
-                        <div class="col fields-col">
-                            <label class="label">Nombre Del Producto</label>
-                            <input type="text" name="producto" id="producto" placeholder="Ej:Gafas De Sol Mol A">
-
-                            <label class="label">Categoria</label>
-                            <select name="categoria" id="categoria">
-                                <option value="gafas">Gafas</option>
-                                <option value="accesorios">Accesorios</option>
-                            </select>
-
-                            <label class="label">Marca</label>
-                            <input type="text" name="marca" id="marca" placeholder="Ej:RayBan">
-
-                            <label class="label">Material</label>
-                            <input type="text" name="material" id="material" placeholder="Ej:Metal">
-
-                            <label class="label">Valor</label>
-                            <input type="text" name="valor" id="valor" placeholder="Ej:180.000">
-
-                            <label class="label">Descuento</label>
-                            <input type="text" name="descuento" id="descuento" placeholder="Ej:20">
-
-                            <label class="label">Referencia</label>
-                            <input type="text" name="referencia" id="referencia" placeholder="Ej:Gsv900">
-
-                            <label class="label">Descripcion</label>
-                            <textarea name="descripcion" id="descripcion"
-                                placeholder="Descripción Del Producto"></textarea>
-                        </div>
+            <!-- ========= SECCION PRODUCTOS ========= -->
+            <div id="section-productos">
+                <header class="admin-header">
+                    <div class="titulo">
+                        <span class="star">◎</span>
+                        <h1>Gafas</h1>
                     </div>
-                </form>
+                    <p class="sub">Administra Productos De La Tienda</p>
 
-                <span id="respuesta"></span>
-                <!-- Aquí termina el form -->
-            </section>
-            <section class="product-list">
-                <h2>Lista De Productos</h2>
-                <ul id="productos"></ul>
-                <span id="respuesta"></span>
-            </section>
+                    <div class="acciones">
+                        <button class="btn-add"><span class="plus">＋</span> Añadir Nuevos Productos</button>
+                    </div>
+                </header>
+
+                <section class="empty-state">
+                    <p class="text-muted">No Tienes Ningun Producto Aún</p>
+                </section>
+
+                <hr class="divider">
+
+                <section class="product-form">
+                    <h2>Nuevo Lente</h2>
+                    <form id="formulario" enctype="multipart/form-data">
+                        <input type="hidden" name="referencia_original" id="referencia_original">
+                        <div class="form-grid">
+                            <div class="col imagen-col">
+                                <label class="label">Imagen</label>
+
+                                <div class="image-placeholder">
+                                    <div class="placeholder-icon">🖼️</div>
+                                    <div class="placeholder-text">Cargar Imagen</div>
+                                    <img id="preview1" src="" alt="Preview 1">
+                                </div>
+                                <input class="placeholder-text" type="file" name="imagen" id="imagen">
+
+                                <div class="image-placeholder">
+                                    <div class="placeholder-icon">🖼️</div>
+                                    <div class="placeholder-text">Imagen 2 (opcional)</div>
+                                    <img id="preview2" src="" alt="Preview 2">
+                                </div>
+                                <input class="placeholder-text" type="file" name="imagen2" id="imagen2">
+
+                                <div class="image-placeholder">
+                                    <div class="placeholder-icon">🖼️</div>
+                                    <div class="placeholder-text">Imagen 3 (opcional)</div>
+                                    <img id="preview3" src="" alt="Preview 3">
+                                </div>
+                                <input class="placeholder-text" type="file" name="imagen3" id="imagen3">
+
+                                <div class="form-actions">
+                                    <button class="btn-confirm" type="submit">Confirmar</button>
+                                    <button class="btn-cancel" type="button">Cancelar</button>
+                                </div>
+                            </div>
+
+                            <div class="col fields-col">
+                                <label class="label">Nombre Del Producto</label>
+                                <input type="text" name="producto" id="producto" placeholder="Ej:Gafas De Sol Mol A">
+
+                                <label class="label">Categoria</label>
+                                <select name="categoria" id="categoria">
+                                    <option value="gafas_dama">Dama</option>
+                                    <option value="gafas_hombre">Hombre</option>
+                                    <option value="gafas_nino">Niño</option>
+                                    <option value="gafas_deportivas">Deportivas</option>
+                                    <option value="gafas_sol">Sol</option>
+                                    <option value="accesorios">Accesorios</option>
+                                </select>
+
+                                <label class="label">Marca</label>
+                                <input type="text" name="marca" id="marca" placeholder="Ej:RayBan">
+
+                                <label class="label">Material</label>
+                                <input type="text" name="material" id="material" placeholder="Ej:Metal">
+
+                                <label class="label">Ancho del lente (mm)</label>
+                                <input type="text" name="ancho" id="ancho" placeholder="Ej: 52">
+
+                                <label class="label">Puente (mm)</label>
+                                <input type="text" name="puente" id="puente" placeholder="Ej: 18">
+
+                                <label class="label">Brazo (mm)</label>
+                                <input type="text" name="brazo" id="brazo" placeholder="Ej: 140">
+
+                                <label class="label">Valor</label>
+                                <input type="text" name="valor" id="valor" placeholder="Ej:180.000">
+
+                                <label class="label">Descuento</label>
+                                <input type="text" name="descuento" id="descuento" placeholder="Ej:20">
+
+                                <label class="label">Referencia</label>
+                                <input type="text" name="referencia" id="referencia" placeholder="Ej:Gsv900">
+
+                                <label class="label">Descripcion</label>
+                                <textarea name="descripcion" id="descripcion"
+                                    placeholder="Descripción Del Producto"></textarea>
+                            </div>
+                        </div>
+                    </form>
+
+                    <span id="respuesta"></span>
+                </section>
+                <section class="product-list">
+                    <h2>Lista De Productos</h2>
+                    <ul id="productos"></ul>
+                    <span id="respuesta"></span>
+                </section>
+            </div>
+
+            <!-- ========= SECCION TESTIMONIOS ========= -->
+            <div id="section-testimonios" style="display:none;">
+                <header class="admin-header">
+                    <div class="titulo">
+                        <span class="star">◎</span>
+                        <h1>Testimonios</h1>
+                    </div>
+                    <p class="sub">Administra los testimonios que aparecen en la página principal</p>
+                </header>
+
+                <section class="admin-form-section">
+                    <h2>Nuevo Testimonio</h2>
+                    <form id="form-testimonio" class="admin-form">
+                        <input type="hidden" id="test-id">
+                        <label class="label">Nombre del cliente</label>
+                        <input type="text" id="test-nombre" placeholder="Ej: María García" required>
+
+                        <label class="label">Comentario</label>
+                        <textarea id="test-comentario" placeholder="Ej: Excelente atención, quedé encantada con mis gafas..." required></textarea>
+
+                        <label class="label">Foto del cliente (opcional)</label>
+                        <input type="file" id="test-imagen" accept="image/*">
+
+                        <div class="form-actions">
+                            <button class="btn-confirm" type="submit">Guardar</button>
+                            <button class="btn-cancel" type="button" onclick="document.getElementById('form-testimonio').reset(); document.getElementById('test-id').value='';">Cancelar</button>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="admin-list-section">
+                    <h2>Lista De Testimonios</h2>
+                    <div id="lista-testimonios"></div>
+                </section>
+            </div>
+
+            <!-- ========= SECCION GALERIA ========= -->
+            <div id="section-galeria" style="display:none;">
+                <header class="admin-header">
+                    <div class="titulo">
+                        <span class="star">◎</span>
+                        <h1>Galería</h1>
+                    </div>
+                    <p class="sub">Imágenes del collage en la página principal</p>
+                </header>
+
+                <section class="admin-form-section">
+                    <h2>Subir Imagen</h2>
+                    <form id="form-galeria" class="admin-form">
+                        <label class="label">Imagen</label>
+                        <input type="file" id="gal-imagen" accept="image/*" required>
+
+                        <div class="form-actions">
+                            <button class="btn-confirm" type="submit">Subir</button>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="admin-list-section">
+                    <h2>Imágenes</h2>
+                    <div id="lista-galeria" class="admin-grid-list"></div>
+                </section>
+            </div>
+
+            <!-- ========= SECCION CARRUSEL ========= -->
+            <div id="section-carrusel" style="display:none;">
+                <header class="admin-header">
+                    <div class="titulo">
+                        <span class="star">◎</span>
+                        <h1>Carrusel Principal</h1>
+                    </div>
+                    <p class="sub">Imágenes del carrusel en la página principal</p>
+                </header>
+
+                <section class="admin-form-section">
+                    <h2>Subir Imagen</h2>
+                    <form id="form-carrusel" class="admin-form">
+                        <label class="label">Imagen</label>
+                        <input type="file" id="car-imagen" accept="image/*" required>
+
+                        <label class="label">Orden</label>
+                        <input type="number" id="car-orden" value="0" min="0">
+
+                        <div class="form-actions">
+                            <button class="btn-confirm" type="submit">Subir</button>
+                        </div>
+                    </form>
+                </section>
+
+                <section class="admin-list-section">
+                    <h2>Imágenes</h2>
+                    <div id="lista-carrusel" class="admin-grid-list"></div>
+                </section>
+            </div>
+
         </main>
     </div>
 
-
 </body>
-
 
 </html>

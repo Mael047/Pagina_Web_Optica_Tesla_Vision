@@ -1,89 +1,56 @@
-# Optica Tesla Vision - Development Notes
+# Optica Tesla Vision
 
-## Architecture
-- Vanilla PHP/PostgreSQL backend with vanilla HTML/CSS/JS frontend
-- No build tools, no npm, no bundler
-- Database: PostgreSQL `opticateslavision` in Docker (localhost:5432)
-
-## Database Connection
-- Driver: PDO PostgreSQL
-- Host: localhost, Port: 5432
-- Database: opticateslavision
-- User: opticauser, Password: optica2024
-- Connection file: `api/conexion_pg.php` (MySQL backup: `api/conexion_mysql.php`)
+Vanilla PHP/PostgreSQL backend + vanilla HTML/CSS/JS frontend. No build tools, no npm, no bundler, no tests, no CI.
 
 ## Running
-- Requires PHP server (e.g., `php -S localhost:8000`) and PostgreSQL Docker container running
-- Start DB: `docker start optica_pg`
-- Open `index.html` or any `.html` file via the PHP server
 
-## Authentication
-Three auth JS files for different page types:
-- `js/auth.js` - Login page (index.html modal)
-- `js/auth2.js` - Admin pages (profile_admin.html)
-- `js/auth3.js` - User pages (profile.html)
+```bash
+docker start optica_pg
+php -S localhost:8000
+# Open http://localhost:8000
+```
 
-Cookie-based auth: `token`, `rol` (admin/user), `user_correo`, `id`
+## Database
 
-## Database Tables
-- `usuarios` - Users (id, nombre, correo, password, rol, telefono, direccion)
-- `productos` - Products (id, nombre, marca, material, valor, descuento, referencia, descripcion, imagen, imagen2, imagen3, categoria)
-- `pedidos` - Orders (id, usuario_id, order_id, total, estado, datos_envio, datos_pago)
-- `pedido_items` - Order items (id, pedido_id, producto_referencia, nombre, cantidad, precio)
+- **Host:** localhost:5432, **DB:** opticateslavision, **User:** opticauser, **Pass:** optica2024
+- Driver: PDO PostgreSQL (`api/conexion_pg.php`). Old MySQL backup at `api/conexion_mysql.php` (unused).
+- Schema: `api/setup/migrate_schema.sql` — 4 tables: `usuarios`, `productos`, `pedidos`, `pedido_items`
+- Admin user: `admin@teslavision.com` / `password`
 
-## API Endpoints
-- `api/auth/auth.php` - Login (prepared statements)
-- `api/get/productos.php` - List products
-- `api/get/producto.php` - Get single product
-- `api/get/get_usuario.php` - Get user(s)
-- `api/post/registro.php` - Create product
-- `api/post/usuario.php` - Create user
-- `api/post/actualizar_producto.php` - Update product
-- `api/post/actualizar_usuario.php` - Update user
-- `api/post/orden.php` - Create order (uses relational tables)
-- `api/delete/eliminar_producto.php` - Delete product
+## API Conventions
 
-## Security
-- All queries use PDO prepared statements (SQL injection protected)
-- Passwords hashed with `password_hash()` / `password_verify()`
-- Input validation on all endpoints
+All endpoints live in `api/{auth,get,post,delete}/`. Every API:
+- Sets `header("Content-Type: application/json")` and `include_once "../conexion_pg.php"`
+- Uses PDO prepared statements
+- Reads JSON body via `json_decode(file_get_contents("php://input"), true)`
+- No CORS headers (works only when served by same PHP server)
 
-## Directory Structure
-- `api/` - PHP endpoints (auth/, get/, post/, delete/)
-- `api/setup/` - Database schema (migrate_schema.sql)
-- `js/` - JavaScript modules (one per feature)
-- `css/` - Stylesheets (estilos_paginas/ for page-specific, estilo_*.css for components)
-- `components/` - Reusable HTML snippets (nav_bar, footer, etc.)
-- `datos/productos.json` - Static product data (backup)
-- `imagenes/` - Product images (uploaded via admin)
-- `img/` - Site assets (logo, banners)
+### Endpoint naming quirks
 
-## Accomplished
+| File | Actual purpose |
+|---|---|
+| `api/post/registro.php` | **Create product** (not registration) |
+| `api/post/usuario.php` | Create user (registration) |
+| `api/post/orden.php` | Create order (reads `id` and `user_correo` from **cookies** server-side) |
 
-### Database & Backend
-- ✅ Set up PostgreSQL in Docker with connection file `api/conexion_pg.php`
-- ✅ Created `api/setup/migrate_schema.sql` with 4 tables
-- ✅ Refactored all 9 PHP APIs to use PDO prepared statements
-- ✅ Created admin user: admin@teslavision.com / password
+## Auth
 
-### Frontend Updates
-- ✅ Added responsive hamburger menu to navbar (all pages now consistent)
-- ✅ Fixed login modal CSS
-- ✅ Created offers section in homepage with `js/ofertas.js`
-- ✅ Moved offers section after carousel
-- ✅ Improved homepage styles (gradients, shadows, hover effects)
-- ✅ Improved catalog styles (badges, cards, placeholders)
+Cookie-based (no JWT/sessions). Cookies set on login: `token=true`, `rol` (admin/user), `user_correo`, `id`.
 
-### Pages with Updated Navbar (new structure without `<ul><li>`)
-- `index.html`
-- `Catalogo.html`
-- `carrito.html`
-- `producto.html` (also fixed HTML bug in register modal)
-- `acc_catalogo.html`
-- `search.html`
-- `components/nav_bar.html`
+Three auth JS files scoped by page:
+- `js/auth.js` — Login page (`index.html` modal), also sets cookies
+- `js/auth2.js` — Admin pages (`profile_admin.html`), redirects if not admin
+- `js/auth3.js` — User pages (`profile.html`), redirects if not logged in
 
-### Pending
-- Review cart page CSS (`estilo_carrito.css`)
-- Review product page CSS (`productos.css`)
-- Test responsive behavior on mobile
+## Image Upload
+
+Products store up to 3 images (`imagen`, `imagen2`, `imagen3` columns). Uploaded as base64 data URLs in the JSON body. Saved to `imagenes/` by `guardarImagen()` (duplicated in `registro.php` and `actualizar_producto.php`). Delete endpoint also removes image files from disk.
+
+## Notable Patterns
+
+- **Navbar** is duplicated inline in every HTML page (no server-side include). `components/nav_bar.html` is a reference copy.
+- **Search** uses `search.html?q=...` powered by `js/search.js`
+- **Orders** require login cookies (`id`, `user_correo`) to be set on the client before POST
+- **Language:** All UI text, DB schema, error messages, and code comments are in Spanish
+- **File naming:** Mixed case — `Catalogo.html`, `acc_catalogo.html`, `producto.html`, `carrito.html`, `search.html`, `registro.html`
+- **Static backups:** `datos/productos.json` and `datos/productos.xml` exist but are unused (historical)

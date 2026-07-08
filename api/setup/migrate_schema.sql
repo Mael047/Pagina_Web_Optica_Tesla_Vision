@@ -15,6 +15,9 @@ CREATE TABLE productos (
     imagen2 VARCHAR(255),
     imagen3 VARCHAR(255),
     categoria VARCHAR(100),
+    ancho VARCHAR(20) DEFAULT '',
+    puente VARCHAR(20) DEFAULT '',
+    brazo VARCHAR(20) DEFAULT '',
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
@@ -59,3 +62,27 @@ CREATE INDEX idx_productos_referencia ON productos(referencia);
 CREATE INDEX idx_pedidos_usuario ON pedidos(usuario_id);
 CREATE INDEX idx_pedidos_order_id ON pedidos(order_id);
 CREATE INDEX idx_pedido_items_pedido ON pedido_items(pedido_id);
+
+-- Tabla testimonios (hero section)
+CREATE TABLE IF NOT EXISTS testimonios (
+    id SERIAL PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    comentario TEXT NOT NULL,
+    imagen VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Tabla galeria (collage hero)
+CREATE TABLE IF NOT EXISTS galeria (
+    id SERIAL PRIMARY KEY,
+    imagen VARCHAR(255) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Tabla carrusel (imágenes del carrusel principal)
+CREATE TABLE IF NOT EXISTS carrusel (
+    id SERIAL PRIMARY KEY,
+    imagen VARCHAR(255) NOT NULL,
+    orden INT DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

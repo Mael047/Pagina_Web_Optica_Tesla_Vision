@@ -19,7 +19,7 @@
     <script src="js/login-modal.js" defer></script>
     <script src="js/auth.js" defer></script>
     <script src="js/usuario.js" defer></script>
-    <title>Catálogo</title>
+    <title>Accesorios</title>
 </head>
 
 <body data-categoria="accesorios">
@@ -32,8 +32,17 @@
             </button>
 
             <div class="nav-left">
-                <a href="Catalogo.html">Gafas</a>
-                <a href="acc_catalogo.html">Accesorios</a>
+                <div class="dropdown">
+                    <a href="Catalogo.html">Gafas</a>
+                    <div class="submenu">
+                        <a href="Catalogo.html?categoria=gafas_dama">Dama</a>
+                        <a href="Catalogo.html?categoria=gafas_hombre">Hombre</a>
+                        <a href="Catalogo.html?categoria=gafas_nino">Niño</a>
+                        <a href="Catalogo.html?categoria=gafas_deportivas">Deportivas</a>
+                        <a href="Catalogo.html?categoria=gafas_sol">Sol</a>
+                    </div>
+                </div>
+                <a href="Catalogo.html?categoria=accesorios">Accesorios</a>
             </div>
 
             <div class="nav-center">
@@ -69,8 +78,17 @@
             </div>
         </nav>
         <div class="nav-menu-mobile" id="navMenuMobile">
-            <a href="Catalogo.html">Gafas</a>
-            <a href="acc_catalogo.html">Accesorios</a>
+            <div class="has-submenu">
+                <a href="Catalogo.html">Gafas</a>
+                <div class="submenu-mobile">
+                    <a href="Catalogo.html?categoria=gafas_dama">Dama</a>
+                    <a href="Catalogo.html?categoria=gafas_hombre">Hombre</a>
+                    <a href="Catalogo.html?categoria=gafas_nino">Niño</a>
+                    <a href="Catalogo.html?categoria=gafas_deportivas">Deportivas</a>
+                    <a href="Catalogo.html?categoria=gafas_sol">Sol</a>
+                </div>
+            </div>
+            <a href="Catalogo.html?categoria=accesorios">Accesorios</a>
         </div>
     </header>
 
@@ -82,7 +100,7 @@
         <div class="barra-superior">
             <nav class="breadcrumb">
                 <a href="index.html">Inicio</a> /
-                <a href="pages/catalogo.html" class="active">Catálogo</a>
+                <a href="pages/catalogo.html" class="active">Accesorios</a>
             </nav>
 
         </div>

@@ -177,8 +177,10 @@ function responseServer(response) {
     // Recargar lista
     ajaxGet("api/get/productos.php");
 
-    // Limpiar modo edición
-    limpiarFormulario();
+    // Solo limpiar formulario si fue exitoso (no borrar campos en error)
+    if (jsonResponse.status === "success") {
+        limpiarFormulario();
+    }
 }
 
 // ----- RENDER LISTA EN ADMIN -----
@@ -246,6 +248,9 @@ function cargarProductoEnFormulario(producto) {
     const campoProducto = document.getElementById("producto");
     const campoCategoria = document.getElementById("categoria");
     const campoMaterial = document.getElementById("material");
+    const campoAncho = document.getElementById("ancho");
+    const campoPuente = document.getElementById("puente");
+    const campoBrazo = document.getElementById("brazo");
     const campoValor = document.getElementById("valor");
     const campoDescuento = document.getElementById("descuento");
     const campoReferencia = document.getElementById("referencia");
@@ -255,6 +260,9 @@ function cargarProductoEnFormulario(producto) {
     if (campoProducto) campoProducto.value = producto.nombre || "";
     if (campoCategoria) campoCategoria.value = producto.categoria || "";
     if (campoMaterial) campoMaterial.value = producto.material || "";
+    if (campoAncho) campoAncho.value = producto.ancho || "";
+    if (campoPuente) campoPuente.value = producto.puente || "";
+    if (campoBrazo) campoBrazo.value = producto.brazo || "";
     if (campoValor) campoValor.value = producto.valor || "";
     if (campoDescuento) campoDescuento.value = producto.descuento || "";
     if (campoReferencia) campoReferencia.value = producto.referencia || "";

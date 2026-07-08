@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const marcaSelect = document.getElementById("marca");
     const materialSelect = document.getElementById("material");
 
-    const categoriaPagina = (document.body.dataset.categoria || "").toLowerCase();
+    const params = new URLSearchParams(window.location.search);
+    const categoriaPagina = (params.get("categoria") || document.body.dataset.categoria || "").toLowerCase();
     let productos = [];
 
     fetch("api/get/productos.php")

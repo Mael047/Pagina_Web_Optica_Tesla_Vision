@@ -76,7 +76,7 @@ try {
     foreach ($items as $item) {
         $stmtItem->execute([
             'pedido_id' => $pedidoId,
-            'ref' => $item['referencia'] ?? '',
+            'ref' => $item['ref'] ?? $item['referencia'] ?? '',
             'nombre' => $item['nombre'] ?? '',
             'cantidad' => $item['cantidad'] ?? 1,
             'precio' => $item['precio'] ?? 0

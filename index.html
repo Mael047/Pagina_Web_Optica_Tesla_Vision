@@ -15,7 +15,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="css/estilo_carrusel.css">
     <script src="js/carrusel.js" defer></script>
-    <script src="js/ofertas.js" defer></script>
+    <script src="js/testimonios.js" defer></script>
+    <script src="js/galeria.js" defer></script>
     <script src="js/login-modal.js" defer></script>
     <script src="js/auth.js" defer></script>
     <script src="js/usuario.js" defer></script>
@@ -34,8 +35,17 @@
             </button>
 
             <div class="nav-left">
-                <a href="Catalogo.html">Gafas</a>
-                <a href="acc_catalogo.html">Accesorios</a>
+                <div class="dropdown">
+                    <a href="Catalogo.html">Gafas</a>
+                    <div class="submenu">
+                        <a href="Catalogo.html?categoria=gafas_dama">Dama</a>
+                        <a href="Catalogo.html?categoria=gafas_hombre">Hombre</a>
+                        <a href="Catalogo.html?categoria=gafas_nino">Niño</a>
+                        <a href="Catalogo.html?categoria=gafas_deportivas">Deportivas</a>
+                        <a href="Catalogo.html?categoria=gafas_sol">Sol</a>
+                    </div>
+                </div>
+                <a href="Catalogo.html?categoria=accesorios">Accesorios</a>
             </div>
 
             <div class="nav-center">
@@ -71,47 +81,44 @@
             </div>
         </nav>
         <div class="nav-menu-mobile" id="navMenuMobile">
-            <a href="Catalogo.html">Gafas</a>
-            <a href="acc_catalogo.html">Accesorios</a>
+            <div class="has-submenu">
+                <a href="Catalogo.html">Gafas</a>
+                <div class="submenu-mobile">
+                    <a href="Catalogo.html?categoria=gafas_dama">Dama</a>
+                    <a href="Catalogo.html?categoria=gafas_hombre">Hombre</a>
+                    <a href="Catalogo.html?categoria=gafas_nino">Niño</a>
+                    <a href="Catalogo.html?categoria=gafas_deportivas">Deportivas</a>
+                    <a href="Catalogo.html?categoria=gafas_sol">Sol</a>
+                </div>
+            </div>
+            <a href="Catalogo.html?categoria=accesorios">Accesorios</a>
         </div>
     </header>
     <main>
-        <div class="Imagen_principal">
-            <img src="img/gafas_Principal.png" alt="Gafas">
-        </div>
-
-        <div class="Texto_principal">
-            <h1>Gafas Para Toda Ocasión</h1>
-            <p>Para irte a pasear o lograrte graduar, sus gafas no le van a faltar.</p>
-        </div>
+        <!-- HERO: testimonios + galería -->
+        <section class="hero-split">
+            <div class="hero-left">
+                <h1>Óptica Tesla Vision</h1>
+                <p class="hero-sub">Calidad y estilo para tu salud visual</p>
+                <div id="hero-testimonios"></div>
+            </div>
+            <div class="hero-right">
+                <div id="hero-galeria"></div>
+            </div>
+        </section>
 
         <div class="carrusel">
             <div class="item">
                 <img src="img/carrusel1_p.png" alt="Imagen1" class="img">
                 <img src="img/carrusel2_p.png" alt="Imagen2" class="img">
                 <img src="img/carrusel3_p.png" alt="Imagen3" class="img">
-                <img src="img/carrusel3_p.png" alt="Imagen4" class="img">
             </div>
             <ul class="puntos">
                 <li class="punto"></li>
                 <li class="punto"></li>
                 <li class="punto"></li>
-                <li class="punto"></li>
             </ul>
         </div>
-
-        <section class="ofertas-section">
-            <div class="ofertas-header">
-                <h2>OFERTAS ESPECIALES</h2>
-                <p>¡Aprovecha nuestros descuentos por tiempo limitado!</p>
-            </div>
-            <div class="ofertas-grid" id="ofertasGrid">
-                <!-- Productos con oferta se cargarán aquí -->
-            </div>
-            <div class="ofertas-ver-mas">
-                <a href="Catalogo.html" class="btn-ver-mas">Ver Todas las Ofertas</a>
-            </div>
-        </section>
 
         <div class="texto_secundario">
             <h2>Gafas para todos, sin distinción</h2>
@@ -125,7 +132,7 @@
 
             <div class="categoria">
                 <img src="img/Acceso_princi.png" alt="Accesorios">
-                <a href="acc_catalogo.html" class="boton_categoria">Accesorios</a>
+                <a href="Catalogo.html?categoria=accesorios" class="boton_categoria">Accesorios</a>
             </div>
         </div>
 

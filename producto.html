@@ -16,7 +16,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
-    <script src="js/precios.js" defer></script>
     <script src="js/carrusel_producto.js" defer></script>
     <script src="js/login-modal.js" defer></script>
     <script src="js/detalle_producto.js" defer></script>
@@ -39,8 +38,17 @@
             </button>
 
             <div class="nav-left">
-                <a href="Catalogo.html">Gafas</a>
-                <a href="acc_catalogo.html">Accesorios</a>
+                <div class="dropdown">
+                    <a href="Catalogo.html">Gafas</a>
+                    <div class="submenu">
+                        <a href="Catalogo.html?categoria=gafas_dama">Dama</a>
+                        <a href="Catalogo.html?categoria=gafas_hombre">Hombre</a>
+                        <a href="Catalogo.html?categoria=gafas_nino">Niño</a>
+                        <a href="Catalogo.html?categoria=gafas_deportivas">Deportivas</a>
+                        <a href="Catalogo.html?categoria=gafas_sol">Sol</a>
+                    </div>
+                </div>
+                <a href="Catalogo.html?categoria=accesorios">Accesorios</a>
             </div>
 
             <div class="nav-center">
@@ -76,8 +84,17 @@
             </div>
         </nav>
         <div class="nav-menu-mobile" id="navMenuMobile">
-            <a href="Catalogo.html">Gafas</a>
-            <a href="acc_catalogo.html">Accesorios</a>
+            <div class="has-submenu">
+                <a href="Catalogo.html">Gafas</a>
+                <div class="submenu-mobile">
+                    <a href="Catalogo.html?categoria=gafas_dama">Dama</a>
+                    <a href="Catalogo.html?categoria=gafas_hombre">Hombre</a>
+                    <a href="Catalogo.html?categoria=gafas_nino">Niño</a>
+                    <a href="Catalogo.html?categoria=gafas_deportivas">Deportivas</a>
+                    <a href="Catalogo.html?categoria=gafas_sol">Sol</a>
+                </div>
+            </div>
+            <a href="Catalogo.html?categoria=accesorios">Accesorios</a>
         </div>
     </header>
 
@@ -110,6 +127,15 @@
                 <h2>Material: Metal</h2>
                 <p class="precio" data-precio="200000" data-descuento="100000">200.000</p>
 
+                <div class="medidas" id="medidas-producto">
+                    <h3>Medidas de la montura</h3>
+                    <ul>
+                        <li id="med-ancho">Ancho del lente: —</li>
+                        <li id="med-puente">Puente: —</li>
+                        <li id="med-brazo">Brazo: —</li>
+                    </ul>
+                </div>
+
                 <div class="secciones">
                     <h2>Detalle y Garantía</h2>
                 </div>
@@ -123,7 +149,7 @@
                     <li>Garantía Por Defectos De Fábrica</li>
                 </ul>
 
-                <button class="btn-comprar">Continuar</button>
+                <button class="btn-comprar">Agregar al Carro</button>
             </div>
         </div>
 

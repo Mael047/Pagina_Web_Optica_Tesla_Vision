@@ -47,6 +47,26 @@ body {
     color: #000;
 }
 
+.detalles-producto .medidas {
+    width: 100%;
+    text-align: left;
+}
+
+.detalles-producto .medidas h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #151e38;
+}
+
+.detalles-producto .medidas ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+    font-size: 14px;
+    color: #333;
+}
+
 .detalles-producto .secciones {
     display: flex;
     gap: 30px;

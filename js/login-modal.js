@@ -29,6 +29,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 navMenuMobile.classList.remove('active');
             }
         });
+
+        // Submenú móvil: toggle al hacer clic en "Gafas"
+        navMenuMobile.querySelectorAll('.has-submenu > a').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const parent = link.parentElement;
+                const sub = parent.querySelector('.submenu-mobile');
+                if (sub) {
+                    sub.classList.toggle('show');
+                    parent.classList.toggle('open');
+                }
+            });
+        });
     }
 
     // -------- Referencias generales --------

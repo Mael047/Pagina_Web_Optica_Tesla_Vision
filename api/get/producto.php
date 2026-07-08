@@ -12,7 +12,7 @@ if (empty($ref)) {
 try {
     $conn = getConnection();
     $stmt = $conn->prepare("
-        SELECT nombre, marca, material, valor, descuento, 
+        SELECT nombre, marca, material, ancho, puente, brazo, valor, descuento, 
                referencia, descripcion, imagen, imagen2, imagen3, categoria
         FROM productos 
         WHERE referencia = :ref

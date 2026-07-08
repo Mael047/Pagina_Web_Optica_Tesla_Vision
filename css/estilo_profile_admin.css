@@ -160,7 +160,7 @@ body {
 }
 
 .btn-add {
-    background: linear-gradient(135deg, #1c7ed6, #845ef7);
+    background: linear-gradient(135deg, #1c7ed6, #9d7cff);
     color: #fff;
     padding: 10px 16px;
     border-radius: 12px;
@@ -407,7 +407,7 @@ body {
 }
 
 .btnEdit {
-    background: linear-gradient(135deg, #12b886, #1c7ed6);
+    background:#12b886;
     color: #fff;
     border: none;
     padding: 6px 12px;
@@ -420,4 +420,123 @@ body {
 
 .btnEdit:hover {
     opacity: 0.92;
+}
+
+/* ========= SECCIONES ADMIN (testimonios, galería, carrusel) ========= */
+.admin-form-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid #e7ebf3;
+    margin-bottom: 24px;
+}
+
+.admin-form-section h2 {
+    margin: 0 0 12px 0;
+    color: #1b2335;
+}
+
+.admin-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.admin-form input[type="text"],
+.admin-form textarea,
+.admin-form input[type="number"],
+.admin-form input[type="file"] {
+    border: 1px solid #e6e9ef;
+    border-radius: 12px;
+    padding: 11px 12px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color .2s ease, box-shadow .2s ease;
+    margin-bottom: 8px;
+}
+
+.admin-form input:focus,
+.admin-form textarea:focus {
+    border-color: #1c7ed6;
+    box-shadow: 0 0 0 3px rgba(28, 126, 214, 0.12);
+}
+
+.admin-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.admin-list-section {
+    margin-top: 24px;
+    background: #fff;
+    padding: 16px;
+    border-radius: 14px;
+    box-shadow: var(--card-shadow);
+    border: 1px solid #e7ebf3;
+}
+
+.admin-list-section h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.admin-list-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    border-bottom: 1px solid #e9edf5;
+    font-size: 14px;
+}
+
+.admin-list-item:last-child {
+    border-bottom: none;
+}
+
+.admin-thumb {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.admin-item-info {
+    flex: 1;
+}
+
+.admin-item-info p {
+    margin: 4px 0 0;
+    font-size: 13px;
+    color: #666;
+}
+
+.admin-grid-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 16px;
+}
+
+.admin-grid-list .admin-list-item {
+    flex-direction: column;
+    border: 1px solid #e9edf5;
+    border-radius: 12px;
+    padding: 12px;
+}
+
+.admin-grid-list .admin-thumb {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.admin-grid-list .admin-item-info {
+    width: 100%;
+    text-align: center;
+}
+
+.admin-grid-list .admin-item-info span {
+    font-size: 12px;
+    word-break: break-all;
 }
